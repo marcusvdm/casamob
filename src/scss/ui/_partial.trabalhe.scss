@@ -1,0 +1,44 @@
+/******************************************
+ * TRABALHE
+ ******************************************/
+
+.trabalhe {
+  background:           $cm_lt-petroleum;
+  padding-bottom:       $base-spacing-unit*3;
+
+  @include media-query(wide) { .form { margin-top: 120px; } }
+
+  h2 span { @include media-query(portable) { color: $cm_lt-blue; } }
+
+  @include media-query (palm) {
+    .uploadfile {
+      float: right;
+      width: 65%;
+
+      margin-bottom: $base-spacing-unit;
+    }
+
+    .fileupload.btn {
+      float: right;
+      margin-right: 0;
+      margin-left: halve($base-spacing-unit);
+      
+      span { cursor: pointer; }
+    }
+
+    .btn.wpcf7-submit {
+      clear: both;
+    }
+
+    .form-line--submit {
+      padding-left: 0;
+    }
+  }
+
+  .nome     { background-color: $cm_lt-orange; }
+  .email    { background-color: $cm_lt-purple; }
+  .telefone { background-color: $cm_lt-blue; }
+  .area     { background-color: $cm_lt-red; }
+  .site     { background-color: $cm_lt-acqua; }
+  .mensagem { background-color: $cm_lt-beige; color: $cinza-funghi }
+}

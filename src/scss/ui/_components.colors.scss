@@ -1,0 +1,76 @@
+.content.colors-palete {
+  max-width: none;
+  position: relative;
+  @include media-query(lap-and-up) { @include gridsize(5,7, $gridsize); }
+  @include media-query(wide) { @include gridsize(5,7); }
+}
+
+.color-box {
+  float: left;
+  position: relative;
+  
+  @include gridsize(1, 1, $gridsize-min);
+
+  @include media-query(lap-and-up) {
+    
+    @include gridsize(1, 1, $gridsize);
+
+    &.branco-sal {         @include gridpos(1,5, $gridsize); }
+    &.preto-jabuticaba {   @include gridpos(2,6, $gridsize); }
+    &.prata-gelo {         @include gridpos(1,7, $gridsize); }
+    &.cinza-funghi {       @include gridpos(4,6, $gridsize); }
+    &.azul-anis {          @include gridpos(4,1, $gridsize); }
+    &.azul-blueberry {     @include gridpos(1,2, $gridsize); }
+    &.verde-cha {          @include gridpos(5,5, $gridsize); }
+    &.verde-alecrim {      @include gridpos(4,5, $gridsize); }
+    &.amarelo-curry {      @include gridpos(3,5, $gridsize); }
+    &.laranja-damasco {    @include gridpos(1,3, $gridsize); }
+    &.vermelho-paprica {   @include gridpos(2,4, $gridsize); }
+    &.bege-baunilha {      @include gridpos(4,4, $gridsize); }
+    &.rosa-iogurte {       @include gridpos(5,4, $gridsize); }
+    &.roxo-figo {          @include gridpos(2,3, $gridsize); }
+    &.roxo-beterraba {     @include gridpos(3,3, $gridsize); }
+    &.madeirado-sal {      @include gridpos(4,3, $gridsize); }
+    &.madeirado-funghi {   @include gridpos(1,1, $gridsize); }
+    &.madeirado-anis {     @include gridpos(2,2, $gridsize); }
+    &.madeirado-canela {   @include gridpos(3,2, $gridsize); }
+    &.madeirado-baunilha { @include gridpos(5,2, $gridsize); }
+    &.madeirado-paprica {  @include gridpos(3,1, $gridsize); }
+  }
+
+  @include media-query(wide) {
+    @include gridsize(1, 1);
+
+    &.branco-sal {         @include gridpos(1,5); }
+    &.preto-jabuticaba {   @include gridpos(2,6); }
+    &.prata-gelo {         @include gridpos(1,7); }
+    &.cinza-funghi {       @include gridpos(4,6); }
+    &.azul-anis {          @include gridpos(4,1); }
+    &.azul-blueberry {     @include gridpos(1,2); }
+    &.verde-cha {          @include gridpos(5,6); }
+    &.verde-alecrim {      @include gridpos(4,5); }
+    &.amarelo-curry {      @include gridpos(3,4); }
+    &.laranja-damasco {    @include gridpos(1,4); }
+    &.vermelho-paprica {   @include gridpos(2,4); }
+    &.bege-baunilha {      @include gridpos(4,4); }
+    &.rosa-iogurte {       @include gridpos(5,4); }
+    &.roxo-figo {          @include gridpos(2,3); }
+    &.roxo-beterraba {     @include gridpos(3,3); }
+    &.madeirado-sal {      @include gridpos(4,3); }
+    &.madeirado-funghi {   @include gridpos(1,1); }
+    &.madeirado-anis {     @include gridpos(2,2); }
+    &.madeirado-canela {   @include gridpos(3,2); }
+    &.madeirado-baunilha { @include gridpos(5,2); }
+    &.madeirado-paprica {  @include gridpos(3,1); }
+  }
+}
+
+.color-label {
+  line-height: 1.3;
+  @include position(absolute, auto auto quarter($base-spacing-unit) quarter($base-spacing-unit));
+  @include media-query(lap-and-up) { @include font-size(14px, 1.3); }
+  @include media-query(wide) { @include font-size($base-font-size, 1.3); }
+
+  color: $white;
+}
+.color-label--dk { color: $cinza-funghi; }

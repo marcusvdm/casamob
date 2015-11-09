@@ -1,0 +1,60 @@
+.kits {
+  .txt-slider {
+    background-color: $cm_lt-violet;
+    
+    h3 { color: $cm_lt-acqua; }
+    .txt.content { outline: none; }
+  }
+  
+  .menu-linha {
+    background: $cm_lt-acqua;
+  }
+  
+  .menu-linha--item.active,
+  .menu-linha--item:hover {
+    background-color: $cm_lt-violet;
+    font-weight: $bold;
+    border: 1px solid $cm_lt-violet;
+  }
+  
+  .link-modulos { color: $cm_lt-violet; }
+  
+  .prod-box h4 { background: $cm_lt-violet; }
+  
+  .color-box.prata-gelo {
+    @include media-query(desk) { @include gridpos(5,1, $gridsize); }
+    @include media-query(wide) { @include gridpos(4,6, $gridsize-max); }
+  }
+  
+  .color-box.preto-jabuticaba {
+    @include media-query(desk) { @include gridpos(3,5, $gridsize); }
+    @include media-query(wide) { @include gridpos(3,5, $gridsize-max); }
+  }
+  .color-box.cinza-funghi {
+    @include media-query(desk) { @include gridpos(5,7, $gridsize); }
+    @include media-query(wide) { @include gridpos(5,7, $gridsize-max); }
+  }
+  
+  &.showcase .ambientes .thumb {
+    &:nth-child(1),
+    &:nth-child(10),
+    &:nth-child(17),
+    &:nth-child(18){
+      @include media-query(desk) { margin-left: $gridsize*2; }
+      @include media-query(wide) { margin-left: $gridsize-max*2; }
+    }
+    &:nth-child(3),
+    &:nth-child(9),
+    &:nth-child(11),
+    &:nth-child(15),
+    &:nth-child(14),
+    &:nth-child(20){
+      @include media-query(desk) { margin-left: $gridsize; }
+      @include media-query(wide) { margin-left: $gridsize-max; }
+    }
+    &:nth-child(6){
+      @include media-query(desk) { margin-left: $gridsize*3; }
+      @include media-query(wide) { margin-left: $gridsize-max*3; }
+    }
+  }
+}

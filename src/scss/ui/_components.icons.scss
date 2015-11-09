@@ -1,0 +1,103 @@
+%icon-before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: quarter($base-spacing-unit);
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+  top: 2px;
+
+  @include media-query("lap-and-up") { text-align: right; }
+  @include media-query(wide) { margin-right: halve($base-spacing-unit); }
+  
+}
+
+
+.icon-conceito:before {
+  content: '';
+  background-image: url(../images/icons/icon-conceito.svg);
+}
+.icon-monte:before {
+  content: '';
+  background-image: url(../images/icons/icon-monte.svg);
+}
+.icon-lupa:before {
+  content: '';
+  background-image: url(../images/icons/icon-lupa.svg);
+}
+.icon-quem:before {
+  content: '';
+  background-image: url(../images/icons/icon-quem.svg);
+}
+.icon-contato:before {
+  content: '';
+  background-image: url(../images/icons/icon-contato.svg);
+}
+.icon-endereco:before {
+  content: '';
+  background-image: url(../images/icons/icon-endereco.svg);
+}
+.icon-onde:before {
+  content: '';
+  background-image: url(../images/icons/icon-onde.svg);
+}
+.icon-diferenciais:before {
+  content: '';
+  background-image: url(../images/icons/icon-diferenciais.svg);
+}
+.icon-representantes:before {
+  content: '';
+  background-image: url(../images/icons/icon-representantes.svg);
+}
+.icon-acessorios:before {
+  content: '';
+  background-image: url(../images/icons/icon-acessorios.svg);
+}
+.icon-produtos:before {
+  content: '';
+  background-image: url(../images/icons/icon-produtos.svg);
+}
+.icon-telefone:before {
+  content: '';
+  background-image: url(../images/icons/icon-contato.svg);
+}
+.icon-arrow-down:before {
+  content: '';
+  background-image: url(../images/icons/icon-arrow-down.svg);
+}
+.icon-arrow-left:before {
+  content: '';
+  background-image: url(../images/icons/icon-arrow-left.svg);
+}
+.icon-arrow-right:before {
+  content: '';
+  background-image: url(../images/icons/icon-arrow-right.svg);
+}
+.icon-arrow-up:before {
+  content: '';
+  background-image: url(../images/icons/icon-arrow-up.svg);
+}
+.icon-limpeza:before {
+  content: '';
+  background-image: url(../images/icons/icon-limpeza.svg);
+}
+.icon-peso:before {
+  content: '';
+  background-image: url(../images/icons/icon-peso.svg);
+}
+.icon-temperatura:before {
+  content: '';
+  background-image: url(../images/icons/icon-temperatura.svg);
+}
+.icon-fabrica:before {
+  content: '';
+  background-image: url(../images/icons/icon-fabrica.svg);
+}

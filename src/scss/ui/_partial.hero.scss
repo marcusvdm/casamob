@@ -1,0 +1,198 @@
+.hero .monte-a-sua {
+  position: absolute;
+  z-index: 10;
+  left: $base-spacing-unit;
+  top: $header-top;
+  margin-top: $header-top;
+
+  img { width: 92px; }
+
+  @include media-query('desk') {
+    top: $header-top;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 40px;
+    margin-left: -150px;
+  }
+
+  @include media-query('wide') {
+    margin-left: -210px;
+    margin-top: 120px;
+
+    img { width: 115px; }
+  }
+}
+
+
+%play-parallax,
+%quadri-parallax,
+%city-parallax {
+  position: absolute;
+  padding-left: 50%;
+
+  img { max-width: initial; }
+}
+
+@include media-query(desk) {
+  %play-parallax,
+  %quadri-parallax,
+  %city-parallax {
+    display: block;
+  }
+}
+
+
+@include media-query(desk-only) {
+  .hero {
+    .play-modelo      { margin-left: 120px; margin-top: -154px; }
+    .play-modulo1     { margin-left: 86px; margin-top: -140px; }
+    .play-modulo2     { margin-left: -10px; margin-top: -112px; }
+    .play-modulo3     { margin-left: -102px; margin-top: -127px; }
+    .play-modulo4     { margin-left: -48px; margin-top: -228px; }
+    .play-exaustor    { margin-left: 0px; margin-top: -158px; }
+    .play-fogao       { margin-left: -1px; margin-top: -184px; }
+    .play-frigideira  { margin-left: -30px; margin-top: -198px; }
+    .play-fruteira    { margin-left: -55px; margin-top: -208px; }
+    .play-geladeira   { margin-left: 150px; margin-top: -144px; }
+    .play-jarra       { margin-left: 45px; margin-top: -181px; }
+    .play-luminaria   { margin-left: 40px; margin-top: -82px; }
+    .play-paneleiro   { margin-left: 40px; margin-top: -166px; }
+    .play-planta      { margin-left: -122px; margin-top: -209px; }
+    .play-torradeira  { margin-left: 25px; margin-top: -194px; }
+
+    .quadri-mulher    { margin-left: -47px; margin-top: -155px; }
+    .quadri-homem     { margin-left: -10px; margin-top: -144px; }
+    .quadri-modulo1   { margin-left: 46px; margin-top: -141px; }
+    .quadri-modulo2   { margin-left: 82px; margin-top: -208px; }
+    .quadri-exaustor  { margin-left: -132px; margin-top: -157px; }
+    .quadri-fogao     { margin-left: -134px; margin-top: -186px; }
+    .quadri-panela1   { margin-left: -135px; margin-top: -189px; }
+    .quadri-panela2   { margin-left: -161px; margin-top: -199px; }
+    .quadri-facas     { margin-left: -102px; margin-top: -199px; }
+    .quadri-taca1     { margin-left: -78px; margin-top: -218px; }
+    .quadri-taca2     { margin-left: -93px; margin-top: -213px; }
+    .quadri-fruteira  { margin-left: 72px; margin-top: -192px; }
+    .quadri-geladeira { margin-left: 135px; margin-top: -134px; }
+    .quadri-jarra     { margin-left: -30px; margin-top: -194px; }
+    .quadri-luminaria { margin-left: 85px; margin-top: -83px; }
+    .quadri-paneleiro { margin-left: 45px; margin-top: -178px; }
+    .quadri-planta    { margin-left: 157px; margin-top: -215px; }
+    .quadri-aparelho  { margin-left: 13px; margin-top: -198px; }
+
+    .city-modelo      { margin-left: -55px; margin-top: -143px; }
+    .city-modulo1     { margin-left: 104px; margin-top: -137px; }
+    .city-modulo2     { margin-left: 105px; margin-top: -207px; }
+    .city-modulo3     { margin-left: 16px; margin-top: -138px; }
+    .city-modulo4     { margin-left: 17px; margin-top: -137px; }
+    .city-exaustor    { margin-left: 57px; margin-top: -156px; }
+    .city-fogao       { margin-left: 58px; margin-top: -173px; }
+    .city-panela      { margin-left: 47px; margin-top: -189px; }
+    .city-tabua       { margin-left: 89px; margin-top: -201px; }
+    .city-geladeira   { margin-left: 174px; margin-top: -157px; }
+    .city-luminaria   { margin-left: 36px; margin-top: -92px; }
+    .city-paneleiro   { margin-left: 90px; margin-top: -181px; }
+    .city-planta      { margin-left: -77px; margin-top: -192px; }
+    .city-garrafa1    { margin-left: 4px; margin-top: -191px; }
+    .city-garrafa2    { margin-left: -5px; margin-top: -187px; }
+  }
+}
+
+@include media-query(wide) {
+  // %play-parallax    { margin-top: 50px }
+  %quadri-parallax  {  }
+  %city-parallax    {  }
+}
+
+.hero {
+  padding: 0;
+
+  .play-modelo      { @extend %play-parallax; left: -450px; top: 340px; z-index: 2; }
+  .play-modulo1     { @extend %play-parallax; left: -355px; top: 315px; }
+  .play-modulo2     { @extend %play-parallax; left: -80px; top: 215px; }
+  .play-modulo3     { @extend %play-parallax; left: 289px; top: 280px; }
+  .play-modulo4     { @extend %play-parallax; left: 175px; top: 678px; }
+  .play-exaustor    { @extend %play-parallax; left: -20px; top: 396px; z-index: 1 }
+  .play-fogao       { @extend %play-parallax; left: -10px; top: 500px; }
+  .play-frigideira  { @extend %play-parallax; left: 180px; top: 530px; }
+  .play-fruteira    { @extend %play-parallax; left: 270px; top: 600px; }
+  .play-geladeira   { @extend %play-parallax; left: -610px; top: 325px; }
+  .play-jarra       { @extend %play-parallax; left: -220px; top: 485px; }
+  .play-luminaria   { @extend %play-parallax; left: -170px; top: 140px; }
+  .play-paneleiro   { @extend %play-parallax; left: -180px; top: 420px; }
+  .play-planta      { @extend %play-parallax; left: 470px; top: 610px; }
+  .play-torradeira  { @extend %play-parallax; left: -100px; top: 530px; }
+
+
+  .quadri-mulher    { @extend %quadri-parallax; left: 150px; top: 380px; z-index: 2 }
+  .quadri-homem     { @extend %quadri-parallax; left: 0px; top: 338px; z-index: 2 }
+  .quadri-modulo1   { @extend %quadri-parallax; left: -224px; top: 325px; }
+  .quadri-modulo2   { @extend %quadri-parallax; left: -370px; top: 593px; }
+  .quadri-exaustor  { @extend %quadri-parallax; left: 490px; top: 390px; z-index: 1 }
+  .quadri-fogao     { @extend %quadri-parallax; left: 498px; top: 505px; }
+  .quadri-panela1   { @extend %quadri-parallax; left: 500px; top: 519px; z-index: 1 }
+  .quadri-panela2   { @extend %quadri-parallax; left: 606px; top: 557px; z-index: 1 }
+  .quadri-facas     { @extend %quadri-parallax; left: 370px; top: 556px; z-index: 1 }
+  .quadri-taca1     { @extend %quadri-parallax; left: 275px; top: 635px; z-index: 1 }
+  .quadri-taca2     { @extend %quadri-parallax; left: 333px; top: 615px; z-index: 1 }
+  .quadri-fruteira  { @extend %quadri-parallax; left: -330px; top: 530px; z-index: 1 }
+  .quadri-geladeira { @extend %quadri-parallax; left: -582px; top: 298px; }
+  .quadri-jarra     { @extend %quadri-parallax; left: 80px; top: 536px; z-index: 1 }
+  .quadri-luminaria { @extend %quadri-parallax; left: -380px; top: 95px; z-index: 1 }
+  .quadri-paneleiro { @extend %quadri-parallax; left: -220px; top: 475px; }
+  .quadri-planta    { @extend %quadri-parallax; left: -671px; top: 623px; }
+  .quadri-aparelho  { @extend %quadri-parallax; left: -92px; top: 553px; }
+
+
+  .city-modelo      { @extend %city-parallax; left: 285px; top: 338px; z-index: 2 }
+  .city-modulo1     { @extend %city-parallax; left: -354px; top: 315px; z-index: 1 }
+  .city-modulo2     { @extend %city-parallax; left: -358px; top: 595px; z-index: 1 }
+  .city-modulo3     { @extend %city-parallax; left: -3px; top: 316px; }
+  .city-modulo4     { @extend %city-parallax; left: -5px; top: 315px; }
+  .city-exaustor    { @extend %city-parallax; left: -165px; top: 388px; z-index: 1 }
+  .city-fogao       { @extend %city-parallax; left: -170px; top: 459px; }
+  .city-panela      { @extend %city-parallax; left: -125px; top: 521px; z-index: 1 }
+  .city-tabua       { @extend %city-parallax; left: -295px; top: 568px; z-index: 1 }
+  .city-geladeira   { @extend %city-parallax; left: -632px; top: 392px; }
+  .city-luminaria   { @extend %city-parallax; left: -81px; top: 135px; z-index: 1 }
+  .city-paneleiro   { @extend %city-parallax; left: -296px; top: 490px; z-index: 1 }
+  .city-planta      { @extend %city-parallax; left: 375px; top: 532px; }
+  .city-garrafa1    { @extend %city-parallax; left: 50px; top: 530px; z-index: 1 }
+  .city-garrafa2    { @extend %city-parallax; left: 87px; top: 515px; z-index: 1 }
+
+}
+
+@include media-query(portable) {
+  %play-parallax,
+  %quadri-parallax,
+  %city-parallax {
+    display: none;
+  }
+}
+
+.hero {
+  .play-cozinha,
+  .quadri-cozinha,
+  .city-cozinha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+
+    @include media-query(desk) {
+      visibility: hidden;
+    }
+  }
+}
+
+.hero .hero__play {
+  @include floor($hero-play, $hero-play-base64);
+}
+
+.hero .hero__quadri {
+  @include floor($hero-quadri, $hero-quadri-base64);
+}
+
+.hero .hero__city {
+  @include floor($hero-city, $hero-city-base64);
+}

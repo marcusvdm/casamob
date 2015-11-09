@@ -1,0 +1,43 @@
+.suporte {
+  background-color: $cm_cyan;
+
+  h2 {
+    float: left;
+
+    @include media-query (wide) {
+      padding-right: $base-spacing-unit;
+      padding-left: $base-spacing-unit;
+    }
+  }
+  
+  .info {
+    position: static;
+    width: auto;
+  }
+
+  .accordion {
+    p { 
+      color: $white;
+      padding-bottom: halve($base-spacing-unit);
+    }
+
+    .scrollpane { display: block !important; }
+
+    ul { padding-left: double($base-spacing-unit); }
+
+    .in-text {
+      padding-bottom: halve($base-spacing-unit);
+      padding-left: double($base-spacing-unit)*2;
+    }
+
+    li {
+      max-width: 520px;
+      width: 100%;
+      padding-bottom: quarter($base-spacing-unit);
+    }
+
+    h4,
+    p,
+    li { @include font-size(16px); }
+  }
+}

@@ -1,0 +1,38 @@
+/******************************************
+ * ONDE
+ ******************************************/
+
+.onde {
+  background-color: $cm_beige;
+  
+  @include media-query(desk) {
+    background-position: 55% -200%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 30%;
+  }
+
+  @include media-query(wide) {
+    background-size: auto;
+    background-position: 65% center;
+  }
+
+  h2 span {
+    @include media-query(portable) { color: $cm_lt-red; }
+  }
+  
+  &.s-accordion__regioes--show {
+    @include media-query(desk) {
+      background: $cm_beige url(../images/onde/mapa-brasil.png) no-repeat 55% $header-total fixed;
+      background-size: 30%;
+    }
+    
+    &,
+    .accordion--location {
+      opacity: 1;
+      max-height: 100%;
+      visibility: visible;
+      transition: all ease-in-out .3s;
+    }
+  }
+}

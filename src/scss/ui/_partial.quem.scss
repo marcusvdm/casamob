@@ -1,0 +1,36 @@
+/******************************************
+ * QUEM
+ ******************************************/
+
+.quem {
+  background: $cm_lt-blue;
+  
+  .info {
+    position: static;
+    width: auto;
+  }
+  
+  h2 span { @include media-query(portable){ color: $cm_red; }}
+  
+  .logos-grupo {
+    margin-bottom: $base-spacing-unit*2;
+    display: block;
+  }
+
+  .endereco {
+    margin-top: $base-spacing-unit;
+    strong {
+      font-weight: $bold;
+      @include font-size(17px);
+    }
+  }
+
+  .icone-endereco,
+  .icone-fabrica {
+    position: absolute;
+    left: -35px;
+    font-size: 80%;
+    text-align: center;
+    margin-top: 0;
+  }
+}

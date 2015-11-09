@@ -1,0 +1,440 @@
+@import '_partial.banners.scss';
+@import '_partial.hero.scss';
+@import '_partial.conceito.scss';
+@import '_partial.diferenciais.scss';
+@import '_partial.cozinhas.scss';
+@import '_partial.linhas.scss';
+@import '_partial.play.scss';
+// @import '_partial.quadri.scss';
+@import '_partial.city.scss';
+@import '_partial.kits.scss';
+@import '_partial.onde.scss';
+@import '_partial.representantes.scss';
+@import '_partial.quem.scss';
+@import '_partial.contato.scss';
+@import '_partial.trabalhe.scss';
+@import '_partial.suporte.scss';
+@import '_partial.imprensa.scss';
+
+.hidden { display: none; }
+.hidden.featherlight-inner { display: block; }
+
+.page__content {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto double($base-spacing-unit);
+    padding: 0 halve($base-spacing-unit);
+    
+    @include media-query(lap-and-up) {
+      position: relative;
+      min-height: $gridsize*6;
+    }
+    @include media-query(desk) {
+        padding: 0 $base-spacing-unit;
+    }
+    @include media-query(wide) { 
+        min-height: $gridsize-max*6;
+        padding: 0 double($base-spacing-unit);
+    }
+    
+    &.page__content--slider {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.content {
+    float: left;
+    max-width: 100%;
+    
+    @include media-query(lap) {
+        float: none;
+        clear: both;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+    }
+
+    @include media-query(desk){
+        float: right;
+        position: relative;
+        max-width: 50%;
+    }
+    
+    .produtos-page & {
+        position: static;
+        margin-top: 80px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.content--limited {
+    max-width: none;
+    @include media-query(lap-and-up) { @include gridsize(5,7, $gridsize); }
+    @include media-query(wide) { @include gridsize(5,7); }
+}
+
+.content--special {
+    width: 100%;
+    max-width: 620px;
+    font-weight: $normal;
+    float: left;
+    
+    @include media-query (desk) {
+        margin: auto auto double($base-spacing-unit) double($base-spacing-unit);
+        
+        .scrollpane {
+            max-height:   220px;
+            overflow:     auto;
+            padding-right: $base-spacing-unit;
+        }
+    }
+    
+    @include media-query (wide) { margin-top: 170px; }
+    
+    p { padding: 0 halve($base-spacing-unit) 0 0; margin-bottom: $base-spacing-unit; position: relative; }
+    hr { margin: $base-spacing-unit 0; border: 1px solid $white; border-bottom: none; }
+}
+
+.info {
+    float: left;
+    width: 100%;
+    padding-bottom: $base-spacing-unit;
+    @include media-query(desk) {
+        position: absolute;
+        padding: 0;
+    }
+    
+    .produtos-page & {
+        position: relative;
+        width: 100%;
+    }
+}
+
+.intro, 
+.virtual-store {
+    @include media-query(lap)  { margin: $base-spacing-unit 50% $base-spacing-unit $base-spacing-unit*2; }
+    @include media-query(desk)  { margin: 0 65% $base-spacing-unit $base-spacing-unit*4; }
+}
+
+h2.tipo-modulo {
+    
+    @include media-query(desk) {
+        float: left;
+        position: absolute;
+        top: 0;
+        line-height: 1;
+        right: 0;
+        width: 100%;
+        max-width: $gridsize*6;
+    }
+    
+    @include media-query(wide) {
+        right: 0;
+        width: 100%;
+        max-width: $gridsize-max*6;
+    }
+    
+    small {
+        display: block;
+        float: none;
+    }
+}
+
+.prod-box {
+    position: relative;
+}
+
+.prod-box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: $base-spacing-unit*3;
+    right: 60%;
+    bottom: $base-spacing-unit*3;
+    left: $base-spacing-unit;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.featherlight-previous,
+.featherlight-next {
+    top: 50%;
+    transform: translate(0,-50%);
+    opacity: .3;
+    
+    span { display: none; }
+}
+
+.featherlight-previous {
+    left: halve($base-spacing-unit);
+    @include media-query(desk) { left: double($base-spacing-unit); }
+}
+.featherlight-next {
+    right: halve($base-spacing-unit);
+    @include media-query(desk) { right: double($base-spacing-unit); }
+}
+
+.slick-arrow.slick-arrow,
+.featherlight-previous,
+.featherlight-next {
+    position: absolute;
+    z-index: 2;
+    border: none;
+    background: none;
+    text-indent: -99999px;
+    overflow: hidden;
+    outline: 0;
+    padding: 0;
+    @include size($arrows_height);
+    @include media-query(desk) { @include size($arrows_height-max); }
+}
+    
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev,
+.featherlight-previous,
+.featherlight-next {
+    &::before {
+        content: '';
+        display: block;
+        border: none;
+        @include size(100%);
+        background-size: contain;
+        position: static;
+        transform: initial;
+    }
+}
+
+.slick-arrow.slick-arrow {
+    left: ($arrows_height + halve($base-spacing-unit)) * -1;
+    margin-top: $base-spacing-unit;
+    &.slick-prev { top: 0; }
+    &.slick-next { top: $arrows_height + halve($base-spacing-unit); }
+    
+    @include media-query(desk) {
+        left: ($arrows_height-max + $base-spacing-unit) * -1;
+    }
+}
+
+.slick-arrow.slick-prev,
+.featherlight-previous {
+    &::before { background-image: url('../images/icons/icon-left-arrow-fill.svg'); }
+}
+
+.slick-arrow.slick-next,
+.featherlight-next {
+    &::before { background-image: url('../images/icons/icon-right-arrow-fill.svg'); }
+}
+
+.showcase {
+    @include media-query(desk) {
+        .content {
+            max-width: 1800px - $base-spacing-unit*4;
+            min-height: 100%;
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+        }    
+    }
+    
+    .intro,
+    .virtual-store {
+        margin-left: 0;
+        margin-right: 70%;
+        
+        @include media-query(portable) { margin-right: 0; }
+    }
+    
+    h2 { margin-left: 0; }
+    .diferenciais h2 { margin-left: -12px; }
+    
+    .txt-slider {
+        width: 100%;
+        margin-bottom: $base-spacing-unit;
+        
+        h3 { margin-bottom: $base-spacing-unit; }
+        
+        @include media-query(lap) {
+            float: left;
+            max-width: 40%;
+            height: 325px;
+        }
+        
+        @include media-query(desk) {
+            @include gridsize(4,3, $gridsize);
+            position: relative;
+            top: $gridsize*2;
+            margin-top: halve($base-spacing-unit)*-1;
+            right: $gridsize*-1;
+            float: right;
+            z-index: 1;
+            
+            h3 { margin-bottom: halve($base-spacing-unit); }
+            p { line-height: 1.3; }
+            .slick-track { max-height: 100%; }
+        }
+        
+        @include media-query(intermediate) {
+            right: $base-spacing-unit;
+            margin-top: 0;
+        }
+        
+        @include media-query(wide) {
+            @include gridsize(4,3, $gridsize-max);
+            top: $gridsize-max*2;
+            right: $gridsize-max*-1;
+        }
+        
+        .slick-arrow {
+            @include media-query(palm) { display: none !important; }
+        }
+    }
+    .txt-content {
+        padding: $base-spacing-unit;
+        @include media-query(desk) {
+            max-height: 100%;
+            overflow: auto;
+        }
+    }
+    
+    .img-slider {
+        @include media-query(lap) {
+            float: left;
+            max-width: 60%;
+            height: 325px;
+        }
+
+        @include media-query(desk) {
+            @include gridsize(6,6, $gridsize);
+            float: right;
+            overflow: hidden;
+        }
+        
+        @include media-query(intermediate) { @include gridsize(6,7, $gridsize); }
+        @include media-query(wide) { @include gridsize(6,7, $gridsize-max); }
+        @include media-query(super) { @include gridsize(6,8, $gridsize-max); }
+    }
+    
+    @include media-query(lap-and-up) {
+        .slick-track { height: 100%; }
+        .slick-list,
+        .slick-slide {
+            @include size(100%);
+            overflow: hidden;
+            float: left;
+            position: relative;
+            
+            img {
+                height: 100%;
+                min-width: 100%;
+                max-width: none;
+            }
+        }   
+    }
+    
+    .thumbs {
+        display: none;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin-bottom: double($base-spacing-unit);
+        
+        @include media-query(lap-and-up) { display: block; }
+        @include media-query(desk) {
+            @include gridsize(2,5, $gridsize);
+            width: 375px;
+            font-size: 0;
+            float: right;
+            text-align: right;
+            margin-bottom: 0;
+            position: absolute;
+            bottom: 0;
+            margin-right: $base-spacing-unit*1.25;
+            right: $gridsize*8;
+        }
+        @include media-query(intermediate) {
+            right: $gridsize*11;
+        }
+        @include media-query(wide) {
+            @include gridsize(2,5, $gridsize-max);
+            right: $gridsize-max*9;
+            margin-right: $base-spacing-unit*1.25;
+        }
+        @include media-query(super) { right: $gridsize-max*10; }
+        
+        &.ambientes {
+            
+            display: block;
+            
+            @include media-query(desk) {
+                @include gridsize(6,8, $gridsize);
+                right: $base-spacing-unit*1.5;
+            }
+            
+            @include media-query(wide) { 
+                @include gridsize(6,8, $gridsize-max);
+                right: $base-spacing-unit*4;
+            }
+            
+            .thumb {
+                margin-bottom: halve($base-spacing-unit);
+            }
+        }
+        
+        .thumb-capa::before { display: none !important; }
+    }
+    
+    .thumb, 
+    .thumb-mais {
+        display: inline-block;
+        position: relative;
+        margin-right: halve($base-spacing-unit);
+        @include size($gridsize);
+        
+        @include media-query(wide) { @include size($gridsize-max); }
+        
+        &.active::before,
+        &:hover::before {
+            background-color: rgba($cm_purple, 0);
+            transition: all ease-in-out .3s;
+        }
+        
+        @include media-query(desk) {
+            margin: 0;
+            vertical-align: bottom;
+            text-align: right;
+        }
+    }
+    .thumb::before {
+        content: '';
+        display: inline-block;
+        background-color: rgba($cm_purple, .5);
+        z-index: 1;
+        transition: all ease-in-out .3s;
+    }
+    .thumb__img,
+    .thumb::before {
+        @include position(absolute, 0 0 0 0);
+        @include size(100%);
+    }
+    
+    .thumb-mais {
+        img {
+            height: $arrows_height;
+            @include media-query(wide) { @include size($arrows_height-max); }
+            position: relative;
+            transform: translate(0,-50%);
+            top: 50%;
+        }
+        position: relative;
+        width: $arrows_height !important;
+        @include media-query(wide) { width: $arrows_height-max !important; }
+        
+        &::before {
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override holy-grail.css’ defaults here.
+ */
+
+$base-font-family: 'Dosis', 'Helvetica-neue', 'Helvetica', sans-serif;
+$base-font-size: 16px;
+$base-line-height: 24px;
+$base-text-color: $white;
+
+$base-spacing-unit: 20px;
+
+$base-background-color: $hero-play;
+
+
+// FONT-SIZES
+
+// $giga-size: 96px!default;
+// $mega-size: 72px!default;
+// $kilo-size: 48px!default;
+
+// $h1-size: 36px!default; // .alpha
+// $h2-size: 30px!default; // .beta
+// $h3-size: 24px!default; // .gamma
+// $h4-size: 20px!default; // .delta
+// $h5-size: 16px!default; // .epsilon
+// $h6-size: 14px!default; // .zeta
+
+// $milli-size: 12px!default;
+// $micro-size: 10px!default;
+
+
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+
+$gridsize-min: 70px;
+$gridsize: 75px;
+$gridsize-max: 110px;
+
+$arrows_height: 24px;
+$arrows_height-max: 30px;
+
+// FONT-WEIGHTS
+
+$normal: 500;
+$bold: 600;
+$light: 200;
+
+// HEADER SIZES
+
+$header-top-min: $base-spacing-unit;
+$logo-height-min: $base-spacing-unit*2;
+$header-spacing-min: $base-spacing-unit;
+$header-total-min: $header-top-min + $logo-height-min + $header-spacing-min;
+
+$header-top-medium: $base-spacing-unit;
+$logo-height-medium: $base-spacing-unit*3;
+$header-spacing-medium: $base-spacing-unit;
+$header-total-medium: $header-top-medium + $logo-height-medium + $header-spacing-medium;
+
+$header-top: $base-spacing-unit*2;
+$logo-height: $base-spacing-unit*4;
+$header-spacing: $base-spacing-unit*2;
+$header-total: $header-top + $logo-height + $header-spacing;

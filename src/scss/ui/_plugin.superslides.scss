@@ -1,0 +1,117 @@
+.slider {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+.slides-container {
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px; }
+
+.slide {
+  float: left;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  
+  #hero .slider.slider {
+  /**
+   * iPad with portrait orientation.
+   */
+  /**
+   * iPad with landscape orientation.
+   */
+  /**
+   * iPhone 5
+   * You can also target devices with aspect ratio.
+   */
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    #hero .slider.slider {
+      height: 100% !important; 
+    }
+  }
+  @media all and (device-width: 1536px) and (device-height: 2048px) and (orientation: portrait) {
+    #hero .slider.slider {
+      height: 1860px !important; 
+    } 
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    #hero .slider.slider {
+      height: 695px !important;
+      display: none !important;
+    }
+  }
+  @media all and (device-width: 1536px) and (device-height: 2048px) and (orientation: landscape) {
+    #hero .slider.slider {
+      height: 1395px !important; } }
+  @media screen and (device-aspect-ratio: 40/71) {
+    #hero .slider.slider {
+      height: 500px; } }
+      
+// --- full slider above
+
+.page__content--slider,
+.page__content--fullslider {
+  position: relative;
+  width: 100%;
+  background-color: $neutral;
+
+  .slider__item {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    min-height: 100vh;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 0;
+  z-index: 99999;
+  width: 10%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  text-indent: -99999px;
+  overflow: hidden;
+  outline: none;
+}
+%arrows {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  @include size(0);
+}
+
+.slick-prev { 
+  left: 0;
+  &::before {
+    @extend %arrows;
+    left: $base-spacing-unit;
+    border: $base-spacing-unit--small solid transparent;
+    border-left: none;
+    border-right: $base-spacing-unit--small solid $white;
+  }
+}
+.slick-next {
+  right: 0;
+  &::before {
+    @extend %arrows;
+    right: $base-spacing-unit;
+    border: $base-spacing-unit--small solid transparent;
+    border-right: none;
+    border-left: $base-spacing-unit--small solid $white;
+  }
+}
+
+.slider__desc {
+  display: none;
+}

@@ -1,0 +1,29 @@
+/******************************************
+ * BANNERS
+ ******************************************/
+
+.shade {
+  @include position(absolute, 0 auto auto 0);
+  @include size(100%);
+
+  background: rgba($cm_purple, .5);
+  z-index: 1000;
+  display: none;
+}
+
+.banner {
+  @include size(320px, 480px);
+  @include centerpos();
+  box-shadow: 0 5px 15px rgba($cm_purple, .2);
+}
+
+.close-banner {
+  display: block;
+  @include size(30px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  text-indent: -999999px;
+  overflow: hidden;
+}

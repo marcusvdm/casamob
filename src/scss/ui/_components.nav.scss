@@ -1,0 +1,161 @@
+// MAIN NAV
+
+.nav--main a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: $bold;
+  letter-spacing: .1em;
+  position: relative;
+  z-index: 2;
+
+  @include font-size(10px,auto);
+
+  @include media-query(wide) {
+    @include font-size(12px,auto);
+  }
+
+  @include media-query(super) {
+    @include font-size(14px,auto);
+  }
+}
+
+.main-menu {
+  li {
+    display: block;
+    float: left;
+    position: relative;
+  }
+}
+
+.menu-item {
+
+  list-style: none;
+  width: 10.5%;
+  text-align: center;
+
+  .sub-menu {
+    float: left;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    width: 100%;
+    padding-top: half($base-spacing-unit);
+
+    transition: all .25s ease-in-out;
+
+    li {
+      clear: left;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    padding-top: $base-spacing-unit;
+
+    transition: all .25s ease-in-out;
+  }
+
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
+}
+
+.menu-item--monte {
+  margin-right: 16%;
+}
+
+.menu-item--conceito,
+.menu-item--onde {
+  text-align: left;
+}
+
+.menu-item--monte,
+.menu-item--contato {
+  text-align: right;
+}
+
+
+.menu-item--conceito { width: 9.5%; }
+.menu-item--diferenciais { width: 11.5%; }
+.menu-item--representantes { width: 13.5%; }
+.menu-item--contato { width: 7.5%; }
+
+// icons
+
+.menu-item--conceito > a:before       { @extend %icon-before; @extend .icon-conceito; }
+.menu-item--monte > a:before          { @extend %icon-before; @extend .icon-monte; }
+.menu-item--diferenciais > a:before   { @extend %icon-before; @extend .icon-diferenciais; }
+.menu-item--acessorios > a:before     { @extend %icon-before; @extend .icon-acessorios; }
+.menu-item--produtos > a:before       { @extend %icon-before; @extend .icon-produtos; }
+.menu-item--onde > a:before           { @extend %icon-before; @extend .icon-onde; }
+.menu-item--representantes > a:before { @extend %icon-before; @extend .icon-representantes; }
+.menu-item--quem > a:before           { @extend %icon-before; @extend .icon-quem; }
+.menu-item--contato > a:before        { @extend %icon-before; @extend .icon-telefone; }
+
+
+// SECUNDARY NAV
+.nav--sec {
+
+  float:                right;
+  padding:              0 $base-spacing-unit;
+  margin-top:           2px;
+
+  a {
+    text-decoration:    none;
+    text-transform:     lowercase;
+  }
+
+  .menu-item {
+    margin: 0;
+    font-weight: $bold;
+    display: inline;
+
+    @include font-size(11px);
+    @include media-query(wide) { @include font-size(13px); } 
+
+    &:after {
+      content: "|";
+      display: inline-block;
+      padding: 0 $base-spacing-unit;
+      font: inherit;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

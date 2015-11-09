@@ -1,0 +1,222 @@
+html,
+body {
+	font-weight: $normal;
+  height: 100%;
+}
+
+a,
+a:hover,
+a:visited {
+	color: $base-text-color;
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.logo img {
+  @include centerpos(-50%, 0);
+  opacity: 0;
+}
+
+.undefined-active {
+  #logo1      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.hero-active.slide-0 {
+  #logo1      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.hero-active.slide-1 {
+  #logo4      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.hero-active.slide-2 {
+  #logo5      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.conceito-active {
+  #logo4      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.cores-active {
+  #logo4      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.combine-active {
+  #logo4      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.diferenciais-active {
+  #logo5      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.acessorios-active {
+  #logo5      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.produtos-active, .play-active, .quadri-active, .city-active, .kits-active, .page {
+  #logo5      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.onde-active {
+  #logo3      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.representantes-active {
+  #logo2      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.quem-active {
+  #logo3      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.imprensa-active {
+  #logo4      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.contato-active {
+  #logo5      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.trabalhe-active {
+  #logo3      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+.suporte-active {
+  #logo5      { opacity: 1; transition: .2s opacity ease-in-out; }
+}
+
+
+.step {
+  position: relative;
+  width: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  
+  /**
+   * iPad with portrait orientation.
+   */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    min-height: 930px;
+  }
+
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    min-height: 1860px;
+  }
+
+  /**
+   * iPad with landscape orientation.
+   */
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    min-height: 695px;
+  }
+
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    min-height: 1395px;
+  }
+
+  /**
+   * iPhone 5
+   * You can also target devices with aspect ratio.
+   */
+  @media screen and (device-aspect-ratio: 40/71) {
+    min-height: 500px;
+  }
+  
+  padding: $base-spacing-unit halve($base-spacing-unit) $base-spacing-unit;
+  
+  @include media-query (portable) {
+    padding: $header-total-min halve($base-spacing-unit) $base-spacing-unit;
+  }
+
+  @include media-query (desk) { padding: $header-total-medium 0 0 0; }
+  @include media-query (wide) { padding-top: $header-total; }
+}
+
+
+.featherlight.featherlight { z-index: 100; }
+
+.featherlight .featherlight-content {
+  @include media-query(palm) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-height: 100% !important;
+    padding: 0 !important;
+    border-bottom: 0 !important;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid $white;
+  background: transparent;
+  padding: quarter($base-spacing-unit) $base-spacing-unit;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nextscene {
+  @include position(absolute, auto auto $base-spacing-unit 50%);
+
+  transform: translate(-50%, 0);
+  z-index: 9
+}
+
+.nextscene:before          { @extend %icon-before; @extend .icon-arrow-down; }
+.icone-endereco:before     { @extend %icon-before; @extend .icon-endereco; font-size: 160%; }
+.icone-fabrica:before      { @extend %icon-before; @extend .icon-fabrica; font-size: 120%; }
+.icone-email:before        { @extend %icon-before; @extend .icon-contato; font-size: 160%; }
+
+.icone-peso:before         { @extend %icon-before; @extend .icon-peso; font-size: 100%; }
+.icone-temperatura:before  { @extend %icon-before; @extend .icon-temperatura; font-size: 100%; }
+.icone-limpeza:before      { @extend %icon-before; @extend .icon-limpeza; font-size: 100%; }
+
+.icone-peso,
+.icone-temperatura,
+.icone-limpeza {
+  font-size: 150% !important;
+  padding: 5px 0 !important;
+  display: inline-block !important;
+}
+
+
+.search-results {
+  .info {
+    position: relative;
+    width: auto;
+  }
+  .intro { width: 100%; }
+}
+
+.results-list ul,
+.results-list li {
+  list-style: none;
+  padding-bottom: $base-spacing-unit;
+  max-width: 620px;
+  float: left;
+  clear: left;
+  
+  a { color: $cm_lt-violet; }
+}

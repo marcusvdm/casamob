@@ -1,0 +1,558 @@
+/******************************************
+ * PLAY, QUADRI, CITY & KITS
+ ******************************************/
+ 
+.linhas {
+  
+  @include media-query(lap) {
+    
+  .intro {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+    
+  .home & {
+      .intro,
+      &.showcase .img-slider {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        z-index: 3;
+      }
+      &.showcase .img-slider { margin-bottom: halve($base-spacing-unit); }
+    } 
+  }
+  
+  h2 a {
+    display: block;
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+    
+    span { display: inline; }
+    
+    &::after {
+      content: "";
+      display: block;
+      background: url(../images/icons/icon-left-arrow-fill.svg) no-repeat center center;
+      background-size: contain;
+      display: inline-block;
+      vertical-align: top;
+      @include size($arrows_height);
+      position: relative;
+      top: 15px;
+      left: -10px;
+      
+      @include media-query(lap) { left: -10px; }
+      @include media-query(desk) {
+        position: relative;
+        top: 25px;
+        left: -20px;
+      }
+      
+      @include media-query(wide) {
+        position: relative;
+        top: 25px;
+        left: -30px;
+      }
+    }
+  }
+  
+  h2 small {
+    @include media-query(lap-and-up) {
+      font-size: .2em;
+      line-height: 3.5;
+      font-weight: $normal;
+      display: inline-block;
+      vertical-align: text-top;
+      float: left;
+    }
+    
+    @include media-query(wide) {
+      line-height: 2.8;
+    }
+  }
+  
+  .link-modulos { font-weight: $bold; position: relative; z-index: 2; letter-spacing: 0.02em;}
+  .link-modulos.current { font-weight: $light; }
+  
+  .color-palete {
+    position: relative;
+    @include media-query(lap) { 
+      @include gridsize (5,7, $gridsize);
+      margin: $base-spacing-unit auto;
+    }
+  }
+  
+  .color-box {
+    @include media-query(desk) { transform: translate(-40px, 0); }
+    @include media-query(wide) { transform: translate(-80px, 0); }
+  }
+  
+  .destaques {
+    margin-top: halve($base-spacing-unit);
+    margin-bottom: $base-spacing-unit;
+    
+    td { vertical-align: middle; }
+    
+    .destaques--img { 
+      text-align: center;
+      width: $base-spacing-unit*4;
+      @include media-query(lap-and-up) { width: $base-spacing-unit*5; }
+    }
+    
+    .destaques--img img {
+      @include size($arrows_height);
+      margin: halve($base-spacing-unit) $base-spacing-unit 0 halve($base-spacing-unit);
+      display: inline-block;
+      
+      @include media-query(desk) { margin-left: double($base-spacing-unit); }
+      @include media-query(wide) {
+        @include size($arrows_height-max*1.5);
+        margin-top: $base-spacing-unit;
+      }
+    }
+    
+    p {
+      font-weight: $bold; 
+      line-height: 1.3;
+      margin-top: halve($base-spacing-unit);
+      @include media-query(wide) { margin-top: $base-spacing-unit; }
+    }
+    
+    @include media-query(lap) {
+      tr {
+        float: left;
+        display: block;
+        overflow: hidden;
+        width: 50%;
+        max-width: 250px;
+        padding-right: 10px;
+      }
+      .destaques--img { width: $base-spacing-unit*3; }
+      .destaques--img img { margin-left: 0; }
+    }
+  }
+  
+  &.showcase .slick-arrow {
+    right: -50px;
+    left: auto;
+    margin-top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  .intro { margin-left: 0; }
+  
+  &.showcase .txt-slider {
+    @include media-query(desk) {
+      @include gridsize(3,3, $gridsize);
+      top: $gridsize*3;
+      right: $gridsize*2 + $base-spacing-unit;
+      margin-top: 0;
+    }
+    
+    @include media-query(wide) {
+      @include gridsize(3,3, $gridsize-max);
+      top: $gridsize-max*3;
+      right: $gridsize + $base-spacing-unit;
+    }
+  }
+  
+  &.showcase .thumbs {
+      
+    @include media-query(desk) { 
+      @include gridsize(1,8, $gridsize);
+      text-align: left;
+      right: 0;
+      margin: 0;
+      padding-top: halve($base-spacing-unit);
+    }
+    
+    @include media-query(intermediate) { 
+      @include gridsize(1,9, $gridsize);
+    }
+    
+    @include media-query(wide) {
+      @include gridsize(1,8, $gridsize-max);
+    }
+    
+    @include media-query(super) { @include gridsize(1,9, $gridsize-max); }
+    
+    .thumb,
+    .thumb-mais {
+      @include media-query(desk) {
+        @include size($gridsize - halve($base-spacing-unit));
+        margin-right: halve($base-spacing-unit);
+      }
+      @include media-query(wide) { @include size($gridsize-max - halve($base-spacing-unit)); }
+    }
+  }
+  
+  &.showcase .img-slider {
+    @include media-query(desk) { @include gridsize(5,8, $gridsize); }
+    @include media-query(intermediate) { @include gridsize(5,9, $gridsize); }
+    @include media-query(wide) { @include gridsize(5,8, $gridsize-max); }
+    @include media-query(super) { @include gridsize(5,9, $gridsize-max); }
+    
+    .slick-slide {
+        @include media-query(desk) { right: $base-spacing-unit; }
+        @include media-query(wide) { right: $base-spacing-unit*2; }
+        @include media-query(super) { right: 0; }
+    }
+  }
+  
+  .menu-linha {
+    display: block;
+    padding: halve($base-spacing-unit);
+    padding-bottom: 0;
+    margin-bottom: $base-spacing-unit;
+    text-align: center;
+    z-index: 4;
+    @include font-size(12px, 1);
+    
+    @include media-query(desk) {
+      padding: $base-spacing-unit;
+      width: $gridsize*2.5;
+      position: absolute;
+      right: $gridsize*6.8;
+      top: 0;
+      margin-bottom: 0;
+      @include font-size(14px, 1);
+    }
+    
+    @include media-query(intermediate) {
+      right: $gridsize*9 + $base-spacing-unit;
+    }
+    
+    @include media-query(wide) {
+      width: double($gridsize-max);
+      right: $gridsize-max*7 - halve($base-spacing-unit);
+    }
+    
+    @include media-query(super) {
+      right: $gridsize-max*8 - halve($base-spacing-unit);
+    }
+  }
+  
+  .menu-linha--item {
+    display: inline-block;
+    padding: halve($base-spacing-unit) $base-spacing-unit;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    border: 1px solid $white;
+    margin-right: halve($base-spacing-unit);
+    margin-bottom: halve($base-spacing-unit);
+    
+    @include media-query(desk) {
+      width: 100%;
+      display: block;
+      margin-right: 0;
+    
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+  
+  &.showcase .thumb::before,
+  &.showcase .thumb::before {
+    background: rgba($black, .5);
+  }
+  
+  .modulos {
+    text-align: center;
+    font-size: 0;
+  }
+  .prod-box {
+    width: 100%;
+    height: $base-spacing-unit*16;
+    border: 1px solid $white;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    margin-bottom: $base-spacing-unit;
+    
+    .btns {
+      background-color: $white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      display: table;
+      
+      a {
+        padding: 1px 5px 3px;
+        border: 1px solid $white;
+        border-bottom: none;
+        display: table-cell;
+        background-color: $neutral;
+        text-align: center;
+        @include font-size(14px);
+        
+        &:first-child { border-left: none; }
+        &:last-child { border-right: none; }
+        
+        &::before {
+          content: "";
+          display: inline-block;
+          position: relative;
+          top: 5px;
+          @include size(20px);
+          margin-right: 5px;
+        }
+      }
+    }
+    
+    .btn-cores::before      { background: url(../images/icons/icon-destaque-cores.svg) no-repeat center; }
+    .btn-puxadores::before  { background: url(../images/icons/icon-destaque-puxadores.svg) no-repeat center; }
+    .btn-tampos::before     { background: url(../images/icons/icon-destaque-tampos.svg) no-repeat center; }
+    
+    @include media-query(desk) {
+      width: 30%;
+      margin-right: 5%;
+      margin-bottom: 0;
+      &:nth-child(5n+3) { margin: 0; }
+      &:nth-child(5n+4),
+      &:nth-child(5n+5) { margin: 0 2.5%; }
+    }
+    
+    @include media-query(wide) {
+      width: 28%;
+      margin-right: 8%;
+      &:nth-child(5n+4),
+      &:nth-child(5n+5) { margin: 0 4%; }
+    }
+  }
+  
+  
+  &,
+  .grid-box,
+  .prod-box {
+    background-color: $neutral;
+  }
+
+  .feat-box {
+    img         {
+      display: block;
+    }
+    .feat-thumb {
+      opacity: 1;
+    }
+  }
+}
+
+.pagination {
+  padding: $base-spacing-unit*2 0 0;
+  overflow: hidden;
+  width: 100%;
+  list-style: none;
+  
+  li {
+    list-style: none;
+    display: inline;
+  }
+  
+  a {
+    color: $cm-lt-purple;
+    font-weight: $bold;
+  }
+  
+  .next a {
+    float: right;
+    &::after {
+      content: "";
+      display: inline-block;
+      @include size($arrows_height);
+      background-image: url(../images/icons/icon-right-arrow-fill.svg);
+      background-size: contain;
+      margin-left: 10px;
+      position: relative;
+      top: 5px;
+    }
+  }
+  .prev a {
+    float: left;
+    &::before {
+      content: "";
+      display: inline-block;
+      @include size($arrows_height);
+      background-image: url(../images/icons/icon-left-arrow-fill.svg);
+      background-size: contain;
+      margin-right: 10px;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
+
+.prod-data {
+  @include position(absolute, 50% 0 auto auto);
+  @include font-size(14px, 1.5);
+
+  font-weight: $bold;
+  padding: 0 halve($base-spacing-unit) halve($base-spacing-unit);
+  width: 50%;
+  transform: translate(0,-60%);
+  margin-top: $base-spacing-unit*1.5;
+
+  dt {
+    color: $cinza-funghi;
+    clear: both;
+    float: left;
+    margin-right: 5px;
+  }
+
+  dd {
+      float: left;
+      @include media-query(desk-only) {
+          clear: both;
+          margin-bottom: 3px;
+      }
+  }
+}
+
+@include media-query(desk) {
+  .aereos-horizontais-play {
+    .prod-box:nth-last-child(2) { float:left; }
+    .prod-box:last-child { float:right; margin-right: 0; }
+  }
+}
+
+.v-350x600-1p::after               { background-image: url(../images/modulos-aereos/v-350x600-1p.png) }
+.v-350x1200-1p::after              { background-image: url(../images/modulos-aereos/v-350x1200-1p.png) }
+.v-400x600-1p::after               { background-image: url(../images/modulos-aereos/v-400x600-1p.png) }
+.v-600x600-1p::after               { background-image: url(../images/modulos-aereos/v-600x600-1p.png) }
+.v-600x600-1p-vidro::after         { background-image: url(../images/modulos-aereos/v-600x600-1p-vidro.png) }
+.v-700x600-2p::after               { background-image: url(../images/modulos-aereos/v-700x600-2p.png) }
+.v-800x600-2p::after               { background-image: url(../images/modulos-aereos/v-800x600-2p.png) }
+.v-1200x600-2p::after              { background-image: url(../images/modulos-aereos/v-1200x600-2p.png) }
+.v-1200x600-2p-vidro::after        { background-image: url(../images/modulos-aereos/v-1200x600-2p-vidro.png) }
+.v-1050x600-3p::after              { background-image: url(../images/modulos-aereos/v-1050x600-3p.png) }
+.v-1200x600-3p::after              { background-image: url(../images/modulos-aereos/v-1200x600-3p.png) }
+.v-1200x600-3p-vidro::after        { background-image: url(../images/modulos-aereos/v-1200x600-3p-vidro.png) }
+.v-900x600-2p-canto::after         { background-image: url(../images/modulos-aereos/v-900x600-2p-canto.png) }
+.v-1050x600-1p-vidro-nicho::after  { background-image: url(../images/modulos-aereos/v-1050x600-1p-vidro-nicho.png) }
+
+
+/* MÓDULOS AÉREOS HORIZONTAIS */
+
+.h-400x350-1p::after         { background-image: url(../images/modulos-aereos/h-400x350-1p.png); }
+.h-600x350-1p::after         { background-image: url(../images/modulos-aereos/h-600x350-1p.png); }
+.h-600x350-1p-vidro::after   { background-image: url(../images/modulos-aereos/h-600x350-1p-vidro.png); }
+.h-600x600-1p::after         { background-image: url(../images/modulos-aereos/h-600x600-1p.png); }
+.h-700x350-1p::after         { background-image: url(../images/modulos-aereos/h-700x350-1p.png); }
+.h-800x350-2p::after         { background-image: url(../images/modulos-aereos/h-800x350-2p.png); }
+.h-1200x350-1p::after        { background-image: url(../images/modulos-aereos/h-1200x350-1p.png); }
+.h-1200x600-1p::after        { background-image: url(../images/modulos-aereos/h-1200x600-1p.png); }
+
+
+/* GABINETES */
+
+.gav-400x700-3g::after       { background-image: url(../images/gabinetes/gav-400x700-3g.png); }
+.gab-400x700-1p::after       { background-image: url(../images/gabinetes/gab-400x700-1p.png); }
+.gab-600x350-1g::after       { background-image: url(../images/gabinetes/gab-600x350-1g.png); }
+.gab-600x700-1p::after       { background-image: url(../images/gabinetes/gab-600x700-1p.png); }
+.gab-600x700-2g::after       { background-image: url(../images/gabinetes/gab-600x700-2g.png); }
+.gab-700x700-2p::after       { background-image: url(../images/gabinetes/gab-700x700-2p.png); }
+.gab-800x700-2p::after       { background-image: url(../images/gabinetes/gab-800x700-2p.png); }
+.gab-1050x700-2p-4g::after   { background-image: url(../images/gabinetes/gab-1050x700-2p-4g.png); }
+.gab-1050x700-3p-2g::after   { background-image: url(../images/gabinetes/gab-1050x700-3p-2g.png); }
+.gab-1200x350-1p::after      { background-image: url(../images/gabinetes/gab-1200x350-1p.png); }
+.gab-1200x700-2p::after      { background-image: url(../images/gabinetes/gab-1200x700-2p.png); }
+.gab-1200x700-2p-3g::after   { background-image: url(../images/gabinetes/gab-1200x700-2p-3g.png); }
+.gab-900x700-2p-canto::after { background-image: url(../images/gabinetes/gab-900x700-2p-canto.png); }
+
+
+/* PANELEIROS */
+
+.pan-600x1200-1p::after        { background-image: url(../images/paneleiros/pan-600x1200-1p.png); }
+.pan-600x1800-3p::after        { background-image: url(../images/paneleiros/pan-600x1800-3p.png); }
+.pan-600x1800-3p-vidro::after  { background-image: url(../images/paneleiros/pan-600x1800-3p-vidro.png); }
+.pan-600x1900-2p::after        { background-image: url(../images/paneleiros/pan-600x1900-2p.png); }
+.pan-700x1900-4p::after        { background-image: url(../images/paneleiros/pan-700x1900-4p.png); }
+.pan-600x2000-3p::after        { background-image: url(../images/paneleiros/pan-600x2000-3p.png); }
+.torre-600x1900-2p-1pr::after  { background-image: url(../images/paneleiros/torre-600x1900-2p-1pr.png); }
+
+
+/* COMPACTAS */
+
+.comp-city-1::after        { background-image: url(../images/compactas/comp-city-1.png); }
+.comp-city-2::after        { background-image: url(../images/compactas/comp-city-2.png); }
+
+
+/* NICHOS */
+
+.nc_250x600::after   { background-image: url(../images/acessorios/nichos/nc_250x600.png); }
+.nc_250x1200::after  { background-image: url(../images/acessorios/nichos/nc_250x1200.png); }
+.nc_400x350::after   { background-image: url(../images/acessorios/nichos/nc_400x350.png); }
+.nc_600x210::after   { background-image: url(../images/acessorios/nichos/nc_600x210.png); }
+.nc_600x350::after   { background-image: url(../images/acessorios/nichos/nc_600x350.png); }
+.nc_600x250::after   { background-image: url(../images/acessorios/nichos/nc_600x250.png); }
+.nc_600x600::after   { background-image: url(../images/acessorios/nichos/nc_600x600.png); }
+.nc-700x210::after   { background-image: url(../images/nichos/nc-700x210.png); }
+.nc_700x350::after   { background-image: url(../images/acessorios/nichos/nc_700x350.png); }
+
+
+/* KITS */
+
+.kit-1200x1900-5p-2g::after        { background-image: url(../images/kits/kit-1200x1900-5p-2g.png); }
+.kit-1200x1900-4p-2g::after        { background-image: url(../images/kits/kit-1200x1900-4p-2g.png); }
+
+
+/* TAMPOS */
+
+.al_400::after         { background-image: url(../images/acessorios/tampos/al_400.png) }
+.al_600::after         { background-image: url(../images/acessorios/tampos/al_600.png) }
+.al_700::after         { background-image: url(../images/acessorios/tampos/al_700.png) }
+.al_800::after         { background-image: url(../images/acessorios/tampos/al_800.png) }
+.al_900::after         { background-image: url(../images/acessorios/tampos/al_900.png) }
+.al_1050::after        { background-image: url(../images/acessorios/tampos/al_1050.png) }
+.al_1200::after        { background-image: url(../images/acessorios/tampos/al_1200.png) }
+.t-1050::after         { background-image: url(../images/tampos/t-1050.png); }
+.t-1200::after         { background-image: url(../images/tampos/t-1200.png); }
+.pia-in_1200::after    { background-image: url(../images/acessorios/tampos/pia-in_1200.png) }
+
+.rp_400::after   { background-image: url(../images/acessorios/rodapes/rp_400.png) }
+.rp_600::after   { background-image: url(../images/acessorios/rodapes/rp_600.png) }
+.rp_700::after   { background-image: url(../images/acessorios/rodapes/rp_700.png) }
+.rp_800::after   { background-image: url(../images/acessorios/rodapes/rp_800.png) }
+.rp_1050::after  { background-image: url(../images/acessorios/rodapes/rp_1050.png) }
+.rp_1200::after  { background-image: url(../images/acessorios/rodapes/rp_1200.png) }
+.base_400::after { background-image: url(../images/acessorios/rodapes/base_400.png) }
+.base_280::after { background-image: url(../images/acessorios/rodapes/base_280.png) }
+
+/* PUXADORES */
+
+.loft       { background-image: url(../images/puxadores/puxador-loft.jpg); }
+.padua      { background-image: url(../images/puxadores/puxador-padua.jpg); }
+.domus      { background-image: url(../images/puxadores/puxador-domus.jpg); }
+.domus-kit  { background-image: url(../images/puxadores/puxador-domus-kit.jpg); }
+.meca       { background-image: url(../images/puxadores/puxador-meca.jpg); }
+
+.tampo-marmore-branco  { background-image: url(../images/tampos/tampo-marmore-branco.jpg); }
+.tampo-marmore-preto   { background-image: url(../images/tampos/tampo-marmore-preto.jpg); }
+
+.loft,
+.padua,
+.meca,
+.domus, .domus-kit,
+.tampo-marmore-branco,
+.tampo-marmore-preto {
+  background-position: center top !important;
+  background-size: cover !important;
+
+  .prod-data dt { color: $white !important; }
+  
+  .prod-data {
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    margin: 0;
+    transform: initial;
+    background-color: rgba($black, .2);
+    padding-top: 5px;
+  }
+}

@@ -1,0 +1,78 @@
+/******************************************
+ * CONCEITO
+ ******************************************/
+
+.conceito {
+  background: $cm_lt-orange url('../images/conceito/conceito.jpg') no-repeat 100px bottom;
+  background-size: contain;
+
+  @include media-query(wide) {
+    background-size: initial;
+  }
+
+  @include media-query(desk) {
+    background-position: bottom right;
+    background-size: contain;
+  }
+
+  h2 {
+    color: $cm_purple;
+    background: $cm_lt-orange;
+    padding-right: $base-spacing-unit;
+    display: inline-block;
+  }
+  
+  .info {
+    max-width: 50%;
+    @include media-query(desk) { max-width: 100%; }
+  }
+
+  .intro {
+    background-color: $cm_lt-orange;
+  }
+
+  em {
+    color: $cm_cooper;
+    font-style: normal;
+    font-weight: $bold;
+  }
+}
+
+.cores {
+  background-image: none;
+  padding-right: 0;
+  background: $cm_lt-orange;
+  
+  @include media-query(desk-only) {
+    .intro { margin: -100px 50% 20px 180px; }
+  }
+  
+}
+
+.combine {
+  background-image: none;
+  
+  .info {
+    @include media-query(portable) { max-width: 100%; }
+  }
+  
+  .modulos {
+    @include media-query(desk) { max-width: 60%; }
+    padding-bottom: double($base-spacing-unit);
+  }
+}
+
+.cores,
+  .combine {
+    h2 {
+      background: none;
+      display: block;
+      margin-left: quarter($base-spacing-unit);
+  
+      @include media-query (lap-and-up) { margin-left: 0; }
+  
+      span {
+        @include media-query(portable) { color: $cm_purple; }
+      }
+    }
+  }

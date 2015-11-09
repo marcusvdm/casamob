@@ -1,0 +1,104 @@
+::selection {
+  background: $cm_lt-pink;
+  color: $cm_lt-beige;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: $cm_lt-pink;
+  color: $cm_lt-beige;
+  text-shadow: none;
+}
+::-webkit-selection {
+  background: $cm_lt-pink;
+  color: $cm_lt-beige;
+  text-shadow: none;
+}
+
+::-webkit-input-placeholder { color: $white; font-style: italic; }
+:-moz-placeholder           { color: $white; font-style: italic; }
+::-moz-placeholder          { color: $white; font-style: italic; }
+:-ms-input-placeholder      { color: $white; font-style: italic; }
+
+::-webkit-scrollbar {
+   -webkit-appearance: none;
+   width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+   border-radius: 4px;
+   background-color: rgba(0,0,0,.5);
+   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+
+/*********************************
+ * CORES
+ *********************************/
+
+.black {            color: $black; }
+.white {            color: $white; }
+.lt-cyan {          color: $cm_lt-cyan; }
+.cyan {             color: $cm_cyan; }
+.lt-blue {          color: $cm_lt-blue; }
+.blue {             color: $cm_blue; }
+.lt-acqua {         color: $cm_lt-acqua; }
+.acqua {            color: $cm_acqua; }
+.lt-green {         color: $cm_lt-green; }
+.green {            color: $cm_green; }
+.lt-petroleum {     color: $cm_lt-petroleum; }
+.petroleum {        color: $cm_petroleum; }
+.lt-beige {         color: $cm_lt-beige; }
+.beige {            color: $cm_beige; }
+.lt-cardboard {     color: $cm_lt-cardboard; }
+.cardboard {        color: $cm_cardboard; }
+.lt-cooper {        color: $cm_lt-cooper; }
+.cooper {           color: $cm_cooper; }
+.lt-brown {         color: $cm_lt-brown; }
+.brown {            color: $cm_brown; }
+.lt-orange {        color: $cm_lt-orange; }
+.orange {           color: $cm_orange; }
+.lt-red {           color: $cm_lt-red; }
+.red {              color: $cm_red; }
+.lt-violet {        color: $cm_lt-violet; }
+.violet {           color: $cm_violet; }
+.lt-pink {          color: $cm_lt-pink; }
+.pink {             color: $cm_pink; }
+.lt-purple {        color: $cm_lt-purple; }
+.purple {           color: $cm_purple; }
+
+
+// para produtos:
+
+.branco-sal {       background-color: $branco-sal; }
+.preto-jabuticaba { background-color: $preto-jabuticaba; }
+.prata-gelo {       background-color: $prata-gelo; }
+.cinza-funghi {     background-color: $cinza-funghi; }
+.azul-anis {        background-color: $azul-anis; }
+.azul-blueberry {   background-color: $azul-blueberry; }
+.verde-cha {        background-color: $verde-cha; }
+.verde-alecrim {    background-color: $verde-alecrim; }
+.amarelo-curry {    background-color: $amarelo-curry; }
+.laranja-damasco {  background-color: $laranja-damasco; }
+.vermelho-paprica { background-color: $vermelho-paprica; }
+.bege-baunilha {    background-color: $bege-baunilha; }
+.rosa-iogurte {     background-color: $rosa-iogurte; }
+.roxo-figo {        background-color: $roxo-figo; }
+.roxo-beterraba {   background-color: $roxo-beterraba; }
+
+.madeirado-sal {      background: $branco-sal url(../images/patterns/madeirado-sal.jpg) center center !important; }
+.madeirado-funghi {   background: $cinza-funghi url(../images/patterns/madeirado-funghi.jpg) center center !important; }
+.madeirado-anis {     background: $azul-anis url(../images/patterns/madeirado-anis.jpg) center center !important; }
+.madeirado-canela {   background: $cm_lt-brown url(../images/patterns/madeirado-canela.jpg) center center !important; }
+.madeirado-baunilha { background: $bege-baunilha url(../images/patterns/madeirado-baunilha.jpg) center center !important; }
+.madeirado-paprica {  background: $vermelho-paprica url(../images/patterns/madeirado-paprica.jpg) center center !important; }
+
+.marmore-branco {     background: $preto-jabuticaba url(../images/patterns/marmore-branco.jpg) center center !important; }
+.marmore-preto {      background: $branco-sal url(../images/patterns/marmore-preto.jpg) center center !important; }
+
+
+
+
+
+
+
+

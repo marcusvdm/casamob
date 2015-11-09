@@ -1,0 +1,335 @@
+.quadri {
+
+  .draggable {
+    @include media-query (desk) { @include gridsize (5, 100, $gridsize); }
+    @include media-query (wide) { @include gridsize (5, 60); }
+  }
+
+  .prod-title { background: $cm_lt-violet; }
+  .feat-title { color: $cm_lt-violet; }
+  .feat-title--lt { color: $cm_lt-acqua; }
+
+  h2 {
+    @include gridsize(1,4, $gridsize-min);
+
+    @include media-query (lap) { @include gridsize (2, null, $gridsize);}
+    @include media-query (desk) { @include gridsize (1,4, $gridsize);}
+    @include media-query (wide) { @include gridsize (1,4);}
+  }
+
+  .intro-box {
+    @include gridsize(2,3, $gridsize-min);
+
+    margin-left: $gridsize-min;
+
+    @include media-query(lap) {
+      @include gridsize (1,4, $gridsize);
+      @include gridpos  (2,1, $gridsize);
+
+      margin-left: $gridsize;
+    }
+
+    @include media-query(desk) {
+      @include gridsize (1,3, $gridsize);
+      @include gridpos  (1,5, $gridsize);
+
+      margin-left: 0;
+    }
+
+    @include media-query(wide) {
+      @include gridsize (1,2);
+      @include gridpos  (1,5);
+    }
+  }
+
+  .features {
+
+    .feat-box {
+      margin-bottom: $gridsize-min;
+      @include media-query(lap) { margin-bottom: $gridsize; }
+      @include media-query(desk) { margin-bottom: 0; }
+
+      &:last-child { margin-bottom: 0; }
+    }
+
+    .box-cozinha1             { @include gridsize(2,4, $gridsize-min); }
+    .box-tampo-preto          { @include gridsize(2,3, $gridsize-min); }
+    .box-cozinha2             { @include gridsize(3,4, $gridsize-min); }
+    .box-puxador-padua        { @include gridsize(2,2, $gridsize-min); }
+    .box-tampo-madeirado-sal  { @include gridsize(2,3, $gridsize-min); }
+    .box-cozinha3             { @include gridsize(2,3, $gridsize-min); }
+    .box-cozinha4             { @include gridsize(3,4, $gridsize-min); }
+    .box-puxador-loft         { @include gridsize(2,4, $gridsize-min); }
+    .box-cozinha5             { @include gridsize(3,4, $gridsize-min); }
+    .box-cozinha6             { @include gridsize(2,3, $gridsize-min); }
+
+    @include media-query(lap-and-up) {
+      .box-cozinha1             { @include gridsize(2,4, $gridsize); }
+      .box-tampo-preto          { @include gridsize(2,3, $gridsize); }
+      .box-cozinha2             { @include gridsize(3,4, $gridsize); }
+      .box-puxador-padua        { @include gridsize(2,2, $gridsize); }
+      .box-tampo-madeirado-sal  { @include gridsize(2,3, $gridsize); }
+      .box-cozinha3             { @include gridsize(2,3, $gridsize); }
+      .box-cozinha4             { @include gridsize(3,4, $gridsize); }
+      .box-puxador-loft         { @include gridsize(2,4, $gridsize); }
+      .box-cozinha5             { @include gridsize(3,4, $gridsize); }
+      .box-cozinha6             { @include gridsize(2,3, $gridsize); }
+    }
+
+    @include media-query (desk) {
+      @include gridsize(5, 21, $gridsize);
+
+      .box-cozinha1             { @include gridpos(2,2, $gridsize); }
+      .box-tampo-preto          { @include gridpos(4,3, $gridsize); }
+      .box-cozinha2             { @include gridpos(3,6, $gridsize); }
+      .box-puxador-padua        { @include gridpos(1,8, $gridsize); }
+      .box-tampo-madeirado-sal  { @include gridpos(4,10, $gridsize); }
+      .box-cozinha3             { @include gridpos(1,10, $gridsize); }
+      .box-cozinha4             { @include gridpos(3,13, $gridsize); }
+      .box-puxador-loft         { @include gridpos(1,15, $gridsize); }
+      .box-cozinha5             { @include gridpos(3,18, $gridsize); }
+      .box-cozinha6             { @include gridpos(1,20, $gridsize); }
+    }
+
+    @include media-query (wide) {
+      @include gridsize(5, 21);
+
+      .box-cozinha1             { @include gridsize(2,4); @include gridpos(2,2); }
+      .box-tampo-preto          { @include gridsize(2,3); @include gridpos(4,3); }
+      .box-cozinha2             { @include gridsize(3,4); @include gridpos(3,6); }
+      .box-puxador-padua        { @include gridsize(2,2); @include gridpos(1,7); }
+      .box-tampo-madeirado-sal  { @include gridsize(2,3); @include gridpos(4,10); }
+      .box-cozinha3             { @include gridsize(2,3); @include gridpos(1,11); }
+      .box-cozinha4             { @include gridsize(3,4); @include gridpos(3,13); }
+      .box-puxador-loft         { @include gridsize(2,4); @include gridpos(1,15); }
+      .box-cozinha5             { @include gridsize(3,4); @include gridpos(3,18); }
+      .box-cozinha6             { @include gridsize(2,3); @include gridpos(1,20); }
+    }
+  }
+
+  .cores-quadri {
+
+    @include media-query (lap) {
+      padding-top: 0;
+    }
+
+    .color-box { float: left; }
+
+    @include media-query (lap) {
+      .color-box { margin-right: $gridsize; }
+
+      .cinza-funghi,
+      .verde-cha,
+      .laranja-damasco,
+      .rosa-iogurte,
+      .madeirado-sal {
+        clear: left;
+      }
+
+      .cinza-funghi,
+      .laranja-damasco,
+      .madeirado-sal {
+        margin-left: $gridsize;
+      }
+    }
+
+    @include media-query (desk) {
+      h2 {
+        @include gridsize(1,3, $gridsize);
+        top: double($gridsize);
+
+        .legal {
+          transform:          initial;
+          top:                auto;
+          bottom:             0
+        }
+      }
+
+      .color-box { float: none; }
+
+      @include gridsize(5, 6, $gridsize);
+
+      .branco-sal           { @include gridpos(2,2, $gridsize); }
+      .preto-jabuticaba     { @include gridpos(5,2, $gridsize); }
+      .prata-gelo           { @include gridpos(4,1, $gridsize); }
+      .azul-anis            { @include gridpos(1,3, $gridsize); }
+      .bege-baunilha        { @include gridpos(2,3, $gridsize); }
+      .cinza-funghi         { @include gridpos(4,3, $gridsize); }
+      .verde-cha            { @include gridpos(5,3, $gridsize); }
+      .rosa-iogurte         { @include gridpos(3,4, $gridsize); }
+      .madeirado-sal        { @include gridpos(4,4, $gridsize); }
+      .madeirado-canela     { @include gridpos(2,5, $gridsize); }
+      .madeirado-anis       { @include gridpos(4,5, $gridsize); }
+      .madeirado-baunilha   { @include gridpos(5,5, $gridsize); }
+      .madeirado-funghi     { @include gridpos(1,6, $gridsize); }
+      .madeirado-paprica    { @include gridpos(3,6, $gridsize); }
+    }
+
+    @include media-query (wide) {
+
+      @include gridsize(5, 6);
+
+      h2 { @include gridsize(1,3); top: double($gridsize-max); }
+
+      .branco-sal           { @include gridpos(2,2); }
+      .preto-jabuticaba     { @include gridpos(5,2); }
+      .prata-gelo           { @include gridpos(4,1); }
+      .azul-anis            { @include gridpos(1,3); }
+      .bege-baunilha        { @include gridpos(2,3); }
+      .cinza-funghi         { @include gridpos(4,3); }
+      .verde-cha            { @include gridpos(5,3); }
+      .rosa-iogurte         { @include gridpos(3,4); }
+      .madeirado-sal        { @include gridpos(4,4); }
+      .madeirado-canela     { @include gridpos(2,5); }
+      .madeirado-anis       { @include gridpos(4,5); }
+      .madeirado-baunilha   { @include gridpos(5,5); }
+      .madeirado-funghi     { @include gridpos(1,6); }
+      .madeirado-paprica    { @include gridpos(3,6); }
+    }
+  }
+
+
+  .modulos-aereos-quadri {
+
+    h2 {
+      letter-spacing: -.01em;
+
+      @include gridsize(2, null, $gridsize-min);
+      @include media-query(palm) { letter-spacing: 0; }
+      @include media-query(lap) { @include gridsize(2, null, $gridsize); }
+      @include media-query(desk) { @include gridsize(2, 6, $gridsize); }
+      @include media-query(desk) { @include gridsize(2, 7); }
+    }
+
+    @include media-query (desk) {
+      @include gridsize(5, 31, $gridsize);
+
+      .prod__item1        { @include gridpos(3,2, $gridsize); }
+      .prod__item2        { @include gridpos(2,5, $gridsize); }
+      .prod__item3        { @include gridpos(1,8, $gridsize); }
+      .prod__item4        { @include gridpos(3,11, $gridsize); }
+      .prod__item5        { @include gridpos(1,14, $gridsize); }
+      .prod__item6        { @include gridpos(3,17, $gridsize); }
+      .prod__item7        { @include gridpos(1,20, $gridsize); }
+      .prod__item8        { @include gridpos(3,23, $gridsize); }
+      .prod__item9        { @include gridpos(1,26, $gridsize); }
+      .prod__item10       { @include gridpos(3,29, $gridsize); }
+    }
+
+    @include media-query (wide) {
+      @include gridsize(5, 12);
+
+      .prod__item1        { @include gridpos(4,1); }
+      .prod__item2        { @include gridpos(3,3); }
+      .prod__item3        { @include gridpos(2,5); }
+      .prod__item4        { @include gridpos(4,5); }
+      .prod__item5        { @include gridpos(1,7); }
+      .prod__item6        { @include gridpos(3,7); }
+      .prod__item7        { @include gridpos(2,9); }
+      .prod__item8        { @include gridpos(4,9); }
+      .prod__item9        { @include gridpos(1,11); }
+      .prod__item10       { @include gridpos(3,11); }
+    }
+  }
+
+  .modulos-gabinetes-quadri {
+    h2 {
+      letter-spacing: -.01em;
+
+      @include gridsize(2, null, $gridsize-min);
+      @include media-query(palm) { letter-spacing: 0; }
+      @include media-query(lap) { @include gridsize(1, null, $gridsize); }
+      @include media-query(desk) { @include gridsize(1, null, $gridsize); }
+      @include media-query(desk) { @include gridsize(1, null); }
+    }
+
+    .prod-title { background: $cm_lt-acqua; }
+
+
+    @include media-query (desk) {
+      @include gridsize(5, 27, $gridsize);
+
+      .prod__item1        { @include gridpos(2,1, $gridsize); }
+      .prod__item2        { @include gridpos(3,4, $gridsize); }
+      .prod__item3        { @include gridpos(1,7, $gridsize); }
+      .prod__item4        { @include gridpos(3,10, $gridsize); }
+      .prod__item5        { @include gridpos(1,13, $gridsize); }
+      .prod__item6        { @include gridpos(3,16, $gridsize); }
+      .prod__item7        { @include gridpos(1,19, $gridsize); }
+      .prod__item8        { @include gridpos(3,22, $gridsize); }
+      .prod__item9        { @include gridpos(1,25, $gridsize); }
+    }
+
+    @include media-query (wide) {
+      @include gridsize(5, 10);
+
+      .prod__item1        { @include gridpos(2,1); }
+      .prod__item2        { @include gridpos(4,1); }
+      .prod__item3        { @include gridpos(3,3); }
+      .prod__item4        { @include gridpos(2,5); }
+      .prod__item5        { @include gridpos(4,5); }
+      .prod__item6        { @include gridpos(1,7); }
+      .prod__item7        { @include gridpos(3,7); }
+      .prod__item8        { @include gridpos(2,9); }
+      .prod__item9        { @include gridpos(4,9); }
+    }
+  }
+
+  .modulos-paneleiros-quadri {
+
+    h2 {
+      letter-spacing: -.01em;
+
+      @include gridsize(2, null, $gridsize-min);
+      @include media-query(palm) { letter-spacing: 0; }
+      @include media-query(lap) { @include gridsize(1, null, $gridsize); }
+      @include media-query(desk) { @include gridsize(1, null, $gridsize); }
+      @include media-query(desk) { @include gridsize(1, null); }
+    }
+
+    @include media-query (desk) {
+      @include gridsize(5, 9, $gridsize);
+
+      .prod__item1        { @include gridpos(3,1, $gridsize); }
+      .prod__item2        { @include gridpos(2,4, $gridsize); }
+      .prod__item3        { @include gridpos(1,7, $gridsize); }
+    }
+
+    @include media-query (wide) {
+      @include gridsize(5, 6);
+
+      .prod__item1        { @include gridpos(3,1); }
+      .prod__item2        { @include gridpos(2,3); }
+      .prod__item3        { @include gridpos(3,5); }
+    }
+  }
+
+  .modulos-puxadores-quadri {
+
+    h2 {
+      letter-spacing: -.01em;
+
+      @include gridsize(2, null, $gridsize-min);
+      @include media-query(palm) { letter-spacing: 0; }
+      @include media-query(lap) { @include gridsize(1, null, $gridsize); }
+      @include media-query(desk) { @include gridsize(1, null, $gridsize); }
+      @include media-query(desk) { @include gridsize(1, null); }
+    }
+
+    .prod-title { background: $cm_lt-acqua; }
+
+    @include media-query (desk) {
+      @include gridsize(5, 6, $gridsize);
+
+      .prod__item1        { @include gridpos(2,1, $gridsize); }
+      .prod__item2        { @include gridpos(3,4, $gridsize); }
+    }
+
+    @include media-query (wide) {
+      @include gridsize(5, 4);
+
+      .prod__item1        { @include gridpos(2,1); }
+      .prod__item2        { @include gridpos(3,3); }
+    }
+  }
+}

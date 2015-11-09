@@ -1,0 +1,64 @@
+/******************************************
+ * REPRESENTANTES
+ ******************************************/
+
+.representantes {
+  background:           $cm_lt-violet;
+  
+  .popup {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    width: 173px;
+    height: 173px;
+    z-index: 9999;
+    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
+    transition: all ease-in-out .3s;
+    
+    .close{display:block; float:right;}
+   }
+
+  @include media-query(desk) {
+    background:         $cm_lt-violet url(../images/representantes/mapa-brasil.png) no-repeat 55% $header-total fixed;
+    background-size:    30%;
+    
+    .popup__show {
+      position: absolute;
+      left: 100px;
+      top: 300px;
+      width: 173px;
+      height: 173px;
+      z-index: 9999;
+      opacity: 1;
+      max-height: 100%;
+      visibility: visible;
+      transition: all ease-in-out .3s;
+    }
+   }
+
+  @include media-query(wide) {
+    background-size:    auto;
+    background-position: 65% center;
+    
+    .popup__show {
+      position: absolute;
+      left: 100px;
+      top: 300px;
+      width: 173px;
+      height: 173px;
+      z-index: 9999;
+      opacity: 1;
+      max-height: 100%;
+      visibility: visible;
+      transition: all ease-in-out .3s;
+    }
+    
+  }
+
+  .accordion {
+    .cobertura, p { color: $white; @include font-size(16px) }
+  }
+}
+

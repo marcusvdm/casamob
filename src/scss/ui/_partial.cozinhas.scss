@@ -1,0 +1,187 @@
+/******************************************
+ * COZINHAS
+ ******************************************/
+
+.produtos {
+
+  background-color:       $neutral;
+  padding-left:           0;
+  padding-right:          0;
+
+  @include media-query(portable) { 
+    padding-top: 0;
+    .page-container { padding: 0; } 
+  }
+
+  .linha {
+    height:                 100%;
+    position:               absolute;
+    width:                  33.3333%;
+    float:                  left;
+    text-align:             center;
+    padding-top: $base-spacing-unit*7;
+    
+    @include media-query(lap-and-up) { padding-top: 0; }
+
+    &.linha-play {
+      left:                 0;
+
+      @include floor($hero-play, $hero-play-base64);
+      @include media-query (portable) { .btn { background: $hero-play; } };
+
+      .cozinhas-title   { color: $cinza-funghi; }
+    }
+
+    &.linha-city {
+      left:                 33.33333%;
+
+      @include floor($hero-city, $hero-city-base64);
+      @include media-query (portable) { .btn { background: $hero-city; } };
+
+      .cozinhas-title   { color: $verde-cha }
+    }
+
+    &.linha-quadri {
+      right:                0;
+
+      @include floor($hero-quadri, $hero-quadri-base64);
+      @include media-query (portable) { .btn { background: $hero-quadri; } };
+
+      .cozinhas-title {   color: $azul-blueberry }
+    }
+
+    &.kits {
+      right:                0;
+
+      @include floor($hero-kits, $hero-kits-base64);
+      @include media-query (portable) { .btn { background: $hero-kits; } };
+
+      .cozinhas-title {   color: $verde-alecrim }
+    }
+  }
+
+  .cozinhas-title {
+    display:              block;
+    line-height:            .8;
+    text-align:           left;
+    margin-left:          double($base-spacing-unit);
+
+    @include media-query(portable) { margin-left: halve($base-spacing-unit) !important; }
+
+    @include media-query(palm) {
+      transform:          translate(-50%, 0) rotate(-90deg) translate(0, 50%);
+      // margin-top:         $header-total-min + $base-spacing-unit;
+    }
+
+    @include media-query (lap-and-up) {
+      position:           absolute;
+    }
+
+    @include font-size(60px, 1);
+    @include media-query(desk) { @include font-size(60px, .8); top: double($base-spacing-unit)*-1.2; }
+    @include media-query(wide) { @include font-size(140px, .8); }
+
+    small {
+      display:              block;
+      font-weight:          normal;
+      color:                $white;
+      text-indent:          halve($base-spacing-unit);
+
+      @include font-size(18px, 1);
+      @include media-query(wide) { @include font-size(30px, 1); }
+    }
+  }
+
+  .offset {
+    @include media-query(lap-and-up) {
+      position:             relative;
+      top:                  25%;
+    }
+
+    // @include media-query(desk) { margin-top: -$header-total-medium; }
+    // @include media-query(wide) { margin-top: -$header-total; }
+  }
+
+  .modelo,
+  .cozinha {
+    position:               absolute;
+    padding:                0 halve($base-spacing-unit);
+    top:                    double($base-spacing-unit);
+
+    @include media-query(palm) { display: none !important; }
+
+    @include media-query(desk) {
+      width:                  100%;
+      max-width:              400px;
+      left:                   50%;
+
+      transform:              translate(-50%, 0);
+    }
+
+    @include media-query (wide) {
+      max-width:              600px;
+      margin-top:             -$base-spacing-unit;
+    }
+  }
+
+  .u-disabled-graphic {
+    opacity:                .5;
+  }
+
+  .modelo { z-index: 1; }
+
+  .btn {
+    position:               absolute;
+    left:                   50%;
+    bottom:                 double($base-spacing-unit)*2;
+    z-index:                3;
+
+    transform:              translate(-50%, 0);
+
+    @include media-query(lap-and-up) {
+      bottom:               auto;
+      top:                  50%;
+      margin-top:           120px;
+    }
+
+    @include media-query(wide) {
+      margin-top:           $header-total + double($base-spacing-unit);
+    }
+
+    @include media-query(superwide) {
+      margin-top:           60px;
+    }
+  }
+
+  .btn--placeholder {
+    border: none;
+    color: $azul-blueberry;
+    font-weight: $bold;
+    white-space: nowrap;
+
+    &::after,
+    &::before {
+      content: "-";
+        display: inline-block;
+        width: 60px;
+        height: 2px;
+        background: $azul-blueberry;
+        margin: 5px 10px;
+        overflow: hidden;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

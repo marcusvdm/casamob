@@ -1,0 +1,126 @@
+/*
+Theme Name: CasaMob 2014
+Description: This theme is the first design of the site for brazilian based company CasaMob.
+Author: Agencia El Camino
+Author URI: http://www.agenciaelcamino.com/
+Version: 1.0
+*/
+
+/*------------------------------------*\
+    $APP GENERAL SETTINGS
+\*------------------------------------*/
+
+@import 'ui/_settings.colors.scss';
+@import '_settings.vars.scss';
+
+
+/*------------------------------------*\
+    $FRAMEWORK
+\*------------------------------------*/
+
+@import 'framework/_tools.functions.scss';
+
+/* FRAMEWORK SETTINGS */
+
+@import 'framework/_settings.defaults.scss';
+@import 'framework/_settings.responsive.scss';
+
+
+/* FRAMEWORK TOOLS */
+
+@import 'framework/_tools.mixins.scss';
+@import 'framework/_tools.responsive.scss';
+@import 'framework/_tools.grid-generator.scss';
+
+
+/* FRAMEWORK GENERIC */
+
+@import 'framework/_generic.normalize.scss';
+@import 'framework/_generic.reset.scss';
+@import 'framework/_generic.box-sizing.scss';
+
+
+/* FRAMEWORK BASE */
+
+@import 'framework/_base.code.scss';
+@import 'framework/_base.forms.scss';
+
+
+@import 'framework/_base.headings.scss';
+@import 'framework/_base.images.scss';
+@import 'framework/_base.lists.scss';
+@import 'framework/_base.page.scss';
+@import 'framework/_base.paragraphs.scss';
+
+
+/* FRAMEWORK OBJECTS */
+
+// $enable-box--flush:   true;
+// $enable-box--tiny:    true;
+// $enable-box--small:   true;
+// $enable-box--large:   true;
+// $enable-box--huge:    true;
+@import 'framework/_object.box.scss';
+
+// $enable-media--tiny:          true;
+// $enable-media--small:         true;
+// $enable-media--large:         true;
+// $enable-media--huge:          true;
+// $enable-media--rev:           true;
+// $enable-media--flush:         true;
+// $enable-media--responsive:    true;
+// $media-collapse-at:           720px;
+@import 'framework/_object.media.scss';
+
+// $enable-list-inline--delimited:   true;
+// $list-inline-delimit-character:   "|\00A0";
+@import 'framework/_object.list-inline.scss';
+
+
+/* FRAMEWORK TRUMPS */
+
+@import 'framework/_trumps.clearfix.scss';
+@import 'framework/_trumps.print.scss';
+
+
+
+/*------------------------------------*\
+    $UI
+\*------------------------------------*/
+
+
+/* UI TOOLS */
+
+@import 'ui/_tools.mixins.scss';
+
+
+/* UI BASE */
+
+@import 'ui/_base.extras.scss';
+@import 'ui/_base.forms.scss';
+@import 'ui/_base.typography.scss';
+
+
+/* UI COMPONENTS */
+
+@import 'ui/_components.app.scss';
+@import 'ui/_components.header.scss';
+@import 'ui/_components.footer.scss';
+@import 'ui/_components.nav-mobile.scss';
+@import 'ui/_components.nav.scss';
+@import 'ui/_components.colors.scss';
+@import 'ui/_components.lightbox.scss';
+@import 'ui/_components.accordion.scss';
+@import 'ui/_components.icons.scss';
+@import 'ui/_components.main.scss';
+// @import 'ui/_components.sidebar.scss';
+
+
+/* UI OBJECTS */
+
+
+/* UI PLUGINS */
+
+@import 'ui/_plugin.superslides.scss'; /* fullscreen slides */
+@import 'ui/_plugin.scrollpane.scss'; /* custom scrollbars */
+@import 'ui/_plugin.preloader.scss'; /* preloader */

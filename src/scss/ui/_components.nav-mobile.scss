@@ -1,0 +1,38 @@
+html.touch {
+  padding-top:          0 !important;
+}
+
+.wprmenu_bar.wprmenu_bar {
+  height:               $base-spacing-unit*3 !important;
+  padding:              $base-spacing-unit !important;
+
+  .menu_title {
+    text-align:         center !important;
+
+    .bar_logo {
+      position:         relative;
+      left:             -15px;
+    }
+  }
+}
+
+.wprmenu_levels.wprmenu_levels {
+  &.left,
+  &.right {
+    top:                $base-spacing-unit*3 !important;
+  }
+
+  ul {
+    padding:            0 $base-spacing-unit !important;
+
+    li {
+      border-top:       none !important;
+      border-bottom:    1px solid rgba($white,.2) !important;
+
+      a,
+      a:hover {
+        padding:        10px 0 !important;
+      }
+    }
+  }
+}

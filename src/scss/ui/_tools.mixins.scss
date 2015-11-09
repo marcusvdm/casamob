@@ -1,0 +1,33 @@
+@mixin floor($bgcolor, $base64:null, $pos:70%, $lighten:5%, $darken:1%, $dist:10%) {
+  background: linear-gradient(to bottom, $bgcolor 0%,lighten($bgcolor, $lighten) $pos,darken($bgcolor, $darken) $pos+$dist);
+  background: $bgcolor; /* Old browsers */
+
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  @if ($base64) {
+    background: $base64;
+  }
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$bgcolor), color-stop($pos,lighten($bgcolor, $lighten)), color-stop($pos+$dist,darken($bgcolor, $darken))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $bgcolor 0%,lighten($bgcolor, $lighten) $pos,darken($bgcolor, $darken) $pos+$dist); /* Chrome10+,Safari5.1+ */
+  background:    -moz-linear-gradient(top,  $bgcolor 0%, lighten($bgcolor, $lighten) $pos, darken($bgcolor, $darken) $pos+$dist); /* FF3.6+ */
+  background:     -ms-linear-gradient(top,  $bgcolor 0%,lighten($bgcolor, $lighten) $pos,darken($bgcolor, $darken) $pos+$dist); /* IE10+ */
+  background:      -o-linear-gradient(top,  $bgcolor 0%,lighten($bgcolor, $lighten) $pos,darken($bgcolor, $darken) $pos+$dist); /* Opera 11.10+ */
+  background:         linear-gradient(to bottom,  $bgcolor 0%,lighten($bgcolor, $lighten) $pos,darken($bgcolor, $darken) $pos+$dist); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='lighten($bgcolor, $lighten)',GradientType=0 ); /* IE6-8 */
+}
+
+@mixin gridpos($line, $col, $grid-line:$gridsize-max, $grid-col:$grid-line) {
+  $top:  ($line - 1) * $grid-line;
+  $right: ($col - 1) * $grid-col;
+
+  @include position(absolute, $top $right auto auto);
+}
+
+@mixin gridsize($lines:5, $cols:null, $grid-line:$gridsize-max, $grid-col:$grid-line) {
+  @if ($cols == null) {
+    width: auto;
+  } @else {
+    width: $cols * $grid-col;
+  }
+  height: $lines * $grid-line;
+}

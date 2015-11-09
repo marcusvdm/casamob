@@ -1,0 +1,17 @@
+/******************************************
+ * CONTATO
+ ******************************************/
+
+.contato {
+  background: $cm_lt-cardboard;
+  padding-bottom: $base-spacing-unit*3;
+
+  @include media-query(wide) { .form { margin-top: 120px; } }
+
+  .nome     { background-color: $cm_lt-cooper; }
+  .empresa  { background-color: $cm_lt-purple; }
+  .email    { background-color: $cm_lt-green; }
+  .telefone { background-color: $cm_lt-red; }
+  .assunto  { background-color: $cm_lt-blue; }
+  .mensagem { background-color: $cm_lt-beige; color: $cinza-funghi }
+}
