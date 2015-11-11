@@ -76,6 +76,7 @@
                 $entryOnde['estado']        = get_post_meta($p, 'estado', true);
                 $entryOnde['cidade']        = get_post_meta($p, 'cidade', true);
                 $entryOnde['endereco']      = get_post_meta($p, 'endereco', true);
+                $entryOnde['telefone']      = get_post_meta($p, 'telefone', true);
                 $entryOnde['informacoes']   = get_post_meta($p, 'informacoes', true);
                 $entryOnde['titulo']        = get_the_title($p);
     
@@ -116,6 +117,7 @@
                               echo '<li class="location-info">';
                                 echo '<p><strong>'.$value['titulo'].'</strong></p>';
                                 echo '<p>'.implode("<br>", explode(";", $value['endereco'])).'</p>';
+                                echo '<p>'.implode("<br>", explode(";", $value['telefone'])).'</p>';
                                 echo '<p>'.implode("<br>", explode(";", $value['informacoes'])).'</p>';
                               echo '</li>';
                             }
