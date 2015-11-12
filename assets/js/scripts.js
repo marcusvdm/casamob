@@ -1,9 +1,9 @@
 /*!
- * casamob
- * 2015 version for CasaMob website
- * http://casamob.com.br/
- * @author Henrique Erzinger
- * @version 1.0.0
+ * Casamob
+ * Fiercely quick and opinionated front-ends
+ * http://www.mmartini.eti.br
+ * @author Marcus Martini
+ * @version 1.0.3
  * Copyright 2015. MIT licensed.
  */
 (function ($, window, document, undefined) {
