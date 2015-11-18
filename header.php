@@ -99,6 +99,6 @@
           wp_nav_menu($menuParameters);
         ?>
       </nav>
-
+    <a href="#" class="face"><img src="/wp-content/themes/casamob/assets/images/ico-face.png" /></a>
     </div>
   </header>
