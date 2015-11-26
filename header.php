@@ -80,7 +80,6 @@
       ?>
     </nav>
 
-
     <div class="sec-line">
 
       <?php get_search_form(); ?>
@@ -99,6 +98,6 @@
           wp_nav_menu($menuParameters);
         ?>
       </nav>
-    <a href="#" class="face"><img src="/wp-content/themes/casamob/assets/images/ico-face.png" /></a>
+      <a href="https://www.facebook.com/casamob.cozinhas" target="_blank" class="face"><img src="/wp-content/themes/casamob/assets/images/ico-face.png" /></a>
     </div>
   </header>

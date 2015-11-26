@@ -47,13 +47,13 @@
       
             foreach($postsOnde as $p){
       
-                $entryOnde['regiao']    = get_post_meta($p, 'região', true);
-                $entryOnde['estado']    = get_post_meta($p, 'estado', true);
-                $entryOnde['cobertura']    = get_post_meta($p, 'cobertura', true);
-                $entryOnde['escritorio']  = get_post_meta($p, 'escritorio', true);
-                $entryOnde['telefones']  = get_post_meta($p, 'telefones', true);
-                $entryOnde['email']  = get_post_meta($p, 'email', true);
-                $entryOnde['titulo']    = get_the_title($p);
+                $entryOnde['regiao']        = get_post_meta($p, 'região', true);
+                $entryOnde['estado']        = get_post_meta($p, 'estado', true);
+                $entryOnde['cobertura']     = get_post_meta($p, 'cobertura', true);
+                $entryOnde['escritorio']    = get_post_meta($p, 'escritorio', true);
+                $entryOnde['telefones']     = get_post_meta($p, 'telefones', true);
+                $entryOnde['email']         = get_post_meta($p, 'email', true);
+                $entryOnde['titulo']        = get_the_title($p);
       
                 $arrayOnde[] = $entryOnde;
             }
@@ -81,6 +81,8 @@
       
       
                       foreach ($estado[$value['estado']] as $key => $value) {
+                        
+                        //echo $value['cobertura'].' - '.$value['estado'];
       
                         if ( !in_array($value['cobertura'], $cobertura) ) {
                           $cobertura[] = $value['cobertura'];

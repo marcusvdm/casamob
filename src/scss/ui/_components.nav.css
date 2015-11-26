@@ -1,19 +1,21 @@
 /*
-Error: Undefined variable: "$base-spacing-unit".
-        on line 4 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.accordion.scss
+Error: Undefined variable: "$bold".
+        on line 6 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.nav.scss
 
-1: .accordion,
-2: .new-accordion {
-3:   list-style: none;
-4:   margin-top: $base-spacing-unit;
-5:   
-6:   @include media-query(desk) { padding: 0 $base-spacing-unit; }
-7: 
-8:   h4 { padding: 0 }
-9: 
+1: // MAIN NAV
+2: 
+3: .nav--main a {
+4:   text-decoration: none;
+5:   text-transform: uppercase;
+6:   font-weight: $bold;
+7:   letter-spacing: .1em;
+8:   position: relative;
+9:   z-index: 2;
+10: 
+11:   @include font-size(10px,auto);
 
 Backtrace:
-/home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.accordion.scss:4
+/home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.nav.scss:6
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/local/rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -67,4 +69,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$base-spacing-unit\".\A         on line 4 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.accordion.scss\A \A 1: .accordion,\A 2: .new-accordion {\A 3:   list-style: none;\A 4:   margin-top: $base-spacing-unit;\A 5:   \A 6:   @include media-query(desk) { padding: 0 $base-spacing-unit; }\A 7: \A 8:   h4 { padding: 0 }\A 9: "; }
+  content: "Error: Undefined variable: \"$bold\".\A         on line 6 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.nav.scss\A \A 1: // MAIN NAV\A 2: \A 3: .nav--main a {\A 4:   text-decoration: none;\A 5:   text-transform: uppercase;\A 6:   font-weight: $bold;\A 7:   letter-spacing: .1em;\A 8:   position: relative;\A 9:   z-index: 2;\A 10: \A 11:   @include font-size(10px,auto);"; }

@@ -1645,7 +1645,8 @@ p a {
 .page-container {
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: relative;
   min-height: 100vh;
   /**
@@ -2012,6 +2013,11 @@ html.touch {
       font: inherit; }
     .nav--sec .menu-item:last-child:after {
       display: none; }
+
+.face {
+  float: right;
+  margin-right: -15px;
+  margin-top: 2px; }
 
 .content.colors-palete {
   max-width: none;
