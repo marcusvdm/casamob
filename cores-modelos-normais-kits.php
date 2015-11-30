@@ -64,12 +64,12 @@
         </p>
       </div>
       
-      <div class="color-box verde-alecrim">
+      <!--<div class="color-box verde-alecrim">
         <p class="color-label">
           Verde Alecrim <br>
           Ref. 5002
         </p>
-      </div>
+      </div>-->
       
       <div class="color-box vermelho-paprica">
         <p class="color-label">
