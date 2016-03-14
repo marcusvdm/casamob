@@ -72,7 +72,7 @@
       height:             50%;
       bottom:             0;
 
-      //@include floor($hero-smart, $hero-smart-base64);
+      @include floor($hero-smart, $hero-smart-base64);
       @include media-query (portable) { .btn { background: $hero-smart; } };
 
       .cozinhas-title {   color: $cm_petroleum; }
@@ -83,7 +83,7 @@
       height:               50%;
       bottom:               0;
 
-     // @include floor($hero-unica, $hero-unica-base64);
+      @include floor($hero-unica, $hero-unica-base64);
       @include media-query (portable) { .btn { background: $hero-unica; } };
 
       .cozinhas-title {   color: $cm_purple; }

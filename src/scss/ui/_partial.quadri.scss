@@ -7,14 +7,14 @@
   }
   
   .menu-linha {
-    background: $cm_lt-cooper;
+    background: $cm_lt-cardboard;
   }
   
   .menu-linha--item.active,
   .menu-linha--item:hover {
-    background-color: $cm_lt-purple;
+    background-color: $cm_red;
     font-weight: $bold;
-    border: 1px solid $cm_lt-purple;
+    border: 1px solid $cm_red;
   }
   
   .link-modulos { color: $cm_lt-purple; }

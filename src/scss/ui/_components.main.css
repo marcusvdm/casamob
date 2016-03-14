@@ -11,10 +11,10 @@ Error: Undefined mixin 'position'.
 5: @import '_partial.cozinhas.scss';
 6: @import '_partial.linhas.scss';
 7: @import '_partial.play.scss';
-8: // @import '_partial.quadri.scss';
-9: @import '_partial.city.scss';
-10: @import '_partial.kits.scss';
-11: @import '_partial.onde.scss';
+8: @import '_partial.city.scss';
+9: @import '_partial.kits.scss';
+10: @import '_partial.unica.scss';
+11: @import '_partial.smart.scss';
 
 Backtrace:
 /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.banners.scss:6:in `position'
@@ -88,4 +88,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'position'.\A         on line 6 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.banners.scss, in `position'\A         from line 6 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.banners.scss\A         from line 1 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.main.scss\A \A 1: @import '_partial.banners.scss';\A 2: @import '_partial.hero.scss';\A 3: @import '_partial.conceito.scss';\A 4: @import '_partial.diferenciais.scss';\A 5: @import '_partial.cozinhas.scss';\A 6: @import '_partial.linhas.scss';\A 7: @import '_partial.play.scss';\A 8: // @import '_partial.quadri.scss';\A 9: @import '_partial.city.scss';\A 10: @import '_partial.kits.scss';\A 11: @import '_partial.onde.scss';"; }
+  content: "Error: Undefined mixin 'position'.\A         on line 6 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.banners.scss, in `position'\A         from line 6 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.banners.scss\A         from line 1 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_components.main.scss\A \A 1: @import '_partial.banners.scss';\A 2: @import '_partial.hero.scss';\A 3: @import '_partial.conceito.scss';\A 4: @import '_partial.diferenciais.scss';\A 5: @import '_partial.cozinhas.scss';\A 6: @import '_partial.linhas.scss';\A 7: @import '_partial.play.scss';\A 8: @import '_partial.city.scss';\A 9: @import '_partial.kits.scss';\A 10: @import '_partial.unica.scss';\A 11: @import '_partial.smart.scss';"; }
