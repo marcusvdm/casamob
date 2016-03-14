@@ -9,6 +9,9 @@
     get_template_part('play');
     get_template_part('city');
     get_template_part('kits');
+    get_template_part('unica');
+    get_template_part('smart');
+    get_template_part('quadri');
 ?>   
     <!--<div class="all-screen"><div>-->
     <!--<div class="banner_lighthome"><a href="#"><img src="/wp-content/themes/casamob/assets/images/banner-home.jpg" /></a><div>-->

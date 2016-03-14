@@ -64,7 +64,7 @@
       @include floor($hero-quadri, $hero-quadri-base64);
       @include media-query (portable) { .btn { background: $hero-quadri; } };
 
-      .cozinhas-title {   color: $vermelho-paprica; }
+      .cozinhas-title {   color: $cm_red; }
     }
     
     &.linha-smart {
@@ -75,7 +75,7 @@
       @include floor($hero-smart, $hero-smart-base64);
       @include media-query (portable) { .btn { background: $hero-smart; } };
 
-      .cozinhas-title {   color: $cinza-funghi; }
+      .cozinhas-title {   color: $cm_petroleum; }
     }
     
     &.linha-unica {
@@ -86,7 +86,7 @@
       @include floor($hero-unica, $hero-unica-base64);
       @include media-query (portable) { .btn { background: $hero-unica; } };
 
-      .cozinhas-title {   color: $roxo-beterraba; }
+      .cozinhas-title {   color: $cm_purple; }
     }
     
   }

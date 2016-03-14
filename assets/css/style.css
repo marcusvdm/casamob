@@ -3684,7 +3684,7 @@ html.touch {
         .produtos .linha.linha-quadri .btn {
           background: #cd7d29; } }
       .produtos .linha.linha-quadri .cozinhas-title {
-        color: #7a1d1a; }
+        color: #761c27; }
     .produtos .linha.linha-smart {
       left: 33.33333%;
       height: 50%;
@@ -3707,7 +3707,7 @@ html.touch {
         .produtos .linha.linha-smart .btn {
           background: #94b7c7; } }
       .produtos .linha.linha-smart .cozinhas-title {
-        color: #666666; }
+        color: #0f4342; }
     .produtos .linha.linha-unica {
       left: 0;
       height: 50%;
@@ -3730,7 +3730,7 @@ html.touch {
         .produtos .linha.linha-unica .btn {
           background: #839e79; } }
       .produtos .linha.linha-unica .cozinhas-title {
-        color: #4d3560; }
+        color: #2d233f; }
   .produtos .cozinhas-title {
     display: block;
     line-height: .8;
