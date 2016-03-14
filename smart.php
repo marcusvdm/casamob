@@ -19,14 +19,14 @@
         <div class="intro">
           <?php the_content();?>
           
-          <?php require_once('destaques-play.php') ?>
+          <?php require_once('destaques-smart.php') ?>
         </div>
       </div>
 
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-play">Diferenciais</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-smart">Diferenciais</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-play">Módulos</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-play">Acessórios</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-play">Ambientes</a>
