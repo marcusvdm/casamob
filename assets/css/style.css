@@ -3456,8 +3456,8 @@ html.touch {
   /* IE6-8 */ }
 
 .hero .hero__quadri {
-  background: linear-gradient(to bottom, #fcb246 0%, #fcbc5f 70%, #fcb041 80%);
-  background: #fcb246;
+  background: linear-gradient(to bottom, #cd7d29 0%, #d78a38 70%, #c97a28 80%);
+  background: #cd7d29;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjYjI0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZjYmI1ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2ZjYWU0MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -3466,7 +3466,7 @@ html.touch {
   /* FF3.6+ */
   /* IE10+ */
   /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #fcb246 0%, #fcbc5f 70%, #fcb041 80%);
+  background: linear-gradient(to bottom, #cd7d29 0%, #d78a38 70%, #c97a28 80%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='lighten($bgcolor, $lighten)',GradientType=0 );
   /* IE6-8 */ }
@@ -3594,7 +3594,9 @@ html.touch {
       .produtos .linha {
         padding-top: 0; } }
     .produtos .linha.linha-play {
+      top: 0;
       left: 0;
+      height: 50%;
       background: linear-gradient(to bottom, #6eb3bb 0%, #7fbcc3 70%, #6bb1b9 80%);
       background: #6eb3bb;
       /* Old browsers */
@@ -3615,7 +3617,9 @@ html.touch {
       .produtos .linha.linha-play .cozinhas-title {
         color: #666666; }
     .produtos .linha.linha-city {
+      top: 0;
       left: 33.33333%;
+      height: 50%;
       background: linear-gradient(to bottom, #36344d 0%, #413e5c 70%, #34324a 80%);
       background: #36344d;
       /* Old browsers */
@@ -3635,29 +3639,10 @@ html.touch {
           background: #36344d; } }
       .produtos .linha.linha-city .cozinhas-title {
         color: #8caa71; }
-    .produtos .linha.linha-quadri {
-      right: 0;
-      background: linear-gradient(to bottom, #fcb246 0%, #fcbc5f 70%, #fcb041 80%);
-      background: #fcb246;
-      /* Old browsers */
-      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjYjI0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZjYmI1ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2ZjYWU0MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-      /* Chrome,Safari4+ */
-      /* Chrome10+,Safari5.1+ */
-      /* FF3.6+ */
-      /* IE10+ */
-      /* Opera 11.10+ */
-      background: linear-gradient(to bottom, #fcb246 0%, #fcbc5f 70%, #fcb041 80%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='lighten($bgcolor, $lighten)',GradientType=0 );
-      /* IE6-8 */ }
-      @media screen and (max-width: 1023px) {
-        .produtos .linha.linha-quadri .btn {
-          background: #fcb246; } }
-      .produtos .linha.linha-quadri .cozinhas-title {
-        color: #1a4388; }
     .produtos .linha.kits {
+      top: 0;
       right: 0;
+      height: 50%;
       background: linear-gradient(to bottom, #dc4f28 0%, #e0613e 70%, #db4b24 80%);
       background: #dc4f28;
       /* Old browsers */
@@ -3677,13 +3662,82 @@ html.touch {
           background: #dc4f28; } }
       .produtos .linha.kits .cozinhas-title {
         color: #0c6347; }
+    .produtos .linha.linha-quadri {
+      right: 0;
+      height: 50%;
+      bottom: 0;
+      background: linear-gradient(to bottom, #cd7d29 0%, #d78a38 70%, #c97a28 80%);
+      background: #cd7d29;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjYjI0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZjYmI1ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2ZjYWU0MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+      /* Chrome,Safari4+ */
+      /* Chrome10+,Safari5.1+ */
+      /* FF3.6+ */
+      /* IE10+ */
+      /* Opera 11.10+ */
+      background: linear-gradient(to bottom, #cd7d29 0%, #d78a38 70%, #c97a28 80%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='lighten($bgcolor, $lighten)',GradientType=0 );
+      /* IE6-8 */ }
+      @media screen and (max-width: 1023px) {
+        .produtos .linha.linha-quadri .btn {
+          background: #cd7d29; } }
+      .produtos .linha.linha-quadri .cozinhas-title {
+        color: #7a1d1a; }
+    .produtos .linha.linha-smart {
+      left: 33.33333%;
+      height: 50%;
+      bottom: 0;
+      background: linear-gradient(to bottom, #94b7c7 0%, #a5c2d0 70%, #91b5c5 80%);
+      background: #94b7c7;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjNGYyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2UwNjEzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2RiNGIyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+      /* Chrome,Safari4+ */
+      /* Chrome10+,Safari5.1+ */
+      /* FF3.6+ */
+      /* IE10+ */
+      /* Opera 11.10+ */
+      background: linear-gradient(to bottom, #94b7c7 0%, #a5c2d0 70%, #91b5c5 80%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='lighten($bgcolor, $lighten)',GradientType=0 );
+      /* IE6-8 */ }
+      @media screen and (max-width: 1023px) {
+        .produtos .linha.linha-smart .btn {
+          background: #94b7c7; } }
+      .produtos .linha.linha-smart .cozinhas-title {
+        color: #666666; }
+    .produtos .linha.linha-unica {
+      left: 0;
+      height: 50%;
+      bottom: 0;
+      background: linear-gradient(to bottom, #839e79 0%, #91a988 70%, #809c76 80%);
+      background: #839e79;
+      /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjNGYyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2UwNjEzZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2RiNGIyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+      /* Chrome,Safari4+ */
+      /* Chrome10+,Safari5.1+ */
+      /* FF3.6+ */
+      /* IE10+ */
+      /* Opera 11.10+ */
+      background: linear-gradient(to bottom, #839e79 0%, #91a988 70%, #809c76 80%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bgcolor', endColorstr='lighten($bgcolor, $lighten)',GradientType=0 );
+      /* IE6-8 */ }
+      @media screen and (max-width: 1023px) {
+        .produtos .linha.linha-unica .btn {
+          background: #839e79; } }
+      .produtos .linha.linha-unica .cozinhas-title {
+        color: #4d3560; }
   .produtos .cozinhas-title {
     display: block;
     line-height: .8;
     text-align: left;
     margin-left: 40px;
-    font-size: 60px;
-    font-size: 3.75rem;
+    font-size: 50px;
+    font-size: 3.125rem;
     line-height: 1; }
     @media screen and (max-width: 1023px) {
       .produtos .cozinhas-title {
@@ -3698,14 +3752,14 @@ html.touch {
         position: absolute; } }
     @media screen and (min-width: 1024px) {
       .produtos .cozinhas-title {
-        font-size: 60px;
-        font-size: 3.75rem;
+        font-size: 40px;
+        font-size: 2.5rem;
         line-height: 0.8;
         top: -48px; } }
     @media screen and (min-width: 1500px) {
       .produtos .cozinhas-title {
-        font-size: 140px;
-        font-size: 8.75rem;
+        font-size: 120px;
+        font-size: 7.5rem;
         line-height: 0.8; } }
     .produtos .cozinhas-title small {
       display: block;
@@ -3728,7 +3782,7 @@ html.touch {
   .produtos .cozinha {
     position: absolute;
     padding: 0 10px;
-    top: 40px; }
+    top: 10px; }
     @media screen and (max-width: 719px) {
       .produtos .modelo,
       .produtos .cozinha {
@@ -3737,7 +3791,7 @@ html.touch {
       .produtos .modelo,
       .produtos .cozinha {
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
             -ms-transform: translate(-50%, 0);
@@ -5483,6 +5537,30 @@ h2.tipo-modulo small {
   .showcase .thumb-mais::before {
     display: none !important; }
 
+.all-screen {
+  display: block;
+  background-color: #242424;
+  background-color: rgba(36, 36, 36, 0.9);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.banner_lighthome {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  max-width: 320px;
+  z-index: 1000;
+  margin: 0 auto;
+  padding-top: 8%; }
+
+.banner_lighthome__close {
+  opacity: 0;
+  visibility: hidden; }
+
 /* UI OBJECTS */
 /* UI PLUGINS */
 .slider {
@@ -5724,7 +5802,7 @@ h2.tipo-modulo small {
     bottom: 2px !important;
     border-radius: 100% !important;
     border: 3px solid transparent !important;
-    border-top-color: #fcb246 !important;
+    border-top-color: #cd7d29 !important;
     -webkit-animation: spin 6s linear infinite !important;
             animation: spin 6s linear infinite !important; }
   #loader#loader:after {

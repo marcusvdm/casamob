@@ -24,7 +24,9 @@
     @include media-query(lap-and-up) { padding-top: 0; }
 
     &.linha-play {
+      top:                  0;
       left:                 0;
+      height:               50%;
 
       @include floor($hero-play, $hero-play-base64);
       @include media-query (portable) { .btn { background: $hero-play; } };
@@ -33,31 +35,60 @@
     }
 
     &.linha-city {
+      top:                  0;
       left:                 33.33333%;
+      height:               50%;
 
       @include floor($hero-city, $hero-city-base64);
       @include media-query (portable) { .btn { background: $hero-city; } };
 
-      .cozinhas-title   { color: $verde-cha }
-    }
-
-    &.linha-quadri {
-      right:                0;
-
-      @include floor($hero-quadri, $hero-quadri-base64);
-      @include media-query (portable) { .btn { background: $hero-quadri; } };
-
-      .cozinhas-title {   color: $azul-blueberry }
+      .cozinhas-title   { color: $verde-cha; }
     }
 
     &.kits {
+      top:                  0;
       right:                0;
+      height:               50%;
 
       @include floor($hero-kits, $hero-kits-base64);
       @include media-query (portable) { .btn { background: $hero-kits; } };
 
-      .cozinhas-title {   color: $verde-alecrim }
+      .cozinhas-title {   color: $verde-alecrim; }
     }
+    
+    &.linha-quadri {
+      right:                0;
+      height:               50%;
+      bottom:               0;
+
+      @include floor($hero-quadri, $hero-quadri-base64);
+      @include media-query (portable) { .btn { background: $hero-quadri; } };
+
+      .cozinhas-title {   color: $vermelho-paprica; }
+    }
+    
+    &.linha-smart {
+      left:               33.33333%;
+      height:             50%;
+      bottom:             0;
+
+      @include floor($hero-smart, $hero-smart-base64);
+      @include media-query (portable) { .btn { background: $hero-smart; } };
+
+      .cozinhas-title {   color: $cinza-funghi; }
+    }
+    
+    &.linha-unica {
+      left:                 0;
+      height:               50%;
+      bottom:               0;
+
+      @include floor($hero-unica, $hero-unica-base64);
+      @include media-query (portable) { .btn { background: $hero-unica; } };
+
+      .cozinhas-title {   color: $roxo-beterraba; }
+    }
+    
   }
 
   .cozinhas-title {
@@ -77,9 +108,9 @@
       position:           absolute;
     }
 
-    @include font-size(60px, 1);
-    @include media-query(desk) { @include font-size(60px, .8); top: double($base-spacing-unit)*-1.2; }
-    @include media-query(wide) { @include font-size(140px, .8); }
+    @include font-size(50px, 1);
+    @include media-query(desk) { @include font-size(40px, .8); top: double($base-spacing-unit)*-1.2; }
+    @include media-query(wide) { @include font-size(120px, .8); }
 
     small {
       display:              block;
@@ -106,13 +137,13 @@
   .cozinha {
     position:               absolute;
     padding:                0 halve($base-spacing-unit);
-    top:                    double($base-spacing-unit);
+    top:                    double($base-spacing-unit/4);
 
     @include media-query(palm) { display: none !important; }
 
     @include media-query(desk) {
       width:                  100%;
-      max-width:              400px;
+      max-width:              350px;
       left:                   50%;
 
       transform:              translate(-50%, 0);

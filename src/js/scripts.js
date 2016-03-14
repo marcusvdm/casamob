@@ -424,5 +424,12 @@
   	});	
   	
   }
+  
+  $('.all-screen').click(function(e){
+  	$('.all-screen').css('display', 'none');
+  	$('.banner_lighthome').addClass('banner_lighthome__close');
+  	
+  	e.preventDefault();
+  });
 
 })(jQuery, window, document);

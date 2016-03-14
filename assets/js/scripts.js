@@ -4,7 +4,7 @@
  * http://www.mmartini.eti.br
  * @author Marcus Martini
  * @version 1.0.3
- * Copyright 2015. MIT licensed.
+ * Copyright 2016. MIT licensed.
  */
 (function ($, window, document, undefined) {
 
@@ -432,5 +432,12 @@
   	});	
   	
   }
+  
+  $('.all-screen').click(function(e){
+  	$('.all-screen').css('display', 'none');
+  	$('.banner_lighthome').addClass('banner_lighthome__close');
+  	
+  	e.preventDefault();
+  });
 
 })(jQuery, window, document);
