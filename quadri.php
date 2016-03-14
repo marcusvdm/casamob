@@ -27,9 +27,9 @@
         
         <nav class="menu-linha">
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-quadri">Diferenciais</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-play">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-play">Acessórios</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-play">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-quadri">Módulos</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-quadri">Acessórios</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-quadri">Ambientes</a>
         </nav>
         
         <figure class="img-slider"
