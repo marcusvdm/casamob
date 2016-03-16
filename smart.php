@@ -37,25 +37,25 @@
             data-featherlight-filter="a"
         >
         <?php 
-          for ($i = 0; $i <= 6; $i++) {
+          for ($i = 0; $i <= 3; $i++) {
         ?>
-          <a href="<?php bloginfo('template_url');?>/assets/images/play/lightbox-coz-play-<?php echo $i; ?>.jpg" title="">
-            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/play/slide-coz-play-<?php echo $i; ?>.jpg" alt="" />
+          <a href="<?php bloginfo('template_url');?>/assets/images/smart/lightbox-coz-smart-<?php echo $i; ?>.jpg" title="">
+            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/smart/slide-coz-smart-<?php echo $i; ?>.jpg" alt="" />
           </a>
         <?php } ?>
         </figure>
         
         <figure class="thumbs" >
         <?php 
-          for ($i = 0; $i <= 6; $i++) {
+          for ($i = 0; $i <= 3; $i++) {
         ?>
           <a class="thumb" data-slick-index="<?php echo $i; ?>" href="<?php bloginfo('template_url');?>/#<?php echo $i; ?>" title="<?php the_title();?>">
-            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/play/thumb-coz-play-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
+            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/smart/thumb-coz-smart-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
           </a>
 
         <?php } ?>
           
-          <a class="thumb-mais" href="<?php echo home_url(); ?>/ambientes-play" title="<?php the_title();?>">
+          <a class="thumb-mais" href="<?php echo home_url(); ?>/ambientes-smart" title="<?php the_title();?>">
             <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/icons/icon-mais.svg" alt="<?php the_title();?>" />
           </a>
         </figure>
