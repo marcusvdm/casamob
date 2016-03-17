@@ -69,11 +69,11 @@
         <div class="intro">
           <strong>Categorias de Módulos:</strong><br>
           
-          <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/1">Aéreos Verticais</a>
-          | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/2">Aéreos Horizontais</a>
-          | <a class="link-modulos <?php if($paged === 3) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/3">Gabinetes</a>
-          | <a class="link-modulos <?php if($paged === 4) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/4">Paneleiros</a>
-          | <a class="link-modulos <?php if($paged === 5) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/5">Nichos</a>
+          <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/1">Aéreos Verticais</a>
+          | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/2">Aéreos Horizontais</a>
+          | <a class="link-modulos <?php if($paged === 3) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/3">Gabinetes</a>
+          | <a class="link-modulos <?php if($paged === 4) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/4">Paneleiros</a>
+          | <a class="link-modulos <?php if($paged === 5) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/5">Nichos</a>
         </div>
       </div>
 
@@ -170,16 +170,16 @@ $wp_query = $temp_query;
 
 <!-- lightboxes -->
 <div id="lb-cores-unica" class="hidden">
-  <?php require_once('cores-unica.php'); ?>
+  <?php //require_once('cores-unica.php'); ?>
 </div>
 <div id="lb-cores-nichos-unica" class="hidden">
-  <?php require_once('cores-nichos-unica.php'); ?>
+  <?php //require_once('cores-nichos-unica.php'); ?>
 </div>
 <div id="lb-puxadores-unica" class="hidden">
-  <?php require_once('puxadores-unica.php'); ?>
+  <?php //require_once('puxadores-unica.php'); ?>
 </div>
 <div id="lb-tampos-unica" class="hidden">
-  <?php require_once('tampos-unica.php'); ?>
+  <?php //require_once('tampos-unica.php'); ?>
 </div>
 
 
