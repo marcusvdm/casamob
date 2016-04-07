@@ -8,11 +8,14 @@
 // `_tools.responsive`.
 
 $breakpoints: (
+    "landscape"     "screen and (max-height: 500px)",
+    "mobile-small"  "screen and (max-width: 240px)",
+    "mobile"        "screen and (max-width: 320px)",
     "palm"          "screen and (max-width: 719px)",
     "lap"           "screen and (min-width: 720px) and (max-width: 1023px)",
     "lap-and-up"    "screen and (min-width: 720px)",
     "portable"      "screen and (max-width: 1023px)",
-    "desk-only"     "screen and (min-width: 1024px) and (max-width: 1499px)",
+    "desk-only"     "screen and (min-width: 1024px) and (max-width: 1320px)",
     "desk"          "screen and (min-width: 1024px)",
     "intermediate"  "screen and (min-width: 1270px) and (max-width: 1499px)",
     "wide"          "screen and (min-width: 1500px)",

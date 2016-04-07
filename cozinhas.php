@@ -7,21 +7,21 @@
     <div class="content linha linha-play js-anchor" data-stellar-offset-parent="true">
       <div class="offset">
   
-        <h2 class="cozinhas-title">
+        <h2 class="cozinhas-title to-mobile-play">
           <small>Linha</small> Play
         </h2>
   
-        <div class="modelo play-modelo">
+        <div class="modelo">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-play.png" alt="">
         </div>
   
-        <div class="cozinha play-cozinha">
+        <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-play.png" alt="">
         </div>
   
       </div><!-- /.offset -->
   
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#play" data-panel="play" class="btn">Clique e conheça</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#play" data-panel="play" class="btn to-mobile-play btn-mobile-play">Clique e conheça</a>
   
   
     </div><!-- /.content.linha-play -->
@@ -29,19 +29,17 @@
     <div class="content linha linha-city js-anchor" data-stellar-offset-parent="true">
   
       <div class="offset">
-  
+      
         <h2 class="cozinhas-title">
-        <!-- <h2 class="cozinhas-title" data-stellar-ratio="2"> -->
+         <!--<h2 class="cozinhas-title" data-stellar-ratio="2">-->
           <small>Linha</small> City
         </h2>
   
-        <div class="modelo city-modelo">
-        <!-- <div class="modelo city-modelo" data-stellar-ratio=".2"> -->
+        <div class="modelo">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-city.png" alt="">
         </div>
   
-        <div class="cozinha city-cozinha">
-        <!-- <div class="cozinha city-cozinha" data-stellar-ratio="-.8"> -->
+        <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-city.png" alt="">
         </div>
   
@@ -57,14 +55,14 @@
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small style="visibility: hidden">Linha</small> Kits
+          <small class="show-hide">Linha</small> Kits
         </h2>
   
-        <div class="modelo kits-modelo">
+        <div class="modelo">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-kits.png" alt="">
         </div>
-  
-        <div class="cozinha kits-cozinha">
+        
+        <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-kits.png" alt="">
         </div>
   
@@ -83,11 +81,11 @@
           <small>Linha</small> Unica 3.5
         </h2>
   
-        <div class="cozinha play-cozinha">
+        <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-unica.png" alt="">
         </div>
   
-      </div><!-- /.offset -->
+    </div><!-- /.offset -->
   
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>#unica" data-panel="unica" class="btn">Clique e conheça</a>
   
@@ -101,11 +99,11 @@
           <small>Linha</small> Play Smart
         </h2>
   
-        <div class="cozinha play-cozinha">
+        <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-smart.png" alt="">
         </div>
   
-      </div><!-- /.offset -->
+    </div><!-- /.offset -->
   
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>#smart" data-panel="smart" class="btn">Clique e conheça</a>
   
@@ -119,15 +117,37 @@
           <small>Linha</small> Quadri
         </h2>
   
-        <div class="cozinha play-cozinha">
+        <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-quadri-2.png" alt="">
         </div>
   
-      </div><!-- /.offset -->
+    </div><!-- /.offset -->
   
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#quadri" data-panel="quadri" class="btn">Clique e conheça</a>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#quadri" data-panel="quadri" class="btn">Clique e conheça</a>
   
   
-    </div><!-- /.content.linha-smart -->
+    </div><!-- /.content.linha-quadri -->
+    
+    <div class="content linha linha-complemento js-anchor" data-stellar-offset-parent="true">
+      <div class="offset">
+  
+        <h2 class="cozinhas-title">
+          <small>Linha</small> Complemento
+        </h2>
+  
+        <div class="cozinha">
+          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-quadri-2.png" alt="">
+        </div>
+  
+    </div><!-- /.offset -->
+  
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#complemento" data-panel="complemento" class="btn">Clique e conheça</a>
+  
+  
+    </div><!-- /.content.linha-complemento -->
   </div>
+  <!-- <div class="dark-produtos"></div>-->
+  <!--<div class="banner-desculpe">-->
+  <!--      <p style="font-size: 16px;"><a href="http://www.youblisher.com/p/1374421-Catalogo-CasaMob-2016/" target="_blank"><img src="wp-content/themes/casamob/assets/images/banner-360x480.jpg" alt="Banner novo catálogo 2016" class="img-banner"/></a></p>-->
+  <!--  </div>-->
 </section>

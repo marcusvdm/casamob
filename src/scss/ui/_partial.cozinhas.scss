@@ -12,81 +12,256 @@
     padding-top: 0;
     .page-container { padding: 0; } 
   }
-
+  
+  @include media-query(palm){ background-color: $cm_purple; }
+   
+  
   .linha {
-    height:                 100%;
+    height:                 50%;
     position:               absolute;
     width:                  33.3333%;
     float:                  left;
     text-align:             center;
-    padding-top: $base-spacing-unit*7;
+    padding-top:            $base-spacing-unit*7;
     
-    @include media-query(lap-and-up) { padding-top: 0; }
+    @include media-query(lap-and-up) { padding-top: 5%; }
+    @include media-query(palm){left: 0; width: 100%; padding-top: 0; }
 
     &.linha-play {
       top:                  0;
       left:                 0;
+      //height:               100%;
       height:               50%;
 
       @include floor($hero-play, $hero-play-base64);
       @include media-query (portable) { .btn { background: $hero-play; } };
+      @include media-query(palm){left: 0; width: 100%; height: 14%; top: 8% ;}
+      @include media-query(landscape){left: 0; width: 100%; height: 14%; top: 20% ;}
 
-      .cozinhas-title   { color: $cinza-funghi; }
+      .cozinha,
+      .modelo {
+        @include media-query(lap){
+          top: 0;
+        }
+      }
+
+      .cozinhas-title { 
+         color: $cinza-funghi; 
+        
+        @include media-query(lap){
+          top: -40px;
+          font-size: 24px;
+        }
+        @include media-query(landscape){
+          top: -10px;
+          font-size: 18px;
+        }
+      }
     }
 
     &.linha-city {
       top:                  0;
       left:                 33.33333%;
+      //height:               100%;
       height:               50%;
 
       @include floor($hero-city, $hero-city-base64);
       @include media-query (portable) { .btn { background: $hero-city; } };
+      @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 22%; }
+      @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 33.28% ;}
 
-      .cozinhas-title   { color: $verde-cha; }
+      .cozinha,
+      .modelo {
+        @include media-query(lap){
+          top: 0;
+        }
+      }
+
+      .cozinhas-title { 
+         color: $verde-cha; 
+        
+        @include media-query(lap){
+          top: -40px;
+          font-size: 24px;
+        }
+        @include media-query(landscape){
+          top: -10px;
+          font-size: 18px;
+        }
+      }
     }
 
     &.kits {
       top:                  0;
       right:                0;
+      //height:               100%;
       height:               50%;
 
       @include floor($hero-kits, $hero-kits-base64);
       @include media-query (portable) { .btn { background: $hero-kits; } };
+      @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 35.28%;}
+      @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 46.56% ;}
 
-      .cozinhas-title {   color: $verde-alecrim; }
-    }
-    
-    &.linha-quadri {
-      right:                0;
-      height:               50%;
-      bottom:               0;
+      .cozinha,
+      .modelo {
+        @include media-query(lap){
+          top: 0;
+        }
+      }
 
-      @include floor($hero-quadri, $hero-quadri-base64);
-      @include media-query (portable) { .btn { background: $hero-quadri; } };
-
-      .cozinhas-title {   color: $cm_red; }
-    }
-    
-    &.linha-smart {
-      left:               33.33333%;
-      height:             50%;
-      bottom:             0;
-
-      @include floor($hero-smart, $hero-smart-base64);
-      @include media-query (portable) { .btn { background: $hero-smart; } };
-
-      .cozinhas-title {   color: $cm_petroleum; }
+      .cozinhas-title { 
+         color: $verde-alecrim; 
+        
+        @include media-query(lap){top: -40px; font-size: 24px;}
+        @include media-query(landscape){
+          top: -10px;
+          font-size: 18px;
+        }
+      }
     }
     
     &.linha-unica {
       left:                 0;
       height:               50%;
+      width:                25%;
       bottom:               0;
 
       @include floor($hero-unica, $hero-unica-base64);
       @include media-query (portable) { .btn { background: $hero-unica; } };
+      @include media-query(lap-and-up) {  padding-top: 0; };
+      @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 48.56%;  }
+      @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 59.84% ;}
+      
+      .cozinha {
+        top: -$base-spacing-unit/4;
+        
+        @include media-query(lap){
+          top: 20px;
+        }
+      }
 
-      .cozinhas-title {   color: $cm_purple; }
+      .cozinhas-title { 
+         color: $cm_purple; 
+        
+        @include media-query(lap){
+          top: -60px;
+          font-size: 24px;
+        }
+        @include media-query(landscape){
+          top: -10px;
+          font-size: 18px;
+        }
+      }
+    }
+    
+    &.linha-smart {
+      left:               25%;
+      height:             50%;
+      width:              25%;
+      bottom:             0;
+
+      @include floor($hero-smart, $hero-smart-base64);
+      @include media-query (portable) { .btn { background: $hero-smart; } };
+      @include media-query(lap-and-up) {  padding-top: 0; };
+       @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 61.84%;}
+       @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 73.12% ;}
+      
+       
+      .cozinha {
+        top: -$base-spacing-unit/4;
+        
+        @include media-query(lap){
+          top: 20px;
+        }
+      }
+
+      .cozinhas-title { 
+         color: $cm_petroleum; 
+        
+        @include media-query(lap){
+          top: -60px;
+          font-size: 24px;
+        }
+        @include media-query(landscape){
+          top: -10px;
+          font-size: 18px;
+        }
+      }
+    }
+    
+    &.linha-quadri {
+      left:                 50%;
+      height:               50%;
+      width:                25%;
+      bottom:               0;
+
+      @include floor($hero-quadri, $hero-quadri-base64);
+      @include media-query (portable) { .btn { background: $hero-quadri; } };
+      @include media-query(lap-and-up) {  padding-top: 0; };
+       @include media-query(palm){left: 0; width: 100%;  height: 12.28%; top: 75.12%;}
+       @include media-query(landscape){left: 0; width: 100%; height: 12.28%; top: 85.4% ;}
+      
+      
+      .cozinha {
+        top: -$base-spacing-unit/4;
+        
+        @include media-query(lap){
+          top: 20px;
+        }
+      }
+
+      .cozinhas-title { 
+        color: $cm_red; 
+        
+        @include media-query(lap){
+          top: -60px;
+          font-size: 24px;
+        }
+        @include media-query(landscape){
+          top: -10px;
+          font-size: 18px;
+        }
+      }
+    }
+    
+    &.linha-complemento {
+      right:                 0;
+      height:               50%;
+      width:                25%;
+      bottom:               0;
+
+      @include floor($hero-unica, $hero-unica-base64);
+      @include media-query (portable) { .btn { background: $hero-unica; } };
+      @include media-query(lap-and-up) {  padding-top: 0; };
+      @include media-query(palm){left: 0; width: 100%; height: 12.28%; top: 87.4%;}
+      @include media-query(landscape){left: 0; width: 100%; height: 12.28%; top: 97.68% ;}
+      
+      .cozinha {
+        top: -$base-spacing-unit/4;
+        
+        @include media-query(lap) { top: 20px; }
+      }
+
+      .cozinhas-title { 
+        color: $cm_purple; 
+        
+        @include media-query(lap){
+          top: -60px;
+          font-size: 24px;
+        }
+        @include media-query(landscape){
+          top: -10px;
+          font-size: 18px;
+        }
+      }
+    }
+    
+    .to-mobile-play {
+      @include media-query(palm) { top: 10px; }
+    }
+    .btn-mobile-play {
+      @include media-query(palm) { top: 30px; }
+      @include media-query(landscape) { top: 5px; }
     }
     
   }
@@ -99,18 +274,15 @@
 
     @include media-query(portable) { margin-left: halve($base-spacing-unit) !important; }
 
-    @include media-query(palm) {
-      transform:          translate(-50%, 0) rotate(-90deg) translate(0, 50%);
-      // margin-top:         $header-total-min + $base-spacing-unit;
-    }
-
     @include media-query (lap-and-up) {
       position:           absolute;
     }
 
-    @include font-size(50px, 1);
-    @include media-query(desk) { @include font-size(40px, .8); top: double($base-spacing-unit)*-1.2; }
+    @include font-size(40px, 1);
+    @include media-query(desk) { @include font-size(40px, .8); top: double($base-spacing-unit)*-1.5; }
     @include media-query(wide) { @include font-size(120px, .8); }
+    @include media-query(palm) { @include font-size(30px, .8); }
+    @include media-query(desk-only){ @include font-size(30px, .8); }
 
     small {
       display:              block;
@@ -120,6 +292,8 @@
 
       @include font-size(18px, 1);
       @include media-query(wide) { @include font-size(30px, 1); }
+      @include media-query(palm) { @include font-size(16px, 1);  }
+      
     }
   }
 
@@ -128,6 +302,16 @@
       position:             relative;
       top:                  25%;
     }
+    @include media-query(palm) {
+      position:             absolute;
+      top:                  15px;
+    }
+    
+    .show-hide { 
+        visibility: hidden;
+        @include media-query(palm) { visibility: visible; }
+        @include media-query(lap) { visibility: visible; }
+      }
 
     // @include media-query(desk) { margin-top: -$header-total-medium; }
     // @include media-query(wide) { margin-top: -$header-total; }
@@ -137,7 +321,7 @@
   .cozinha {
     position:               absolute;
     padding:                0 halve($base-spacing-unit);
-    top:                    double($base-spacing-unit/4);
+    top:                    -$base-spacing-unit*2;
 
     @include media-query(palm) { display: none !important; }
 
@@ -174,6 +358,13 @@
       top:                  50%;
       margin-top:           120px;
     }
+    
+    @include media-query(desk-only) {
+      bottom:               auto;
+      top:                  50%;
+      margin-top:           120px;
+      width:                180px;
+    }
 
     @include media-query(wide) {
       margin-top:           $header-total + double($base-spacing-unit);
@@ -181,6 +372,25 @@
 
     @include media-query(superwide) {
       margin-top:           60px;
+    }
+    
+    @include media-query(palm) {
+      left:                 85%;
+      top:                  20px;
+      bottom:               auto;
+      @include font-size(12px, 1);
+    }
+    @include media-query(lap) {
+      left:                 50%;
+      top:                  130px;
+      bottom:               auto;
+      @include font-size(15px, 1);
+    }
+    @include media-query(landscape){
+      left:                 75%;
+      top:                  5px;
+      bottom:               auto;
+      @include font-size(15px, 1);
     }
   }
 
@@ -201,6 +411,42 @@
         overflow: hidden;
     }
   }
+  
+  .dark-produtos{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: #aeafae;
+    z-index:10;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+  .banner-desculpe {
+    position:absolute;
+    left: 50%;
+    top:20%;
+    margin-left: -180px;
+    max-width: 360px;
+    width:100%;
+    z-index:20;
+  }
+  @include media-query(mobile) {
+    .banner-desculpe {
+      margin-left: -157px;
+    }
+  }
+  @include media-query(mobile-small) {
+    .banner-desculpe {
+      margin-left: -120px;
+    }
+  }
+  .banner-desculpe .img-banner {
+    max-width:360px;
+    width:100%;
+  }
+  
 }
 
 
