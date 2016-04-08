@@ -132,7 +132,7 @@
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small>Linha</small> Complemento
+          <small>Linha</small> Complementos
         </h2>
   
         <div class="cozinha">

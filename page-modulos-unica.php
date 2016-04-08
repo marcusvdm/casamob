@@ -101,48 +101,45 @@
   
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
-        <dt><?php echo $k; ?>: </dt>
-        <dd><?php echo $d; ?></dd>
+        <dt><?php //echo $k; ?></dt>
+        <dd><?php echo $k.":"; ?><br><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/<?php echo $d; ?>" style="width:100%; max-width:30px;" /></dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
-
-    <div class="btns"
-      data-featherlight-gallery 
-      data-featherlight-filter="a"
-    >
+    
+    <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       
-      <?php $lb_link = ($slug === 'nichos-unica' ? '#lb-cores-nichos-unica' : '#lb-cores-unica'); ?>
+      <?php //$lb_link = ($slug === 'nichos-unica' ? '#lb-cores-nichos-unica' : '#lb-cores-unica'); ?>
       
-      <a href="#cores-unica"
-        data-featherlight="<?php echo $lb_link; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-cores"
-      >
-        cores
-      </a>
+      <!--<a href="#cores-unica"-->
+      <!--  data-featherlight="<?php //echo $lb_link; ?>"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-cores"-->
+      <!-->-->
+      <!--  cores-->
+      <!--</a>-->
       
-      <?php if ($p->puxadores === "true" ) { ?>
-      <a href="#puxadores-unica"
-        data-featherlight="#lb-puxadores-unica"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-puxadores"
-      >
-        puxadores
-      </a>
-      <?php } ?>
+      <?php //if ($p->puxadores === "true" ) { ?>
+      <!--<a href="#puxadores-unica"-->
+      <!--  data-featherlight="#lb-puxadores-unica"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-puxadores"-->
+      <!-->-->
+      <!--  puxadores-->
+      <!--</a>-->
+      <?php //} ?>
       
-      <?php if ($p->tampos === "true" ) { ?>
-      <a href="#tampos-unica"
-        data-featherlight="#lb-tampos-unica"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-tampos"
-      >
-        tampos
-      </a>
-      <?php } ?>
+      <?php //if ($p->tampos === "true" ) { ?>
+      <!--<a href="#tampos-unica"-->
+      <!--  data-featherlight="#lb-tampos-unica"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-tampos"-->
+      <!-->-->
+      <!--  tampos-->
+      <!--</a>-->
+      <?php //} ?>
     </div>
   </div><!-- /.prod-box -->
 <?php } ?>

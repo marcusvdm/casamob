@@ -4441,7 +4441,7 @@ html.touch {
   border: 1px solid #ffffff;
   display: inline-block;
   vertical-align: top;
-  float: none;
+  float: left;
   margin-bottom: 20px; }
   .linhas .prod-box .btns {
     background-color: #ffffff;
@@ -4472,7 +4472,7 @@ html.touch {
         top: 5px;
         width: 20px;
         height: 20px;
-        margin-right: 5px; }
+        margin-right: 3px; }
   .linhas .prod-box .btn-cores::before {
     background: url(../images/icons/icon-destaque-cores.svg) no-repeat center; }
   .linhas .prod-box .btn-puxadores::before {
@@ -4553,7 +4553,7 @@ html.touch {
   line-height: 1.5;
   font-weight: 600;
   padding: 0 10px 10px;
-  width: 50%;
+  width: 20%;
   -webkit-transform: translate(0, -60%);
       -ms-transform: translate(0, -60%);
           transform: translate(0, -60%);
@@ -4564,7 +4564,8 @@ html.touch {
     float: left;
     margin-right: 5px; }
   .prod-data dd {
-    float: left; }
+    float: left;
+    color: #59496a; }
     @media screen and (min-width: 1024px) and (max-width: 1320px) {
       .prod-data dd {
         clear: both;
@@ -4576,6 +4577,29 @@ html.touch {
   .aereos-horizontais-play .prod-box:last-child {
     float: right;
     margin-right: 0; } }
+
+/* NOVAS LINHAS*/
+/*UNICA*/
+.AV70-2P-Armario-Vertical-2-Portas::after {
+  background-image: url(../images/modulos-aereos/AV70-2P-Armario-Vertical-2-Portas.png); }
+
+.AV70-2PV-Armario-Vertical-2-Portas-Vidro::after {
+  background-image: url(../images/modulos-aereos/AV70-2PV-Armario-Vertical-2-Portas-Vidro.png); }
+
+.AV105-3P-Armario-Vertical-3-Portas::after {
+  background-image: url(../images/modulos-aereos/AV105-3P-Armario-Vertical-3-Portas.png); }
+
+.AV105-3P-1V-Armario-Vertical-3-Portas-1-Vidro::after {
+  background-image: url(../images/modulos-aereos/AV105-3P-1V-Armario-Vertical-3-Portas-1-Vidro.png); }
+
+.AV105-3PV-Armario-Vertical-3-Portas-Vidro::after {
+  background-image: url(../images/modulos-aereos/AV105-3PV-Armario-Vertical-3-Portas-Vidro.png); }
+
+.AH70-1P-Armario-Horizontal-1-Porta::after {
+  background-image: url(../images/modulos-aereos/AH70-1P-Armario-Horizontal-1-Porta.png); }
+
+.AH80-2P-Armario-Horizontal-2-Portas::after {
+  background-image: url(../images/modulos-aereos/AH80-2P-Armario-Horizontal-2-Portas.png); }
 
 .v-350x600-1p::after {
   background-image: url(../images/modulos-aereos/v-350x600-1p.png); }
@@ -5823,6 +5847,7 @@ h2.tipo-modulo small {
   position: absolute;
   top: 60px;
   right: 60%;
+  width: 60%;
   bottom: 60px;
   left: 20px;
   background-repeat: no-repeat;

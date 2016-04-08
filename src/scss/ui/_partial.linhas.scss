@@ -271,7 +271,7 @@
     border: 1px solid $white;
     display: inline-block;
     vertical-align: top;
-    float: none;
+    float: left;
     margin-bottom: $base-spacing-unit;
     
     .btns {
@@ -301,7 +301,7 @@
           position: relative;
           top: 5px;
           @include size(20px);
-          margin-right: 5px;
+          margin-right: 3px;
         }
       }
     }
@@ -394,7 +394,7 @@
 
   font-weight: $bold;
   padding: 0 halve($base-spacing-unit) halve($base-spacing-unit);
-  width: 50%;
+  width: 20%;
   transform: translate(0,-60%);
   margin-top: $base-spacing-unit*1.5;
 
@@ -407,6 +407,7 @@
 
   dd {
       float: left;
+      color: #59496a;
       @include media-query(desk-only) {
           clear: both;
           margin-bottom: 3px;
@@ -420,6 +421,18 @@
     .prod-box:last-child { float:right; margin-right: 0; }
   }
 }
+
+/* NOVAS LINHAS*/
+
+/*UNICA*/
+.AV70-2P-Armario-Vertical-2-Portas::after { background-image: url(../images/modulos-aereos/AV70-2P-Armario-Vertical-2-Portas.png) }
+.AV70-2PV-Armario-Vertical-2-Portas-Vidro::after { background-image: url(../images/modulos-aereos/AV70-2PV-Armario-Vertical-2-Portas-Vidro.png) }
+.AV105-3P-Armario-Vertical-3-Portas::after { background-image: url(../images/modulos-aereos/AV105-3P-Armario-Vertical-3-Portas.png) }
+.AV105-3P-1V-Armario-Vertical-3-Portas-1-Vidro::after { background-image: url(../images/modulos-aereos/AV105-3P-1V-Armario-Vertical-3-Portas-1-Vidro.png) }
+.AV105-3PV-Armario-Vertical-3-Portas-Vidro::after { background-image: url(../images/modulos-aereos/AV105-3PV-Armario-Vertical-3-Portas-Vidro.png) }
+.AH70-1P-Armario-Horizontal-1-Porta::after { background-image: url(../images/modulos-aereos/AH70-1P-Armario-Horizontal-1-Porta.png) }
+.AH80-2P-Armario-Horizontal-2-Portas::after { background-image: url(../images/modulos-aereos/AH80-2P-Armario-Horizontal-2-Portas.png) }
+
 
 .v-350x600-1p::after               { background-image: url(../images/modulos-aereos/v-350x600-1p.png) }
 .v-350x1200-1p::after              { background-image: url(../images/modulos-aereos/v-350x1200-1p.png) }
@@ -437,7 +450,6 @@
 .v-1200x600-3p-vidro::after        { background-image: url(../images/modulos-aereos/v-1200x600-3p-vidro.png) }
 .v-900x600-2p-canto::after         { background-image: url(../images/modulos-aereos/v-900x600-2p-canto.png) }
 .v-1050x600-1p-vidro-nicho::after  { background-image: url(../images/modulos-aereos/v-1050x600-1p-vidro-nicho.png) }
-
 
 /* MÓDULOS AÉREOS HORIZONTAIS */
 
