@@ -102,9 +102,11 @@
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
-        <dd><?php echo $k.":"; ?><br><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/<?php echo $d; ?>" style="width:100%; max-width:30px;" /></dd>
+        <dd><?php echo $k.":"; ?><br><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
+    
+    <div class="puxadores"><p>Puxador</p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       

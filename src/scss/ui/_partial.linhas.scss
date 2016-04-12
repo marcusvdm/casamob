@@ -271,7 +271,7 @@
     border: 1px solid $white;
     display: inline-block;
     vertical-align: top;
-    float: left;
+    float: none;
     margin-bottom: $base-spacing-unit;
     
     .btns {
@@ -312,18 +312,18 @@
     
     @include media-query(desk) {
       width: 30%;
-      margin-right: 5%;
+      margin-right: 3%;
       margin-bottom: 0;
-      &:nth-child(5n+3) { margin: 0; }
-      &:nth-child(5n+4),
-      &:nth-child(5n+5) { margin: 0 2.5%; }
+      //&:nth-child(5n+3) { margin: 0; }
+      //&:nth-child(5n+4),
+      //&:nth-child(5n+5) { margin: 0 2.5%; }
     }
     
     @include media-query(wide) {
       width: 28%;
       margin-right: 8%;
-      &:nth-child(5n+4),
-      &:nth-child(5n+5) { margin: 0 4%; }
+      //&:nth-child(5n+4),
+      //&:nth-child(5n+5) { margin: 0 4%; }
     }
   }
   
@@ -422,6 +422,14 @@
   }
 }
 
+.puxadores {
+  @include position(absolute, 78% 5% auto auto);
+  width: 100%;
+  max-width: 100px;
+  
+  p { color: $black;}
+}
+
 /* NOVAS LINHAS*/
 
 /*UNICA*/
@@ -432,6 +440,15 @@
 .AV105-3PV-Armario-Vertical-3-Portas-Vidro::after { background-image: url(../images/modulos-aereos/AV105-3PV-Armario-Vertical-3-Portas-Vidro.png) }
 .AH70-1P-Armario-Horizontal-1-Porta::after { background-image: url(../images/modulos-aereos/AH70-1P-Armario-Horizontal-1-Porta.png) }
 .AH80-2P-Armario-Horizontal-2-Portas::after { background-image: url(../images/modulos-aereos/AH80-2P-Armario-Horizontal-2-Portas.png) }
+.NH70-Nicho-700x200::after { background-image: url(../images/modulos-aereos/NH70-Nicho-700x200.png) }
+.G70-2P-Gabinete-2-Portas::after { background-image: url(../images/modulos-aereos/G70-2P-Gabinete-2-Portas.png) }
+.GM105-2P-3G-Gabinete-2-Portas-3-Gavetas::after { background-image: url(../images/modulos-aereos/GM105-2P-3G-Gabinete-2-Portas-3-Gavetas.png) }
+.GM105-3P-2G-Gabinete-3-Portas-2-Gavetas::after { background-image: url(../images/modulos-aereos/GM105-3P-2G-Gabinete-3-Portas-2-Gavetas.png) }
+.P70-4P-Paneleiro-Duplo-4-Portas::after { background-image: url(../images/modulos-aereos/P70-4P-Paneleiro-Duplo-4-Portas.png) }
+.P70-6P-Paneleiro-Duplo-6-Portas::after { background-image: url(../images/modulos-aereos/P70-6P-Paneleiro-Duplo-6-Portas.png) }
+.P70-6P-2PV-Paneleiro-Duplo-6-Portas-2-Vidros::after { background-image: url(../images/modulos-aereos/P70-6P-2PV-Paneleiro-Duplo-6-Portas-2-Vidros.png) }
+.CCU2450-9P-Cozinha-Compacta-Unica-9-Portas::after { background-image: url(../images/modulos-aereos/CCU2450-9P-Cozinha-Compacta-Unica-9-Portas.png) }
+.CCU2450-9P-3PV-Cozinha-Compacta-Unica-9-Portas-3-Vidros::after { background-image: url(../images/modulos-aereos/CCU2450-9P-3PV-Cozinha-Compacta-Unica-9-Portas-3-Vidros.png) }
 
 
 .v-350x600-1p::after               { background-image: url(../images/modulos-aereos/v-350x600-1p.png) }
