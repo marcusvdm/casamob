@@ -38,38 +38,51 @@
         <h2>
           <a href="<?php echo home_url(); ?>#city">
             <small class="white">Linha</small>
-            <span class="lt-green">city</span>
+            <span class="purple">city</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
           
           <?php
-            switch ($slug) {
-              case 'modulos-normais-city':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-green">City</span>';
-                break;
-              case 'modulos-madeirados-city':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-green">City</span>
-                      <span class="cooper">Madeirada</span>';
-                break;
-            }
+            // switch ($slug) {
+            //   case 'aereos-verticais-city':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Verticais</span>';
+            //     break;
+            //   case 'aereos-horizontais-city':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Horizontais</span>';
+            //     break;
+            //   case 'gabinetes-city':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Gabinetes</span>';
+            //     break;
+            //   case 'paneleiros-city':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Paneleiros</span>';
+            //     break;
+            // }
           ?>
         </h2>
-        <div class="intro">
-          <strong>Categorias de Módulos:</strong><br>
+        <!--<div class="intro">-->
+        <!--  <strong>Categorias de Módulos:</strong><br>-->
           
-          <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-city/page/1">Módulos City</a>
-          | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-city/page/2">Módulos City Madeirada</a>
-        </div>
+        <!--  <a class="link-modulos <?php //if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-city/page/1">Aéreos Verticais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 2) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-city/page/2">Aéreos Horizontais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 3) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-city/page/3">Gabinetes</a>-->
+        <!--  | <a class="link-modulos <?php// if($paged === 4) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-city/page/4">Paneleiros</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 5) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-city/page/5">Nichos</a>-->
+        <!--</div>-->
       </div>
 
       <div class="content">
         
         <nav class="menu-linha">
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-city">Diferenciais</a>
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/módulos-city">Módulos</a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-city">Módulos</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-city">Acessórios</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-city">Ambientes</a>
         </nav>
 
@@ -88,63 +101,63 @@
   
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
-        <dt><?php echo $k; ?>: </dt>
-        <dd><?php echo $d; ?></dd>
+        <dt><?php //echo $k; ?></dt>
+        <dd>
+          <?php if (($k === "Cores" ) && ($p->linha === "compacta" )){ echo $k.":"; ?>
+                <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
+          <?php } else if ($k === "Cores" ) { echo $k.":"; ?>
+                <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:40px;" />
+          <?php } else if ($k === "Cor" ) { echo $k.":"; ?>
+                  <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
+          <?php } ?>
+        </dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
-
-    <div class="btns"
-      data-featherlight-gallery 
-      data-featherlight-filter="a"
-    >
-      
-      
-      <?php 
-        $whiteOnly = array(
-          'v-1050x600-3p',
-          'pan-700x1900-4p'
-        );
-        $gabinetes = array(
-          'gab-1050x700-3p-2g'
-        );
-        
-        $lb_link_cor = (in_array($p->prodID, $whiteOnly) ? '#lb-cores-white' : '#lb-cores-'.$slug); 
-        
-        if (in_array($p->prodID, $gabinetes) && $slug === 'modulos-madeirados-city') {
-          $lb_link_cor = '#lb-cores-gabinetes-madeirados-city';
-        }
-      ?>
-      
-      <a href="<?php echo $lb_link_cor; ?>"
-        data-featherlight="<?php echo $lb_link_cor; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-cores"
-      >
-        cores
-      </a>
-      
-      <?php if ($p->puxadores === "true" ) { ?>
-      <a href="#puxadores-<?php echo $slug; ?>"
-        data-featherlight="#lb-puxadores-<?php echo $slug; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-puxadores"
-      >
-        puxadores
-      </a>
+    
+    <div class="tampos">
+      <?php if (($p->tampos === "Tampos" ) && ($p->linha === "compacta")) { ?>
+            <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" />
+      <?php } else if (($p->tampos === "Tampos" ) && ($p->linha === "")) { ?>
+            <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" />
       <?php } ?>
+    </div>
       
-      <?php if ($p->tampos === "true" ) { ?>
-      <a href="#tampos-<?php echo $slug; ?>"
-        data-featherlight="#lb-tampos-<?php echo $slug; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-tampos"
-      >
-        tampos
-      </a>
-      <?php } ?>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    
+    <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
+      
+      <?php //$lb_link = ($slug === 'nichos-city' ? '#lb-cores-nichos-city' : '#lb-cores-city'); ?>
+      
+      <!--<a href="#cores-city"-->
+      <!--  data-featherlight="<?php //echo $lb_link; ?>"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-cores"-->
+      <!-->-->
+      <!--  cores-->
+      <!--</a>-->
+      
+      <?php //if ($p->puxadores === "true" ) { ?>
+      <!--<a href="#puxadores-city"-->
+      <!--  data-featherlight="#lb-puxadores-city"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-puxadores"-->
+      <!-->-->
+      <!--  puxadores-->
+      <!--</a>-->
+      <?php //} ?>
+      
+      <?php //if ($p->tampos === "true" ) { ?>
+      <!--<a href="#tampos-city"-->
+      <!--  data-featherlight="#lb-tampos-city"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-tampos"-->
+      <!-->-->
+      <!--  tampos-->
+      <!--</a>-->
+      <?php //} ?>
     </div>
   </div><!-- /.prod-box -->
 <?php } ?>
@@ -171,29 +184,17 @@ $wp_query = $temp_query;
 ?>
 
 <!-- lightboxes -->
-<div id="lb-cores-modulos-normais-city" class="hidden">
-  <?php require_once('cores-modulos-normais-city.php'); ?>
+<div id="lb-cores-city" class="hidden">
+  <?php //require_once('cores-city.php'); ?>
 </div>
-<div id="lb-cores-white" class="hidden">
-  <?php require_once('cores-white.php'); ?>
+<div id="lb-cores-nichos-city" class="hidden">
+  <?php //require_once('cores-nichos-city.php'); ?>
 </div>
-<div id="lb-cores-modulos-madeirados-city" class="hidden">
-  <?php require_once('cores-modulos-madeirados-city.php'); ?>
+<div id="lb-puxadores-city" class="hidden">
+  <?php //require_once('puxadores-city.php'); ?>
 </div>
-<div id="lb-cores-gabinetes-madeirados-city" class="hidden">
-  <?php require_once('cores-gabinetes-madeirados-city.php'); ?>
-</div>
-<div id="lb-puxadores-modulos-normais-city" class="hidden">
-  <?php require_once('puxadores-modulos-normais-city.php'); ?>
-</div>
-<div id="lb-puxadores-modulos-madeirados-city" class="hidden">
-  <?php require_once('puxadores-modulos-madeirados-city.php'); ?>
-</div>
-<div id="lb-tampos-modulos-normais-city" class="hidden">
-  <?php require_once('tampos-modulos-normais-city.php'); ?>
-</div>
-<div id="lb-tampos-modulos-madeirados-city" class="hidden">
-  <?php require_once('tampos-modulos-madeirados-city.php'); ?>
+<div id="lb-tampos-city" class="hidden">
+  <?php //require_once('tampos-city.php'); ?>
 </div>
 
 

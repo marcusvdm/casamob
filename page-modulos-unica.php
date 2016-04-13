@@ -44,37 +44,37 @@
         <h2 class="tipo-modulo">
           
           <?php
-            switch ($slug) {
-              case 'aereos-verticais-unica':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Aéreos</span>
-                      <span class="lt-cooper">Verticais</span>';
-                break;
-              case 'aereos-horizontais-unica':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Aéreos</span>
-                      <span class="lt-cooper">Horizontais</span>';
-                break;
-              case 'gabinetes-unica':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Gabinetes</span>';
-                break;
-              case 'paneleiros-unica':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Paneleiros</span>';
-                break;
-            }
+            // switch ($slug) {
+            //   case 'aereos-verticais-unica':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Verticais</span>';
+            //     break;
+            //   case 'aereos-horizontais-unica':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Horizontais</span>';
+            //     break;
+            //   case 'gabinetes-unica':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Gabinetes</span>';
+            //     break;
+            //   case 'paneleiros-unica':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Paneleiros</span>';
+            //     break;
+            // }
           ?>
         </h2>
-        <div class="intro">
-          <strong>Categorias de Módulos:</strong><br>
+        <!--<div class="intro">-->
+        <!--  <strong>Categorias de Módulos:</strong><br>-->
           
-          <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/1">Aéreos Verticais</a>
-          | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/2">Aéreos Horizontais</a>
-          | <a class="link-modulos <?php if($paged === 3) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/3">Gabinetes</a>
-          | <a class="link-modulos <?php if($paged === 4) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/4">Paneleiros</a>
-          | <a class="link-modulos <?php if($paged === 5) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-unica/page/5">Nichos</a>
-        </div>
+        <!--  <a class="link-modulos <?php //if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-unica/page/1">Aéreos Verticais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 2) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-unica/page/2">Aéreos Horizontais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 3) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-unica/page/3">Gabinetes</a>-->
+        <!--  | <a class="link-modulos <?php// if($paged === 4) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-unica/page/4">Paneleiros</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 5) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-unica/page/5">Nichos</a>-->
+        <!--</div>-->
       </div>
 
       <div class="content">
@@ -102,11 +102,11 @@
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
-        <dd><?php echo $k.":"; ?><br><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></dd>
+        <dd><?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
-    
-    <div class="puxadores"><p>Puxador</p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    <div class="tampos"><p>Tampos</p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $p->Tampos; ?>" style="width:100%; max-width:20px;" /></div>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       

@@ -44,37 +44,37 @@
         <h2 class="tipo-modulo">
           
           <?php
-            switch ($slug) {
-              case 'aereos-verticais-quadri':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Aéreos</span>
-                      <span class="lt-cooper">Verticais</span>';
-                break;
-              case 'aereos-horizontais-quadri':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Aéreos</span>
-                      <span class="lt-cooper">Horizontais</span>';
-                break;
-              case 'gabinetes-quadri':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Gabinetes</span>';
-                break;
-              case 'paneleiros-quadri':
-                echo '<small class="white">Módulos</small>
-                      <span class="lt-purple">Paneleiros</span>';
-                break;
-            }
+            // switch ($slug) {
+            //   case 'aereos-verticais-quadri':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Verticais</span>';
+            //     break;
+            //   case 'aereos-horizontais-quadri':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Horizontais</span>';
+            //     break;
+            //   case 'gabinetes-quadri':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Gabinetes</span>';
+            //     break;
+            //   case 'paneleiros-quadri':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Paneleiros</span>';
+            //     break;
+            // }
           ?>
         </h2>
-        <div class="intro">
-          <strong>Categorias de Módulos:</strong><br>
+        <!--<div class="intro">-->
+        <!--  <strong>Categorias de Módulos:</strong><br>-->
           
-          <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/1">Aéreos Verticais</a>
-          | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/2">Aéreos Horizontais</a>
-          | <a class="link-modulos <?php if($paged === 3) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/3">Gabinetes</a>
-          | <a class="link-modulos <?php if($paged === 4) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/4">Paneleiros</a>
-          | <a class="link-modulos <?php if($paged === 5) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/5">Nichos</a>
-        </div>
+        <!--  <a class="link-modulos <?php //if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-quadri/page/1">Aéreos Verticais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 2) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-quadri/page/2">Aéreos Horizontais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 3) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-quadri/page/3">Gabinetes</a>-->
+        <!--  | <a class="link-modulos <?php// if($paged === 4) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-quadri/page/4">Paneleiros</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 5) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-quadri/page/5">Nichos</a>-->
+        <!--</div>-->
       </div>
 
       <div class="content">
@@ -101,48 +101,53 @@
   
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
-        <dt><?php echo $k; ?>: </dt>
-        <dd><?php echo $d; ?></dd>
+        <dt><?php //echo $k; ?></dt>
+        <dd><?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
-
-    <div class="btns"
-      data-featherlight-gallery 
-      data-featherlight-filter="a"
-    >
-      
-      <?php $lb_link = ($slug === 'nichos-quadri' ? '#lb-cores-nichos-quadri' : '#lb-cores-quadri'); ?>
-      
-      <a href="#cores-quadri"
-        data-featherlight="<?php echo $lb_link; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-cores"
-      >
-        cores
-      </a>
-      
-      <?php if ($p->puxadores === "true" ) { ?>
-      <a href="#puxadores-quadri"
-        data-featherlight="#lb-puxadores-quadri"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-puxadores"
-      >
-        puxadores
-      </a>
+    
+    <div class="tampos">
+      <?php if ($p->tampos !== "" ) { ?>
+      <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" />
       <?php } ?>
+    </div>
+    
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    
+    <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       
-      <?php if ($p->tampos === "true" ) { ?>
-      <a href="#tampos-quadri"
-        data-featherlight="#lb-tampos-quadri"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-tampos"
-      >
-        tampos
-      </a>
-      <?php } ?>
+      <?php //$lb_link = ($slug === 'nichos-quadri' ? '#lb-cores-nichos-quadri' : '#lb-cores-quadri'); ?>
+      
+      <!--<a href="#cores-quadri"-->
+      <!--  data-featherlight="<?php //echo $lb_link; ?>"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-cores"-->
+      <!-->-->
+      <!--  cores-->
+      <!--</a>-->
+      
+      <?php //if ($p->puxadores === "true" ) { ?>
+      <!--<a href="#puxadores-quadri"-->
+      <!--  data-featherlight="#lb-puxadores-quadri"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-puxadores"-->
+      <!-->-->
+      <!--  puxadores-->
+      <!--</a>-->
+      <?php //} ?>
+      
+      <?php //if ($p->tampos === "true" ) { ?>
+      <!--<a href="#tampos-quadri"-->
+      <!--  data-featherlight="#lb-tampos-quadri"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-tampos"-->
+      <!-->-->
+      <!--  tampos-->
+      <!--</a>-->
+      <?php //} ?>
     </div>
   </div><!-- /.prod-box -->
 <?php } ?>
@@ -170,16 +175,16 @@ $wp_query = $temp_query;
 
 <!-- lightboxes -->
 <div id="lb-cores-quadri" class="hidden">
-  <?php require_once('cores-quadri.php'); ?>
+  <?php //require_once('cores-quadri.php'); ?>
 </div>
 <div id="lb-cores-nichos-quadri" class="hidden">
-  <?php require_once('cores-nichos-quadri.php'); ?>
+  <?php //require_once('cores-nichos-quadri.php'); ?>
 </div>
 <div id="lb-puxadores-quadri" class="hidden">
-  <?php require_once('puxadores-quadri.php'); ?>
+  <?php //require_once('puxadores-quadri.php'); ?>
 </div>
 <div id="lb-tampos-quadri" class="hidden">
-  <?php require_once('tampos-quadri.php'); ?>
+  <?php //require_once('tampos-quadri.php'); ?>
 </div>
 
 
