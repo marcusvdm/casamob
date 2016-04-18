@@ -38,32 +38,43 @@
         <h2>
           <a href="<?php echo home_url(); ?>#kits">
             <small class="white">Linha</small>
-            <span class="lt-violet">kits</span>
+            <span class="purple">kits</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
           
           <?php
-            switch ($slug) {
-              case 'modulos-normais-kits':
-                echo '<small class="white">Modelos</small>
-                      <span class="lt-violet">kits</span>
-                      <span class="acqua">coloridos</span>';
-                break;
-              case 'modulos-madeirados-kits':
-                echo '<small class="white">Modelos</small>
-                      <span class="lt-violet">kits</span>
-                      <span class="acqua">madeirados</span>';
-                break;
-            }
+            // switch ($slug) {
+            //   case 'aereos-verticais-kits':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Verticais</span>';
+            //     break;
+            //   case 'aereos-horizontais-kits':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Aéreos</span>
+            //           <span class="lt-cooper">Horizontais</span>';
+            //     break;
+            //   case 'gabinetes-kits':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Gabinetes</span>';
+            //     break;
+            //   case 'paneleiros-kits':
+            //     echo '<small class="white">Módulos</small>
+            //           <span class="lt-purple">Paneleiros</span>';
+            //     break;
+            // }
           ?>
         </h2>
-        <div class="intro">
-          <strong>Modelos:</strong><br>
+        <!--<div class="intro">-->
+        <!--  <strong>Categorias de Módulos:</strong><br>-->
           
-          <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modelos-kits/page/1">kits coloridos</a>
-          | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modelos-kits/page/2">kits madeirados</a>
-        </div>
+        <!--  <a class="link-modulos <?php //if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-kits/page/1">Aéreos Verticais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 2) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-kits/page/2">Aéreos Horizontais</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 3) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-kits/page/3">Gabinetes</a>-->
+        <!--  | <a class="link-modulos <?php// if($paged === 4) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-kits/page/4">Paneleiros</a>-->
+        <!--  | <a class="link-modulos <?php //if($paged === 5) { echo "current"; } ?>" href="<?php //echo home_url(); ?>/modulos-kits/page/5">Nichos</a>-->
+        <!--</div>-->
       </div>
 
       <div class="content">
@@ -88,46 +99,55 @@
   
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
-        <dt><?php echo $k; ?>: </dt>
-        <dd><?php echo $d; ?></dd>
+        <dt><?php //echo $k; ?></dt>
+        <dd>
+          <?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
+        </dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
-
-    <div class="btns"
-      data-featherlight-gallery 
-      data-featherlight-filter="a"
-    >
-      
-      <a href="#cores-<?php echo $slug; ?>"
-        data-featherlight="#lb-cores-<?php echo $slug; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-cores"
-      >
-        cores
-      </a>
-      
-      <?php if ($p->puxadores === "true" ) { ?>
-      <a href="#puxadores-<?php echo $slug; ?>"
-        data-featherlight="#lb-puxadores-<?php echo $slug; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-puxadores"
-      >
-        puxadores
-      </a>
+    
+    <div class="tampos">
+      <?php if ($p->tampos === "Tampos" ) { ?>
+            <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" />
       <?php } ?>
+    </div>
       
-      <?php if ($p->tampos === "true" ) { ?>
-      <a href="#tampos-<?php echo $slug; ?>"
-        data-featherlight="#lb-tampos-<?php echo $slug; ?>"
-        data-prodid="<?php echo $p->prodID; ?>"
-        data-prodtitle="<?php echo $p->prodTitle; ?>"
-        class="btn-tampos"
-      >
-        tampos
-      </a>
-      <?php } ?>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    
+    <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
+      
+      <?php //$lb_link = ($slug === 'nichos-kits' ? '#lb-cores-nichos-kits' : '#lb-cores-kits'); ?>
+      
+      <!--<a href="#cores-kits"-->
+      <!--  data-featherlight="<?php //echo $lb_link; ?>"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-cores"-->
+      <!-->-->
+      <!--  cores-->
+      <!--</a>-->
+      
+      <?php //if ($p->puxadores === "true" ) { ?>
+      <!--<a href="#puxadores-kits"-->
+      <!--  data-featherlight="#lb-puxadores-kits"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-puxadores"-->
+      <!-->-->
+      <!--  puxadores-->
+      <!--</a>-->
+      <?php //} ?>
+      
+      <?php //if ($p->tampos === "true" ) { ?>
+      <!--<a href="#tampos-kits"-->
+      <!--  data-featherlight="#lb-tampos-kits"-->
+      <!--  data-prodid="<?php //echo $p->prodID; ?>"-->
+      <!--  data-prodtitle="<?php //echo $p->prodTitle; ?>"-->
+      <!--  class="btn-tampos"-->
+      <!-->-->
+      <!--  tampos-->
+      <!--</a>-->
+      <?php //} ?>
     </div>
   </div><!-- /.prod-box -->
 <?php } ?>
@@ -154,23 +174,17 @@ $wp_query = $temp_query;
 ?>
 
 <!-- lightboxes -->
-<div id="lb-cores-modelos-normais-kits" class="hidden">
-  <?php require_once('cores-modelos-normais-kits.php'); ?>
+<div id="lb-cores-kits" class="hidden">
+  <?php //require_once('cores-kits.php'); ?>
 </div>
-<div id="lb-cores-modelos-madeirados-kits" class="hidden">
-  <?php require_once('cores-modelos-madeirados-kits.php'); ?>
+<div id="lb-cores-nichos-kits" class="hidden">
+  <?php //require_once('cores-nichos-kits.php'); ?>
 </div>
-<div id="lb-puxadores-modelos-normais-kits" class="hidden">
-  <?php require_once('puxadores-modelos-normais-kits.php'); ?>
+<div id="lb-puxadores-kits" class="hidden">
+  <?php //require_once('puxadores-kits.php'); ?>
 </div>
-<div id="lb-puxadores-modelos-madeirados-kits" class="hidden">
-  <?php require_once('puxadores-modelos-madeirados-kits.php'); ?>
-</div>
-<div id="lb-tampos-modelos-normais-kits" class="hidden">
-  <?php require_once('tampos-modelos-normais-kits.php'); ?>
-</div>
-<div id="lb-tampos-modelos-madeirados-kits" class="hidden">
-  <?php require_once('tampos-modelos-madeirados-kits.php'); ?>
+<div id="lb-tampos-kits" class="hidden">
+  <?php //require_once('tampos-kits.php'); ?>
 </div>
 
 

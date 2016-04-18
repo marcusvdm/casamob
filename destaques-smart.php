@@ -2,7 +2,7 @@
     <tr>
         <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-cores.svg" alt=""></td>
         <td>
-            <p>11 cores</p>
+            <p>9 cores</p>
         </td>
     </tr>
     <tr>
@@ -23,10 +23,10 @@
     <!--      <p>Combinações exclusivas, <br>com mais e 10.000 possibilidades <br>de ambientes</p>-->
     <!--    </td>-->
     <!--</tr>-->
-    <tr>
-        <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-utilidades.svg" alt=""></td>
-        <td>
-          <p>Diversas utilidades, para qualquer ambiente da casa</p>
-        </td>
-    </tr>
+    <!--<tr>-->
+    <!--    <td class="destaques--img"><img src="<?php //bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-utilidades.svg" alt=""></td>-->
+    <!--    <td>-->
+    <!--      <p>Diversas utilidades, para qualquer ambiente da casa</p>-->
+    <!--    </td>-->
+    <!--</tr>-->
 </table>

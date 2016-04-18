@@ -103,26 +103,21 @@
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
         <dd>
-          <?php if (($k === "Cores" ) && ($p->linha === "compacta" )){ echo $k.":"; ?>
-                <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
-          <?php } else if ($k === "Cores" ) { echo $k.":"; ?>
-                <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $d; ?>" style="width:100%; max-width:40px;" />
-          <?php } else if ($k === "Cor" ) { echo $k.":"; ?>
-                  <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
-          <?php } ?>
+          <?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $d; ?>" style="width:100%; max-width:35px;" />
         </dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
     
     <div class="tampos">
-      <?php if (($p->tampos === "Tampos" ) && ($p->linha === "compacta")) { ?>
-            <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" />
-      <?php } else if (($p->tampos === "Tampos" ) && ($p->linha === "")) { ?>
+      <?php if ($p->tampos === "Tampos" ) { ?>
             <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" />
       <?php } ?>
     </div>
-      
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    
+    <div class="puxadores-play">
+      <div class="obj"><p><?php echo $p->NomePuxadorUm; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $p->ImgPuxadorUm; ?>"  /></div>
+      <div class="obj"><p><?php echo $p->NomePuxadorDois; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/play/<?php echo $p->ImgPuxadorDois; ?>" /></div>
+    </div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       

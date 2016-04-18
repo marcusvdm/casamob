@@ -26,9 +26,9 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-quadri">Diferenciais</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-quadri">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-quadri">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-quadri">Acessórios</a>
+          <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-quadri">Acessórios</a>-->
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-quadri">Ambientes</a>
         </nav>
         

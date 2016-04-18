@@ -60,20 +60,27 @@
     }
 
     &.linha-city {
-      top:                  0;
-      left:                 33.33333%;
-      //height:               100%;
-      height:               50%;
+      left:               25%;
+      height:             50%;
+      width:              25%;
+      bottom:             0;
 
       @include floor($hero-city, $hero-city-base64);
       @include media-query (portable) { .btn { background: $hero-city; } };
-      @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 22%; }
-      @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 33.28% ;}
-
-      .cozinha,
-      .modelo {
+      @include media-query(lap-and-up) {  padding-top: 0; };
+       @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 61.84%;}
+       @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 73.12% ;}
+      
+      .modelo {visibility: hidden;} 
+      .cozinha {
+        top: -$base-spacing-unit/4;
+        width: 100%;
+        max-width: 250px;
+        
+        img { max-width: 250px; width: 100%; }
+        
         @include media-query(lap){
-          top: 0;
+          top: 5px;
         }
       }
 
@@ -81,7 +88,7 @@
          color: $verde-cha; 
         
         @include media-query(lap){
-          top: -40px;
+          top: -60px;
           font-size: 24px;
         }
         @include media-query(landscape){
@@ -92,27 +99,33 @@
     }
 
     &.kits {
-      top:                  0;
-      right:                0;
-      //height:               100%;
+      left:                 50%;
       height:               50%;
+      width:                25%;
+      bottom:               0;
 
       @include floor($hero-kits, $hero-kits-base64);
       @include media-query (portable) { .btn { background: $hero-kits; } };
-      @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 35.28%;}
-      @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 46.56% ;}
-
-      .cozinha,
-      .modelo {
+      @include media-query(lap-and-up) {  padding-top: 0; };
+       @include media-query(palm){left: 0; width: 100%;  height: 12.28%; top: 75.12%;}
+       @include media-query(landscape){left: 0; width: 100%; height: 12.28%; top: 85.4% ;}
+      
+      
+      .cozinha, .modelo {
+        top: -$base-spacing-unit/4;
+        
         @include media-query(lap){
-          top: 0;
+          top: 20px;
         }
       }
 
       .cozinhas-title { 
-         color: $verde-alecrim; 
+        color: $verde-alecrim; 
         
-        @include media-query(lap){top: -40px; font-size: 24px;}
+        @include media-query(lap){
+          top: -60px;
+          font-size: 24px;
+        }
         @include media-query(landscape){
           top: -10px;
           font-size: 18px;
@@ -133,10 +146,14 @@
       @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 59.84% ;}
       
       .cozinha {
-        top: -$base-spacing-unit/4;
+        top: -$base-spacing-unit;
+        width: 100%;
+        max-width: 250px;
+        
+        img { max-width: 250px; width: 100%; }
         
         @include media-query(lap){
-          top: 20px;
+          top: 5px;
         }
       }
 
@@ -155,23 +172,25 @@
     }
     
     &.linha-smart {
-      left:               25%;
-      height:             50%;
-      width:              25%;
-      bottom:             0;
+      top:                  0;
+      left:                 33.33333%;
+      //height:               100%;
+      height:               50%;
 
       @include floor($hero-smart, $hero-smart-base64);
       @include media-query (portable) { .btn { background: $hero-smart; } };
-      @include media-query(lap-and-up) {  padding-top: 0; };
-       @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 61.84%;}
-       @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 73.12% ;}
-      
-       
+      @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 22%; }
+      @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 33.28% ;}
+
       .cozinha {
-        top: -$base-spacing-unit/4;
+        top: -$base-spacing-unit;
+        width: 100%;
+        //max-width: 200px;
+        
+        img { max-width: 200px; width: 100%; }
         
         @include media-query(lap){
-          top: 20px;
+          top: 5px;
         }
       }
 
@@ -179,7 +198,7 @@
          color: $cm_petroleum; 
         
         @include media-query(lap){
-          top: -60px;
+          top: -40px;
           font-size: 24px;
         }
         @include media-query(landscape){
@@ -190,33 +209,32 @@
     }
     
     &.linha-quadri {
-      left:                 50%;
+      top:                  0;
+      right:                0;
+      //height:               100%;
       height:               50%;
-      width:                25%;
-      bottom:               0;
 
       @include floor($hero-quadri, $hero-quadri-base64);
       @include media-query (portable) { .btn { background: $hero-quadri; } };
-      @include media-query(lap-and-up) {  padding-top: 0; };
-       @include media-query(palm){left: 0; width: 100%;  height: 12.28%; top: 75.12%;}
-       @include media-query(landscape){left: 0; width: 100%; height: 12.28%; top: 85.4% ;}
-      
-      
+      @include media-query(palm){left: 0; width: 100%; height: 13.28%; top: 35.28%;}
+      @include media-query(landscape){left: 0; width: 100%; height: 13.28%; top: 46.56% ;}
+
       .cozinha {
-        top: -$base-spacing-unit/4;
+        top: -$base-spacing-unit;
+        width: 100%;
+        //max-width: 200px;
+        
+        img { max-width: 200px; width: 100%; }
         
         @include media-query(lap){
-          top: 20px;
+          top: 5px;
         }
       }
 
       .cozinhas-title { 
-        color: $cm_red; 
+         color: $cm_red; 
         
-        @include media-query(lap){
-          top: -60px;
-          font-size: 24px;
-        }
+        @include media-query(lap){top: -40px; font-size: 24px;}
         @include media-query(landscape){
           top: -10px;
           font-size: 18px;
@@ -237,9 +255,14 @@
       @include media-query(landscape){left: 0; width: 100%; height: 12.28%; top: 97.68% ;}
       
       .cozinha {
-        top: -$base-spacing-unit/4;
+        top: -$base-spacing-unit;
+        width: 100%;
+        max-width: 250px;
         
-        @include media-query(lap) { top: 20px; }
+        img { max-width: 250px; width: 100%; }
+        
+        @include media-query(lap) { top: 5px; }
+        
       }
 
       .cozinhas-title { 
@@ -448,17 +471,3 @@
   }
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

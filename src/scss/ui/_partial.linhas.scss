@@ -389,7 +389,7 @@
 }
 
 .prod-data {
-  @include position(absolute, 50% 0 auto auto);
+  @include position(absolute, 50% 0 -100px auto);
   @include font-size(14px, 1.5);
 
   font-weight: $bold;
@@ -428,6 +428,17 @@
   max-width: 150px;
   
   p { color: #59496a;}
+}
+.puxadores-play {
+  @include position(absolute, 74% 1% auto auto);
+  width: 100%;
+  max-width: 200px;
+  
+  p { color: #59496a;}
+  
+  img { width:100%; max-width:80px; }
+  
+  .obj{ float:right; width:80px; margin-left:20px;}
 }
 .tampos {
   @include position(absolute, 78% auto auto auto);
@@ -575,6 +586,21 @@
 .G70-2P-Gabinete-2-Portas::after { background-image: url(../images/modulos-aereos/play/G70-2P-Gabinete-2-Portas.png) }
 .Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas::after { background-image: url(../images/modulos-aereos/play/Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas.png) }
 
+/*KITS*/
+.KT120-4P-3G-kit-1200-4-portas-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-4P-3G-kit-1200-4-portas-3-gavetas.png) }
+.KT120-5P-3G-kit-1200-5-portas-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-5P-3G-kit-1200-5-portas-3-gavetas.png) }
+.KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas.png) }
+.KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas.png) }
+
+/*COMPLEMENTOS*/
+.NV25-60-Nicho-250x600::after               { background-image: url(../images/modulos-aereos/complementos/NV25-60-Nicho-250x600.png) }
+.NV25-120-Nicho-250x1200::after               { background-image: url(../images/modulos-aereos/complementos/NV25-120-Nicho-250x1200.png) }
+.NH40-35-Nicho-400x350::after               { background-image: url(../images/modulos-aereos/complementos/NH40-35-Nicho-400x350.png) }
+.NH60-20-Nicho-600x200::after               { background-image: url(../images/modulos-aereos/complementos/NH60-20-Nicho-600x200.png) }
+.NH60-25-Nicho-600x250::after               { background-image: url(../images/modulos-aereos/complementos/NH60-25-Nicho-600x250.png) }
+.NH60-35-Nicho-600x350::after               { background-image: url(../images/modulos-aereos/complementos/NV25-60-Nicho-250x600.png) }
+.NV60-60-Nicho-600x600::after               { background-image: url(../images/modulos-aereos/complementos/NV60-60-Nicho-600x600.png) }
+.NH70-35-Nicho-700x350::after               { background-image: url(../images/modulos-aereos/complementos/NH70-35-Nicho-700x350.png) }
 
 .v-350x600-1p::after               { background-image: url(../images/modulos-aereos/v-350x600-1p.png) }
 .v-350x1200-1p::after              { background-image: url(../images/modulos-aereos/v-350x1200-1p.png) }

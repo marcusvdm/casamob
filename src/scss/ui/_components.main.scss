@@ -17,6 +17,7 @@
 @import '_partial.trabalhe.scss';
 @import '_partial.suporte.scss';
 @import '_partial.imprensa.scss';
+@import '_partial.complementos.scss';
 
 .hidden { display: none; }
 .hidden.featherlight-inner { display: block; }
@@ -443,15 +444,15 @@ h2.tipo-modulo {
 }
 
 .all-screen {
-	display: block;
-	background-color: #242424;
-	background-color: rgba( 36, 36, 36, .9 );
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+  display: block;
+  background-color: #242424;
+  background-color: rgba( 36, 36, 36, .9 );
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .banner_lighthome { 

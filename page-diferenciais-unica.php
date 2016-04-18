@@ -28,10 +28,10 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/diferenciais-unica">Diferenciais</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-play">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-play">Acessórios</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-play">Ambientes</a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/diferenciais-unica">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-unica">Módulos</a>
+          <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-unica">Acessórios</a>-->
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica">Ambientes</a>
         </nav>
         
         <figure class="img-slider"
@@ -50,8 +50,8 @@
           while (have_posts() ) { the_post();
           $childSlug = basename(get_permalink());
         ?>
-          <a href="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/lightbox-dif-<?php echo $childSlug; ?>.jpg" title="<?php the_title();?>">
-            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/slide-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
+          <a href="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/lightbox-dif-<?php echo $childSlug; ?>.jpg" title="<?php the_title();?>">
+            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/slide-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
           </a>
         <?php } ?>
         </figure>
@@ -78,7 +78,7 @@
           $childSlug = basename(get_permalink());
         ?>
           <a class="thumb" data-slick-index="<?php echo $i; ?>" href="<?php bloginfo('template_url');?>/#<?php echo $childSlug; ?>" title="<?php the_title();?>">
-            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/thumb-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
+            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/thumb-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
           </a>
 
         <?php $i++; } ?>

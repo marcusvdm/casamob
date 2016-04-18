@@ -25,72 +25,6 @@
   
   
     </div><!-- /.content.linha-play -->
-  
-    <div class="content linha linha-city js-anchor" data-stellar-offset-parent="true">
-  
-      <div class="offset">
-      
-        <h2 class="cozinhas-title">
-         <!--<h2 class="cozinhas-title" data-stellar-ratio="2">-->
-          <small>Linha</small> City
-        </h2>
-  
-        <div class="modelo">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-city.png" alt="">
-        </div>
-  
-        <div class="cozinha">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-city.png" alt="">
-        </div>
-  
-      </div><!-- /.offset -->
-  
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#city" data-panel="city" class="btn">Clique e conheça</a>
-  
-  
-    </div><!-- /.content.linha-city -->
-  
-    <div class="content linha kits js-anchor" data-stellar-offset-parent="true">
-  
-      <div class="offset">
-  
-        <h2 class="cozinhas-title">
-          <small class="show-hide">Linha</small> Kits
-        </h2>
-  
-        <div class="modelo">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-kits.png" alt="">
-        </div>
-        
-        <div class="cozinha">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-kits.png" alt="">
-        </div>
-  
-      </div><!-- /.offset -->
-  
-       <a href="<?php echo esc_url( home_url( '/' ) ); ?>#kits" data-panel="kits" class="btn">Clique e conheça</a> 
-      <!--<span class="btn btn--placeholder">Novidades em Breve</span>-->
-  
-  
-    </div><!-- /.content.linha-kits -->
-    
-    <div class="content linha linha-unica js-anchor" data-stellar-offset-parent="true">
-      <div class="offset">
-  
-        <h2 class="cozinhas-title">
-          <small>Linha</small> Unica 3.5
-        </h2>
-  
-        <div class="cozinha">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-unica.png" alt="">
-        </div>
-  
-    </div><!-- /.offset -->
-  
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#unica" data-panel="unica" class="btn">Clique e conheça</a>
-  
-  
-    </div><!-- /.content.linha-unica -->
     
     <div class="content linha linha-smart js-anchor" data-stellar-offset-parent="true">
       <div class="offset">
@@ -114,7 +48,7 @@
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small>Linha</small> Quadri
+          <small class="show-hide">Linha</small> Quadri
         </h2>
   
         <div class="cozinha">
@@ -128,11 +62,78 @@
   
     </div><!-- /.content.linha-quadri -->
     
+    
+    <div class="content linha linha-unica js-anchor" data-stellar-offset-parent="true">
+      <div class="offset">
+  
+        <h2 class="cozinhas-title">
+          <small>Linha</small> Unica 3.5
+        </h2>
+  
+        <div class="cozinha">
+          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-unica.png" alt="">
+        </div>
+  
+    </div><!-- /.offset -->
+  
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#unica" data-panel="unica" class="btn">Clique e conheça</a>
+  
+  
+    </div><!-- /.content.linha-unica -->
+    
+    <div class="content linha linha-city js-anchor" data-stellar-offset-parent="true">
+  
+      <div class="offset">
+      
+        <h2 class="cozinhas-title">
+         <!--<h2 class="cozinhas-title" data-stellar-ratio="2">-->
+          <small>Linha</small> City
+        </h2>
+  
+        <div class="modelo">
+          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-city.png" alt="">
+        </div>
+  
+        <div class="cozinha">
+          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-city.png" alt="">
+        </div>
+  
+      </div><!-- /.offset -->
+  
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#city" data-panel="city" class="btn">Clique e conheça</a>
+  
+  
+    </div><!-- /.content.linha-city -->
+    
+    <div class="content linha kits js-anchor" data-stellar-offset-parent="true">
+  
+      <div class="offset">
+  
+        <h2 class="cozinhas-title">
+          <small>Linha</small> Kits
+        </h2>
+  
+        <div class="modelo">
+          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-kits.png" alt="">
+        </div>
+        
+        <div class="cozinha">
+          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-kits.png" alt="">
+        </div>
+  
+      </div><!-- /.offset -->
+  
+       <a href="<?php echo esc_url( home_url( '/' ) ); ?>#kits" data-panel="kits" class="btn">Clique e conheça</a> 
+      <!--<span class="btn btn--placeholder">Novidades em Breve</span>-->
+  
+  
+    </div><!-- /.content.linha-kits -->
+    
     <div class="content linha linha-complemento js-anchor" data-stellar-offset-parent="true">
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small>Linha</small> Complementos
+           Complementos<small> de Linhas</small>
         </h2>
   
         <div class="cozinha">
@@ -141,7 +142,7 @@
   
     </div><!-- /.offset -->
   
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#complemento" data-panel="complemento" class="btn">Clique e conheça</a>
+    <a href="<?php echo esc_url( home_url( '/modulos-complementos' ) ); ?>" data-panel="complemento" class="btn">Clique e conheça</a>
   
   
     </div><!-- /.content.linha-complemento -->

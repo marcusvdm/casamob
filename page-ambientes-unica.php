@@ -30,9 +30,9 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-unica">Diferenciais</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-unica">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-unica">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-unica">Acessórios</a>
+          <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-unica">Acessórios</a>-->
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-unica">Ambientes</a>
         </nav>
         
@@ -40,10 +40,10 @@
             data-featherlight-gallery 
             data-featherlight-filter="a">
         <?php 
-          $exceptions = array(0, 4, 8);
+          //$exceptions = array(0, 4, 8);
           //$remove = array(10,19,20);
           
-          for ($i = 0; $i <= 21; $i++) {
+          for ($i = 0; $i <= 5; $i++) {
             
           if (!in_array($i, $remove)) {  
             if (!in_array($i, $exceptions)) {

@@ -3070,7 +3070,7 @@ html.touch {
   .hero .city-garrafa2 {
     display: block; } }
 
-@media screen and (min-width: 1024px) and (max-width: 1320px) {
+@media screen and (min-width: 1024px) and (max-width: 1499px) {
   .hero .play-modelo {
     margin-left: 120px;
     margin-top: -154px; }
@@ -3521,7 +3521,7 @@ html.touch {
   background-image: none;
   padding-right: 0;
   background: #fcb246; }
-  @media screen and (min-width: 1024px) and (max-width: 1320px) {
+  @media screen and (min-width: 1024px) and (max-width: 1499px) {
     .cores .intro {
       margin: -100px 50% 20px 180px; } }
 
@@ -3649,9 +3649,10 @@ html.touch {
             top: -10px;
             font-size: 18px; } }
     .produtos .linha.linha-city {
-      top: 0;
-      left: 33.33333%;
+      left: 25%;
       height: 50%;
+      width: 25%;
+      bottom: 0;
       background: linear-gradient(to bottom, #36344d 0%, #413e5c 70%, #34324a 80%);
       background: #36344d;
       /* Old browsers */
@@ -3669,36 +3670,48 @@ html.touch {
       @media screen and (max-width: 1023px) {
         .produtos .linha.linha-city .btn {
           background: #36344d; } }
+      @media screen and (min-width: 720px) {
+        .produtos .linha.linha-city {
+          padding-top: 0; } }
       @media screen and (max-width: 719px) {
         .produtos .linha.linha-city {
           left: 0;
           width: 100%;
           height: 13.28%;
-          top: 22%; } }
+          top: 61.84%; } }
       @media screen and (max-height: 500px) {
         .produtos .linha.linha-city {
           left: 0;
           width: 100%;
           height: 13.28%;
-          top: 33.28%; } }
-      @media screen and (min-width: 720px) and (max-width: 1023px) {
-        .produtos .linha.linha-city .cozinha,
-        .produtos .linha.linha-city .modelo {
-          top: 0; } }
+          top: 73.12%; } }
+      .produtos .linha.linha-city .modelo {
+        visibility: hidden; }
+      .produtos .linha.linha-city .cozinha {
+        top: -5px;
+        width: 100%;
+        max-width: 250px; }
+        .produtos .linha.linha-city .cozinha img {
+          max-width: 250px;
+          width: 100%; }
+        @media screen and (min-width: 720px) and (max-width: 1023px) {
+          .produtos .linha.linha-city .cozinha {
+            top: 5px; } }
       .produtos .linha.linha-city .cozinhas-title {
         color: #8caa71; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.linha-city .cozinhas-title {
-            top: -40px;
+            top: -60px;
             font-size: 24px; } }
         @media screen and (max-height: 500px) {
           .produtos .linha.linha-city .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
     .produtos .linha.kits {
-      top: 0;
-      right: 0;
+      left: 50%;
       height: 50%;
+      width: 25%;
+      bottom: 0;
       background: linear-gradient(to bottom, #dc4f28 0%, #e0613e 70%, #db4b24 80%);
       background: #dc4f28;
       /* Old browsers */
@@ -3716,27 +3729,31 @@ html.touch {
       @media screen and (max-width: 1023px) {
         .produtos .linha.kits .btn {
           background: #dc4f28; } }
+      @media screen and (min-width: 720px) {
+        .produtos .linha.kits {
+          padding-top: 0; } }
       @media screen and (max-width: 719px) {
         .produtos .linha.kits {
           left: 0;
           width: 100%;
-          height: 13.28%;
-          top: 35.28%; } }
+          height: 12.28%;
+          top: 75.12%; } }
       @media screen and (max-height: 500px) {
         .produtos .linha.kits {
           left: 0;
           width: 100%;
-          height: 13.28%;
-          top: 46.56%; } }
-      @media screen and (min-width: 720px) and (max-width: 1023px) {
-        .produtos .linha.kits .cozinha,
-        .produtos .linha.kits .modelo {
-          top: 0; } }
+          height: 12.28%;
+          top: 85.4%; } }
+      .produtos .linha.kits .cozinha, .produtos .linha.kits .modelo {
+        top: -5px; }
+        @media screen and (min-width: 720px) and (max-width: 1023px) {
+          .produtos .linha.kits .cozinha, .produtos .linha.kits .modelo {
+            top: 20px; } }
       .produtos .linha.kits .cozinhas-title {
         color: #0c6347; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.kits .cozinhas-title {
-            top: -40px;
+            top: -60px;
             font-size: 24px; } }
         @media screen and (max-height: 500px) {
           .produtos .linha.kits .cozinhas-title {
@@ -3780,10 +3797,15 @@ html.touch {
           height: 13.28%;
           top: 59.84%; } }
       .produtos .linha.linha-unica .cozinha {
-        top: -5px; }
+        top: -20px;
+        width: 100%;
+        max-width: 250px; }
+        .produtos .linha.linha-unica .cozinha img {
+          max-width: 250px;
+          width: 100%; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.linha-unica .cozinha {
-            top: 20px; } }
+            top: 5px; } }
       .produtos .linha.linha-unica .cozinhas-title {
         color: #2d233f; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
@@ -3795,10 +3817,9 @@ html.touch {
             top: -10px;
             font-size: 18px; } }
     .produtos .linha.linha-smart {
-      left: 25%;
+      top: 0;
+      left: 33.33333%;
       height: 50%;
-      width: 25%;
-      bottom: 0;
       background: linear-gradient(to bottom, #94b7c7 0%, #a5c2d0 70%, #91b5c5 80%);
       background: #94b7c7;
       /* Old browsers */
@@ -3816,41 +3837,41 @@ html.touch {
       @media screen and (max-width: 1023px) {
         .produtos .linha.linha-smart .btn {
           background: #94b7c7; } }
-      @media screen and (min-width: 720px) {
-        .produtos .linha.linha-smart {
-          padding-top: 0; } }
       @media screen and (max-width: 719px) {
         .produtos .linha.linha-smart {
           left: 0;
           width: 100%;
           height: 13.28%;
-          top: 61.84%; } }
+          top: 22%; } }
       @media screen and (max-height: 500px) {
         .produtos .linha.linha-smart {
           left: 0;
           width: 100%;
           height: 13.28%;
-          top: 73.12%; } }
+          top: 33.28%; } }
       .produtos .linha.linha-smart .cozinha {
-        top: -5px; }
+        top: -20px;
+        width: 100%; }
+        .produtos .linha.linha-smart .cozinha img {
+          max-width: 200px;
+          width: 100%; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.linha-smart .cozinha {
-            top: 20px; } }
+            top: 5px; } }
       .produtos .linha.linha-smart .cozinhas-title {
         color: #0f4342; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.linha-smart .cozinhas-title {
-            top: -60px;
+            top: -40px;
             font-size: 24px; } }
         @media screen and (max-height: 500px) {
           .produtos .linha.linha-smart .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
     .produtos .linha.linha-quadri {
-      left: 50%;
+      top: 0;
+      right: 0;
       height: 50%;
-      width: 25%;
-      bottom: 0;
       background: linear-gradient(to bottom, #cd7d29 0%, #d78a38 70%, #c97a28 80%);
       background: #cd7d29;
       /* Old browsers */
@@ -3868,31 +3889,32 @@ html.touch {
       @media screen and (max-width: 1023px) {
         .produtos .linha.linha-quadri .btn {
           background: #cd7d29; } }
-      @media screen and (min-width: 720px) {
-        .produtos .linha.linha-quadri {
-          padding-top: 0; } }
       @media screen and (max-width: 719px) {
         .produtos .linha.linha-quadri {
           left: 0;
           width: 100%;
-          height: 12.28%;
-          top: 75.12%; } }
+          height: 13.28%;
+          top: 35.28%; } }
       @media screen and (max-height: 500px) {
         .produtos .linha.linha-quadri {
           left: 0;
           width: 100%;
-          height: 12.28%;
-          top: 85.4%; } }
+          height: 13.28%;
+          top: 46.56%; } }
       .produtos .linha.linha-quadri .cozinha {
-        top: -5px; }
+        top: -20px;
+        width: 100%; }
+        .produtos .linha.linha-quadri .cozinha img {
+          max-width: 200px;
+          width: 100%; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.linha-quadri .cozinha {
-            top: 20px; } }
+            top: 5px; } }
       .produtos .linha.linha-quadri .cozinhas-title {
         color: #761c27; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.linha-quadri .cozinhas-title {
-            top: -60px;
+            top: -40px;
             font-size: 24px; } }
         @media screen and (max-height: 500px) {
           .produtos .linha.linha-quadri .cozinhas-title {
@@ -3936,10 +3958,15 @@ html.touch {
           height: 12.28%;
           top: 97.68%; } }
       .produtos .linha.linha-complemento .cozinha {
-        top: -5px; }
+        top: -20px;
+        width: 100%;
+        max-width: 250px; }
+        .produtos .linha.linha-complemento .cozinha img {
+          max-width: 250px;
+          width: 100%; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
           .produtos .linha.linha-complemento .cozinha {
-            top: 20px; } }
+            top: 5px; } }
       .produtos .linha.linha-complemento .cozinhas-title {
         color: #2d233f; }
         @media screen and (min-width: 720px) and (max-width: 1023px) {
@@ -3989,7 +4016,7 @@ html.touch {
         font-size: 30px;
         font-size: 1.875rem;
         line-height: 0.8; } }
-    @media screen and (min-width: 1024px) and (max-width: 1320px) {
+    @media screen and (min-width: 1024px) and (max-width: 1499px) {
       .produtos .cozinhas-title {
         font-size: 30px;
         font-size: 1.875rem;
@@ -4068,7 +4095,7 @@ html.touch {
         bottom: auto;
         top: 50%;
         margin-top: 120px; } }
-    @media screen and (min-width: 1024px) and (max-width: 1320px) {
+    @media screen and (min-width: 1024px) and (max-width: 1499px) {
       .produtos .btn {
         bottom: auto;
         top: 50%;
@@ -4540,7 +4567,7 @@ html.touch {
   position: absolute;
   top: 50%;
   right: 0;
-  bottom: auto;
+  bottom: -100px;
   left: auto;
   font-size: 14px;
   font-size: 0.875rem;
@@ -4560,7 +4587,7 @@ html.touch {
   .prod-data dd {
     float: left;
     color: #59496a; }
-    @media screen and (min-width: 1024px) and (max-width: 1320px) {
+    @media screen and (min-width: 1024px) and (max-width: 1499px) {
       .prod-data dd {
         clear: both;
         margin-bottom: 3px; } }
@@ -4582,6 +4609,24 @@ html.touch {
   max-width: 150px; }
   .puxadores p {
     color: #59496a; }
+
+.puxadores-play {
+  position: absolute;
+  top: 74%;
+  right: 1%;
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  max-width: 200px; }
+  .puxadores-play p {
+    color: #59496a; }
+  .puxadores-play img {
+    width: 100%;
+    max-width: 80px; }
+  .puxadores-play .obj {
+    float: right;
+    width: 80px;
+    margin-left: 20px; }
 
 .tampos {
   position: absolute;
@@ -4972,6 +5017,44 @@ html.touch {
 
 .Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas::after {
   background-image: url(../images/modulos-aereos/play/Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas.png); }
+
+/*KITS*/
+.KT120-4P-3G-kit-1200-4-portas-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/kits/KT120-4P-3G-kit-1200-4-portas-3-gavetas.png); }
+
+.KT120-5P-3G-kit-1200-5-portas-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/kits/KT120-5P-3G-kit-1200-5-portas-3-gavetas.png); }
+
+.KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/kits/KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas.png); }
+
+.KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/kits/KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas.png); }
+
+/*COMPLEMENTOS*/
+.NV25-60-Nicho-250x600::after {
+  background-image: url(../images/modulos-aereos/complementos/NV25-60-Nicho-250x600.png); }
+
+.NV25-120-Nicho-250x1200::after {
+  background-image: url(../images/modulos-aereos/complementos/NV25-120-Nicho-250x1200.png); }
+
+.NH40-35-Nicho-400x350::after {
+  background-image: url(../images/modulos-aereos/complementos/NH40-35-Nicho-400x350.png); }
+
+.NH60-20-Nicho-600x200::after {
+  background-image: url(../images/modulos-aereos/complementos/NH60-20-Nicho-600x200.png); }
+
+.NH60-25-Nicho-600x250::after {
+  background-image: url(../images/modulos-aereos/complementos/NH60-25-Nicho-600x250.png); }
+
+.NH60-35-Nicho-600x350::after {
+  background-image: url(../images/modulos-aereos/complementos/NV25-60-Nicho-250x600.png); }
+
+.NV60-60-Nicho-600x600::after {
+  background-image: url(../images/modulos-aereos/complementos/NV60-60-Nicho-600x600.png); }
+
+.NH70-35-Nicho-700x350::after {
+  background-image: url(../images/modulos-aereos/complementos/NH70-35-Nicho-700x350.png); }
 
 .v-350x600-1p::after {
   background-image: url(../images/modulos-aereos/v-350x600-1p.png); }
@@ -5729,9 +5812,9 @@ html.touch {
     margin-left: 330px; } }
 
 .quadri .txt-slider {
-  background-color: #59496a; }
+  background-color: #cd7d29; }
   .quadri .txt-slider h3 {
-    color: #e0a243; }
+    color: #59496a; }
   .quadri .txt-slider .txt.content {
     outline: none; }
 
@@ -6084,6 +6167,100 @@ html.touch {
 
 #html5-image {
   overflow: auto !important; }
+
+.complementos .txt-slider {
+  background-color: #648357; }
+  .complementos .txt-slider h3 {
+    color: #e0a243; }
+  .complementos .txt-slider .txt.content {
+    outline: none; }
+
+.complementos .menu-linha {
+  background: #c8752f; }
+
+.complementos .menu-linha--item.active,
+.complementos .menu-linha--item:hover {
+  background-color: #648357;
+  font-weight: 600;
+  border: 1px solid #648357; }
+
+.complementos .link-modulos {
+  color: #648357; }
+
+.complementos .prod-box h4 {
+  background: #648357; }
+
+@media screen and (min-width: 1024px) {
+  .complementos .color-box.prata-gelo {
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    bottom: auto;
+    left: auto; } }
+
+@media screen and (min-width: 1500px) {
+  .complementos .color-box.prata-gelo {
+    position: absolute;
+    top: 330px;
+    right: 550px;
+    bottom: auto;
+    left: auto; } }
+
+@media screen and (min-width: 1024px) {
+  .complementos .color-box.preto-jabuticaba {
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    bottom: auto;
+    left: auto; } }
+
+@media screen and (min-width: 1500px) {
+  .complementos .color-box.preto-jabuticaba {
+    position: absolute;
+    top: 220px;
+    right: 440px;
+    bottom: auto;
+    left: auto; } }
+
+@media screen and (min-width: 1024px) {
+  .complementos .color-box.cinza-funghi {
+    position: absolute;
+    top: 300px;
+    right: 450px;
+    bottom: auto;
+    left: auto; } }
+
+@media screen and (min-width: 1500px) {
+  .complementos .color-box.cinza-funghi {
+    position: absolute;
+    top: 440px;
+    right: 660px;
+    bottom: auto;
+    left: auto; } }
+
+@media screen and (min-width: 1024px) {
+  .complementos.showcase .ambientes .thumb:nth-child(1), .complementos.showcase .ambientes .thumb:nth-child(10), .complementos.showcase .ambientes .thumb:nth-child(17), .complementos.showcase .ambientes .thumb:nth-child(18) {
+    margin-left: 150px; } }
+
+@media screen and (min-width: 1500px) {
+  .complementos.showcase .ambientes .thumb:nth-child(1), .complementos.showcase .ambientes .thumb:nth-child(10), .complementos.showcase .ambientes .thumb:nth-child(17), .complementos.showcase .ambientes .thumb:nth-child(18) {
+    margin-left: 220px; } }
+
+@media screen and (min-width: 1024px) {
+  .complementos.showcase .ambientes .thumb:nth-child(3), .complementos.showcase .ambientes .thumb:nth-child(9), .complementos.showcase .ambientes .thumb:nth-child(11), .complementos.showcase .ambientes .thumb:nth-child(15), .complementos.showcase .ambientes .thumb:nth-child(14), .complementos.showcase .ambientes .thumb:nth-child(20) {
+    margin-left: 75px; } }
+
+@media screen and (min-width: 1500px) {
+  .complementos.showcase .ambientes .thumb:nth-child(3), .complementos.showcase .ambientes .thumb:nth-child(9), .complementos.showcase .ambientes .thumb:nth-child(11), .complementos.showcase .ambientes .thumb:nth-child(15), .complementos.showcase .ambientes .thumb:nth-child(14), .complementos.showcase .ambientes .thumb:nth-child(20) {
+    margin-left: 110px; } }
+
+@media screen and (min-width: 1024px) {
+  .complementos.showcase .ambientes .thumb:nth-child(6) {
+    margin-left: 225px; } }
+
+@media screen and (min-width: 1500px) {
+  .complementos.showcase .ambientes .thumb:nth-child(6) {
+    margin-left: 330px; } }
 
 .hidden {
   display: none; }
