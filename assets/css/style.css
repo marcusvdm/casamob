@@ -3553,16 +3553,16 @@ html.touch {
 .diferenciais {
   background-color: #2d233f; }
   @media screen and (min-width: 1024px) {
-    .diferenciais .thumb:nth-child(1) {
+    .diferenciais .thumb:nth-child(2) {
       margin: 0 75px; }
-    .diferenciais .thumb:nth-child(6) {
+    .diferenciais .thumb:nth-child(3) {
       margin-right: 75px; }
     .diferenciais h2 {
       letter-spacing: 0.01em; } }
   @media screen and (min-width: 1500px) {
-    .diferenciais .thumb:nth-child(1) {
+    .diferenciais .thumb:nth-child(2) {
       margin: 0 110px; }
-    .diferenciais .thumb:nth-child(6) {
+    .diferenciais .thumb:nth-child(3) {
       margin-right: 110px; } }
   .diferenciais .txt-slider {
     background-color: #e0a243; }
@@ -3648,6 +3648,10 @@ html.touch {
           .produtos .linha.linha-play .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
+        @media screen and (min-width: 1500px) {
+          .produtos .linha.linha-play .cozinhas-title {
+            bottom: 0px;
+            font-size: 40px; } }
     .produtos .linha.linha-city {
       left: 25%;
       height: 50%;
@@ -3707,6 +3711,10 @@ html.touch {
           .produtos .linha.linha-city .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
+        @media screen and (min-width: 1500px) {
+          .produtos .linha.linha-city .cozinhas-title {
+            bottom: 0px;
+            font-size: 40px; } }
     .produtos .linha.kits {
       left: 50%;
       height: 50%;
@@ -3759,6 +3767,10 @@ html.touch {
           .produtos .linha.kits .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
+        @media screen and (min-width: 1500px) {
+          .produtos .linha.kits .cozinhas-title {
+            bottom: 0px;
+            font-size: 40px; } }
     .produtos .linha.linha-unica {
       left: 0;
       height: 50%;
@@ -3816,6 +3828,10 @@ html.touch {
           .produtos .linha.linha-unica .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
+        @media screen and (min-width: 1500px) {
+          .produtos .linha.linha-unica .cozinhas-title {
+            bottom: 0px;
+            font-size: 40px; } }
     .produtos .linha.linha-smart {
       top: 0;
       left: 33.33333%;
@@ -3868,6 +3884,10 @@ html.touch {
           .produtos .linha.linha-smart .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
+        @media screen and (min-width: 1500px) {
+          .produtos .linha.linha-smart .cozinhas-title {
+            bottom: 0px;
+            font-size: 40px; } }
     .produtos .linha.linha-quadri {
       top: 0;
       right: 0;
@@ -3920,6 +3940,10 @@ html.touch {
           .produtos .linha.linha-quadri .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
+        @media screen and (min-width: 1500px) {
+          .produtos .linha.linha-quadri .cozinhas-title {
+            bottom: 0px;
+            font-size: 40px; } }
     .produtos .linha.linha-complemento {
       right: 0;
       height: 50%;
@@ -3977,6 +4001,10 @@ html.touch {
           .produtos .linha.linha-complemento .cozinhas-title {
             top: -10px;
             font-size: 18px; } }
+        @media screen and (min-width: 1500px) {
+          .produtos .linha.linha-complemento .cozinhas-title {
+            bottom: 0px;
+            font-size: 40px; } }
     @media screen and (max-width: 719px) {
       .produtos .linha .to-mobile-play {
         top: 10px; } }
@@ -5056,6 +5084,46 @@ html.touch {
 .NH70-35-Nicho-700x350::after {
   background-image: url(../images/modulos-aereos/complementos/NH70-35-Nicho-700x350.png); }
 
+/*ACESSORIOS*/
+.TA040052-Tampo-400::after {
+  background-image: url(../images/modulos-aereos/acessorios/TA040052-Tampo-400.png); }
+
+.TA060052-Tampo-600::after {
+  background-image: url(../images/modulos-aereos/acessorios/TA060052-Tampo-600.png); }
+
+.TA080052-Tampo-800::after {
+  background-image: url(../images/modulos-aereos/acessorios/TA080052-Tampo-800.png); }
+
+.TC090052-Tampo-De-Canto-900::after {
+  background-image: url(../images/modulos-aereos/acessorios/TC090052-Tampo-De-Canto-900.png); }
+
+.TA120052-Tampo-1200::after {
+  background-image: url(../images/modulos-aereos/acessorios/TA120052-Tampo-1200.png); }
+
+.TA34PIA001-Pia-Inox-1200::after {
+  background-image: url(../images/modulos-aereos/acessorios/TA34PIA001-Pia-Inox-1200.png); }
+
+.RI040013-Rodape-400-prata::after {
+  background-image: url(../images/modulos-aereos/acessorios/RI040013-Rodape-400-prata.png); }
+
+.RI060013-Rodape-600-prata::after {
+  background-image: url(../images/modulos-aereos/acessorios/RI060013-Rodape-600-prata.png); }
+
+.RI080013-Rodape-800-prata::after {
+  background-image: url(../images/modulos-aereos/acessorios/RI080013-Rodape-800-prata.png); }
+
+.RI120013-Rodape-1200-prata::after {
+  background-image: url(../images/modulos-aereos/acessorios/RI120013-Rodape-1200-prata.png); }
+
+.BI04801522002-Base-Invisivel-Rasa-280-Prata-2-Pes::after {
+  background-image: url(../images/modulos-aereos/acessorios/BI04801522002-Base-Invisivel-Rasa-280-Prata-2-Pes.png); }
+
+.BI048015-Base-Invisivel-Profunda-480-Prata-1-Pe::after {
+  background-image: url(../images/modulos-aereos/acessorios/BI048015-Base-Invisivel-Profunda-480-Prata-1-Pe.png); }
+
+.BI04801532002-Base-Invisivel-Profunda-480-Prata-3-Pes::after {
+  background-image: url(../images/modulos-aereos/acessorios/BI04801532002-Base-Invisivel-Profunda-480-Prata-3-Pes.png); }
+
 .v-350x600-1p::after {
   background-image: url(../images/modulos-aereos/v-350x600-1p.png); }
 
@@ -5624,9 +5692,9 @@ html.touch {
     margin-left: 330px; } }
 
 .unica .txt-slider {
-  background-color: #59496a; }
+  background-color: #839e79; }
   .unica .txt-slider h3 {
-    color: #e0a243; }
+    color: #2d233f; }
   .unica .txt-slider .txt.content {
     outline: none; }
 
@@ -5718,9 +5786,9 @@ html.touch {
     margin-left: 330px; } }
 
 .smart .txt-slider {
-  background-color: #59496a; }
+  background-color: #94b7c7; }
   .smart .txt-slider h3 {
-    color: #e0a243; }
+    color: #0f4342; }
   .smart .txt-slider .txt.content {
     outline: none; }
 

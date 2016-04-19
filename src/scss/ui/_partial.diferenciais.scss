@@ -2,14 +2,14 @@
   background-color: $cm_purple;
   
   @include media-query(desk) {
-    .thumb:nth-child(1) { margin: 0 $gridsize; }
-    .thumb:nth-child(6) { margin-right: $gridsize; }
+    .thumb:nth-child(2) { margin: 0 $gridsize; }
+    .thumb:nth-child(3) { margin-right: $gridsize; }
     h2 { letter-spacing: 0.01em; }
   }
   
   @include media-query(wide) {
-    .thumb:nth-child(1) { margin: 0 $gridsize-max; }
-    .thumb:nth-child(6) { margin-right: $gridsize-max; }
+    .thumb:nth-child(2) { margin: 0 $gridsize-max; }
+    .thumb:nth-child(3) { margin-right: $gridsize-max; }
   }
   
   .txt-slider {

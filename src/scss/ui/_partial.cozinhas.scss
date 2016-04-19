@@ -48,14 +48,9 @@
       .cozinhas-title { 
          color: $cinza-funghi; 
         
-        @include media-query(lap){
-          top: -40px;
-          font-size: 24px;
-        }
-        @include media-query(landscape){
-          top: -10px;
-          font-size: 18px;
-        }
+        @include media-query(lap){ top: -40px;  font-size: 24px;  }
+        @include media-query(landscape){  top: -10px;  font-size: 18px;  }
+        @include media-query(wide){ bottom: 0px; font-size: 40px; }
       }
     }
 
@@ -87,14 +82,9 @@
       .cozinhas-title { 
          color: $verde-cha; 
         
-        @include media-query(lap){
-          top: -60px;
-          font-size: 24px;
-        }
-        @include media-query(landscape){
-          top: -10px;
-          font-size: 18px;
-        }
+        @include media-query(lap){  top: -60px;  font-size: 24px;  }
+        @include media-query(landscape){  top: -10px;  font-size: 18px;  }
+        @include media-query(wide){ bottom: 0px; font-size: 40px; }
       }
     }
 
@@ -122,14 +112,9 @@
       .cozinhas-title { 
         color: $verde-alecrim; 
         
-        @include media-query(lap){
-          top: -60px;
-          font-size: 24px;
-        }
-        @include media-query(landscape){
-          top: -10px;
-          font-size: 18px;
-        }
+        @include media-query(lap){  top: -60px;  font-size: 24px;  }
+        @include media-query(landscape){  top: -10px;  font-size: 18px;  }
+        @include media-query(wide){ bottom: 0px; font-size: 40px; }
       }
     }
     
@@ -160,14 +145,9 @@
       .cozinhas-title { 
          color: $cm_purple; 
         
-        @include media-query(lap){
-          top: -60px;
-          font-size: 24px;
-        }
-        @include media-query(landscape){
-          top: -10px;
-          font-size: 18px;
-        }
+        @include media-query(lap){  top: -60px;  font-size: 24px;  }
+        @include media-query(landscape){ top: -10px;  font-size: 18px;  }
+        @include media-query(wide){ bottom: 0px; font-size: 40px; }
       }
     }
     
@@ -197,14 +177,9 @@
       .cozinhas-title { 
          color: $cm_petroleum; 
         
-        @include media-query(lap){
-          top: -40px;
-          font-size: 24px;
-        }
-        @include media-query(landscape){
-          top: -10px;
-          font-size: 18px;
-        }
+        @include media-query(lap){  top: -40px;  font-size: 24px; }
+        @include media-query(landscape){  top: -10px;  font-size: 18px;  }
+        @include media-query(wide){ bottom: 0px; font-size: 40px; }
       }
     }
     
@@ -235,10 +210,8 @@
          color: $cm_red; 
         
         @include media-query(lap){top: -40px; font-size: 24px;}
-        @include media-query(landscape){
-          top: -10px;
-          font-size: 18px;
-        }
+        @include media-query(landscape){  top: -10px;  font-size: 18px; }
+        @include media-query(wide){ bottom: 0px; font-size: 40px; }
       }
     }
     
@@ -268,14 +241,9 @@
       .cozinhas-title { 
         color: $cm_purple; 
         
-        @include media-query(lap){
-          top: -60px;
-          font-size: 24px;
-        }
-        @include media-query(landscape){
-          top: -10px;
-          font-size: 18px;
-        }
+        @include media-query(lap){ top: -60px;  font-size: 24px;  }
+        @include media-query(landscape){  top: -10px; font-size: 18px; }
+        @include media-query(wide){ bottom: 0px; font-size: 40px; }
       }
     }
     
