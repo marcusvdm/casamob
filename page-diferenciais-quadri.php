@@ -17,7 +17,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#quadri">
             <small class="white">Linha</small>
-            <span class="purple"><?php the_title();?></span>
+            <span class="red"><?php the_title();?></span>
           </a>
         </h2>
         <div class="intro">

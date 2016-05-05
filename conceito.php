@@ -54,14 +54,14 @@
         <div class="color-box branco-sal">
         <p class="color-label color-label--dk">
           Branco Sal <br>
-          Ref. 1000
+          BS
         </p>
       </div>
 
       <div class="color-box preto-jabuticaba">
         <p class="color-label">
           Preto Jabuticaba <br>
-          Ref. 9000
+          PJ
         </p>
       </div>
 
@@ -75,14 +75,14 @@
       <div class="color-box cinza-funghi">
         <p class="color-label">
           Cinza Funghi <br>
-          Ref. 2000
+          CF
         </p>
       </div>
 
       <div class="color-box azul-anis">
         <p class="color-label">
           Azul Anis <br>
-          Ref. 4000
+          AA
         </p>
       </div>
 
@@ -96,7 +96,7 @@
       <div class="color-box verde-cha">
         <p class="color-label">
           Verde Chá <br>
-          Ref. 5000
+          VC
         </p>
       </div>
 
@@ -110,28 +110,28 @@
       <div class="color-box amarelo-curry">
         <p class="color-label">
           Amarelo Curry <br>
-          Ref. 3000
+          AC
         </p>
       </div>
 
       <div class="color-box laranja-damasco">
         <p class="color-label">
           Laranja Damasco <br>
-          Ref. 8004
+          LD
         </p>
       </div>
 
       <div class="color-box vermelho-paprica">
         <p class="color-label">
           Vermelho Páprica <br>
-          Ref. 8000
+          VP
         </p>
       </div>
 
       <div class="color-box bege-baunilha">
         <p class="color-label">
           Bege Baunilha <br>
-          Ref. 3002
+          BB
         </p>
       </div>
 
@@ -152,14 +152,14 @@
       <div class="color-box roxo-beterraba">
         <p class="color-label">
           Roxo Beterraba <br>
-          Ref. 8008
+          RB
         </p>
       </div>
 
       <div class="color-box madeirado-sal">
         <p class="color-label color-label--dk">
           Madeirado Sal <br>
-          Ref. 1002
+          MS
         </p>
       </div>
 
@@ -180,14 +180,14 @@
       <div class="color-box madeirado-canela">
         <p class="color-label">
           Madeirado Canela <br>
-          Ref. 7000
+          MC
         </p>
       </div>
 
       <div class="color-box madeirado-baunilha">
         <p class="color-label">
           Madeirado Baunilha <br>
-          Ref. 3004
+         MB
         </p>
       </div>
 

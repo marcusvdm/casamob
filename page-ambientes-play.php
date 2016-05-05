@@ -30,7 +30,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-play">Diferenciais</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-play">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-play">Módulos</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-play">Acessórios</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-play">Ambientes</a>
@@ -43,7 +43,7 @@
           $exceptions = array(0, 4, 8);
           $remove = array(10,19,20);
           
-          for ($i = 0; $i <= 21; $i++) {
+          for ($i = 0; $i <= 26; $i++) {
             
           if (!in_array($i, $remove)) {  
             if (!in_array($i, $exceptions)) {

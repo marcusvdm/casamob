@@ -67,6 +67,7 @@
 
 .color-label {
   line-height: 1.3;
+  text-align: center;
   @include position(absolute, auto auto quarter($base-spacing-unit) quarter($base-spacing-unit));
   @include media-query(lap-and-up) { @include font-size(14px, 1.3); }
   @include media-query(wide) { @include font-size($base-font-size, 1.3); }

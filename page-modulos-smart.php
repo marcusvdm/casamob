@@ -38,7 +38,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#smart">
             <small class="white">Linha</small>
-            <span class="purple">smart</span>
+            <span class="petroleum">play smart</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
@@ -118,7 +118,7 @@
       <?php } ?>
     </div>
       
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php echo $p->medidapeca; ?></p></div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       

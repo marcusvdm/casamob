@@ -74,9 +74,8 @@
         
         img { max-width: 250px; width: 100%; }
         
-        @include media-query(lap){
-          top: 5px;
-        }
+        @include media-query(lap){  top: 5px;   }
+        @include media-query(wide){ top: 40px; }
       }
 
       .cozinhas-title { 
@@ -137,9 +136,8 @@
         
         img { max-width: 250px; width: 100%; }
         
-        @include media-query(lap){
-          top: 5px;
-        }
+        @include media-query(lap){ top: 5px; }
+        @include media-query(wide){ top: 40px; }
       }
 
       .cozinhas-title { 
@@ -169,9 +167,8 @@
         
         img { max-width: 200px; width: 100%; }
         
-        @include media-query(lap){
-          top: 5px;
-        }
+        @include media-query(lap){  top: 5px;  }
+        @include media-query(wide){ top: 40px; }
       }
 
       .cozinhas-title { 
@@ -201,9 +198,8 @@
         
         img { max-width: 200px; width: 100%; }
         
-        @include media-query(lap){
-          top: 5px;
-        }
+        @include media-query(lap){  top: 5px;  }
+        @include media-query(wide){ top: 40px; }
       }
 
       .cozinhas-title { 
@@ -235,6 +231,7 @@
         img { max-width: 250px; width: 100%; }
         
         @include media-query(lap) { top: 5px; }
+        @include media-query(wide){ top: 40px; }
         
       }
 
@@ -358,7 +355,7 @@
     }
 
     @include media-query(wide) {
-      margin-top:           $header-total + double($base-spacing-unit);
+      margin-top:           $header-total + $base-spacing-unit;
     }
 
     @include media-query(superwide) {

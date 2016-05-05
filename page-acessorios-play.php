@@ -100,6 +100,9 @@
         <dd><?php echo $d; ?></dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
+    
+    <div class="msg"><p><?php echo $p->compativel; ?></p></div>
+    <div class="msg"><p><?php echo $p->disponivel; ?></p></div>
 
     <?php //if($slug !== 'rodapes-play') {  ?>
     <!--<div class="btns"-->

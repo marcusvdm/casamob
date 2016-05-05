@@ -38,7 +38,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#quadri">
             <small class="white">Linha</small>
-            <span class="purple">quadri</span>
+            <span class="red">quadri 4.0</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
@@ -112,7 +112,7 @@
       <?php } ?>
     </div>
     
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php echo $p->medidapeca; ?></p></div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       

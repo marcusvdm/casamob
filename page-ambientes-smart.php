@@ -17,7 +17,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#smart">
             <small class="white">Linha</small>
-            <span class="lt-purple"><?php the_title();?></span>
+            <span class="petroleum"><?php the_title();?></span>
           </a>
         </h2>
         <div class="intro">

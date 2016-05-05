@@ -40,7 +40,7 @@
           $exceptions = array();
           $remove = array(1,7,8,10);
           
-          for ($i = 0; $i <= 12; $i++) { 
+          for ($i = 0; $i <= 15; $i++) { 
            
           if (!in_array($i, $remove)) {  
             if (!in_array($i, $exceptions)) {

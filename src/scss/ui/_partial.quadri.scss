@@ -1,8 +1,8 @@
 .quadri {
   .txt-slider {
-    background-color: $hero-quadri;
+    background-color: $cm_purple;
     
-    h3 { color: $cm_lt-purple; }
+    h3 { color: $hero-quadri; }
     .txt.content { outline: none; }
   }
   
@@ -12,9 +12,9 @@
   
   .menu-linha--item.active,
   .menu-linha--item:hover {
-    background-color: $cm_red;
+    background-color: $cm_purple;
     font-weight: $bold;
-    border: 1px solid $cm_red;
+    border: 1px solid $cm_purple;
   }
   
   .link-modulos { color: $cm_lt-purple; }

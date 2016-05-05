@@ -423,7 +423,7 @@
 }
 
 .puxadores {
-  @include position(absolute, 78% 5% auto auto);
+  @include position(absolute, 70% 1% auto auto);
   width: 100%;
   max-width: 150px;
   
@@ -444,6 +444,14 @@
   @include position(absolute, 78% auto auto auto);
   width: 100%;
   max-width: 100px;
+  
+  p { color: #59496a;}
+}
+
+.msg {
+  @include position(absolute, 85% auto auto auto);
+  width: 100%;
+  max-width: 100%;
   
   p { color: #59496a;}
 }
@@ -476,8 +484,8 @@
 .Av120-2P-Armario-Vertical-2-Portas::after { background-image: url(../images/modulos-aereos/quadri/Av120-2P-Armario-Vertical-2-Portas.png) }
 .Av120-3P-Armario-Vertical-3-Portas::after { background-image: url(../images/modulos-aereos/quadri/Av120-3P-Armario-Vertical-3-Portas.png) }
 .Av120-3P-1V-Armario-Vertical-3-Portas-1-Vidro::after { background-image: url(../images/modulos-aereos/quadri/Av120-3P-1V-Armario-Vertical-3-Portas-1-Vidro.png) }
-.Av120-3Pv-Armario-Vertical-3-Portas-Vidro::after { background-image: url(../images/modulos-aereos/quadri/Av120-3Pv-Armario-Vertical-3-Portas-Vidro.png) }
-.Ah60-1P-Armario-Horizontal-1-Porta::after { background-image: url(../images/modulos-aereos/quadri/Ah60-1P-Armario-Horizontal-1-Porta.png) }
+.Av120-3Pv-Armario-Vertical-3-Portas-Vidro-ok::after { background-image: url(../images/modulos-aereos/quadri/Av120-3Pv-Armario-Vertical-3-Portas-Vidro-ok.png) }
+.Ah60-1P-Armario-Horizontal-1-Porta-ok::after { background-image: url(../images/modulos-aereos/quadri/Ah60-1P-Armario-Horizontal-1-Porta-ok.png) }
 .Ah70-1P-Armario-Horizontal-1-Porta::after { background-image: url(../images/modulos-aereos/quadri/Ah70-1P-Armario-Horizontal-1-Porta.png) }
 .Ah80-2P-Armario-Horizontal-2-Portas::after { background-image: url(../images/modulos-aereos/quadri/Ah80-2P-Armario-Horizontal-2-Portas.png) }
 .Ac45-1P-Armario-De-Canto-1-Porta::after { background-image: url(../images/modulos-aereos/quadri/Ac45-1P-Armario-De-Canto-1-Porta.png) }

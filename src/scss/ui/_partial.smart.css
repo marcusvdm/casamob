@@ -1,12 +1,12 @@
 /*
-Error: Undefined variable: "$hero-smart".
+Error: Undefined variable: "$cm_petroleum".
         on line 3 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.smart.scss
 
 1: .smart {
 2:   .txt-slider {
-3:     background-color: $hero-smart;
+3:     background-color: $cm_petroleum;
 4:     
-5:     h3 { color: $cm_petroleum; }
+5:     h3 { color: $cm_lt-cooper; }
 6:     .txt.content { outline: none; }
 7:   }
 8:   
@@ -77,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$hero-smart\".\A         on line 3 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.smart.scss\A \A 1: .smart {\A 2:   .txt-slider {\A 3:     background-color: $hero-smart;\A 4:     \A 5:     h3 { color: $cm_petroleum; }\A 6:     .txt.content { outline: none; }\A 7:   }\A 8:   "; }
+  content: "Error: Undefined variable: \"$cm_petroleum\".\A         on line 3 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.smart.scss\A \A 1: .smart {\A 2:   .txt-slider {\A 3:     background-color: $cm_petroleum;\A 4:     \A 5:     h3 { color: $cm_lt-cooper; }\A 6:     .txt.content { outline: none; }\A 7:   }\A 8:   "; }

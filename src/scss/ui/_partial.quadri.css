@@ -1,12 +1,12 @@
 /*
-Error: Undefined variable: "$hero-quadri".
+Error: Undefined variable: "$cm_purple".
         on line 3 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.quadri.scss
 
 1: .quadri {
 2:   .txt-slider {
-3:     background-color: $hero-quadri;
+3:     background-color: $cm_purple;
 4:     
-5:     h3 { color: $cm_lt-purple; }
+5:     h3 { color: $hero-quadri; }
 6:     .txt.content { outline: none; }
 7:   }
 8:   
@@ -77,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$hero-quadri\".\A         on line 3 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.quadri.scss\A \A 1: .quadri {\A 2:   .txt-slider {\A 3:     background-color: $hero-quadri;\A 4:     \A 5:     h3 { color: $cm_lt-purple; }\A 6:     .txt.content { outline: none; }\A 7:   }\A 8:   "; }
+  content: "Error: Undefined variable: \"$cm_purple\".\A         on line 3 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.quadri.scss\A \A 1: .quadri {\A 2:   .txt-slider {\A 3:     background-color: $cm_purple;\A 4:     \A 5:     h3 { color: $hero-quadri; }\A 6:     .txt.content { outline: none; }\A 7:   }\A 8:   "; }
