@@ -146,7 +146,7 @@ h2.tipo-modulo {
     }
 }
 
-.prod-box {
+.prod-box, .ajuste-play {
     position: relative;
 }
 
@@ -163,6 +163,7 @@ h2.tipo-modulo {
     background-position: center center;
     background-size: contain;
 }
+.ajuste-play::after{ width: 90%;}
 
 .featherlight-previous,
 .featherlight-next {
@@ -444,7 +445,7 @@ h2.tipo-modulo {
 }
 
 .all-screen {
-  display: block;
+  display: none;
   background-color: #242424;
   background-color: rgba( 36, 36, 36, .9 );
   position: fixed;

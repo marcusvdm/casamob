@@ -14,7 +14,7 @@ h2 {
   @include media-query(desk) { margin-left: halve($base-spacing-unit); }
 
   @include media-query(wide) {
-    @include font-size($base-spacing-unit*7, 1.05);
+    @include font-size(80px);
     margin-left: halve($base-spacing-unit);
     letter-spacing: .05em;
     
@@ -101,7 +101,7 @@ p, li {
 }
 
 .legal {
-  @include font-size(12px, 1.3);
+  @include font-size(10px, 1.3);
   letter-spacing: initial;
   display: block;
   color: $white;

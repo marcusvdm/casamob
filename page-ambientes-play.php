@@ -30,9 +30,9 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-play">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-play">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-play">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-play">Acessórios</a>
+          <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-play">Acessórios</a>-->
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-play">Ambientes</a>
         </nav>
         
@@ -41,11 +41,11 @@
             data-featherlight-filter="a">
         <?php 
           $exceptions = array(0, 4, 8);
-          $remove = array(10,19,20);
+          $remove = array(0,4,8,10,15,19,20,26);
           
           for ($i = 0; $i <= 26; $i++) {
-            
-          if (!in_array($i, $remove)) {  
+          
+          if (!in_array($i, $remove)) { 
             if (!in_array($i, $exceptions)) {
         ?>
           <a class="thumb" href="<?php bloginfo('template_url');?>/assets/images/play/lightbox-coz-play-amb-<?php echo $i; ?>.jpg" title="<?php the_title();?>">

@@ -6,9 +6,9 @@ Error: Undefined variable: "$cm_purple".
 2:   background-color: $cm_purple;
 3:   
 4:   @include media-query(desk) {
-5:     .thumb:nth-child(1) { margin: 0 $gridsize; }
-6:     .thumb:nth-child(3) { margin-right: $gridsize; }
-7:     h2 { letter-spacing: 0.01em; }
+5:     .thumb:nth-child(1) { margin-right: 5px; }
+6:     .thumb:nth-child(2) { margin-right: 5px; }
+7:     .thumb:nth-child(3) { margin-right: 5px; }
 
 Backtrace:
 /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.diferenciais.scss:2
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$cm_purple\".\A         on line 2 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.diferenciais.scss\A \A 1: .diferenciais {\A 2:   background-color: $cm_purple;\A 3:   \A 4:   @include media-query(desk) {\A 5:     .thumb:nth-child(1) { margin: 0 $gridsize; }\A 6:     .thumb:nth-child(3) { margin-right: $gridsize; }\A 7:     h2 { letter-spacing: 0.01em; }"; }
+  content: "Error: Undefined variable: \"$cm_purple\".\A         on line 2 of /home/ubuntu/workspace/wp-content/themes/casamob/src/scss/ui/_partial.diferenciais.scss\A \A 1: .diferenciais {\A 2:   background-color: $cm_purple;\A 3:   \A 4:   @include media-query(desk) {\A 5:     .thumb:nth-child(1) { margin-right: 5px; }\A 6:     .thumb:nth-child(2) { margin-right: 5px; }\A 7:     .thumb:nth-child(3) { margin-right: 5px; }"; }

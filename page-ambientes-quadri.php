@@ -17,7 +17,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#quadri">
             <small class="white">Linha</small>
-            <span class="lt-purple"><?php the_title();?></span>
+            <span class="red"><?php the_title();?></span>
           </a>
         </h2>
         <div class="intro">
@@ -30,7 +30,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-quadri">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-quadri">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-quadri">Módulos</a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-quadri">Acessórios</a>-->
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-quadri">Ambientes</a>
@@ -40,20 +40,20 @@
             data-featherlight-gallery 
             data-featherlight-filter="a">
         <?php 
-          //$exceptions = array(0, 4, 8);
+          $exceptions = array(0, 4, 6);
           //$remove = array(10,19,20);
           
-          for ($i = 0; $i <= 5; $i++) {
+          for ($i = 0; $i <= 8; $i++) {
             
           if (!in_array($i, $remove)) {  
             if (!in_array($i, $exceptions)) {
         ?>
           <a class="thumb" href="<?php bloginfo('template_url');?>/assets/images/quadri/lightbox-coz-quadri-amb-<?php echo $i; ?>.jpg" title="<?php the_title();?>">
-            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/quadri/thumb-coz-quadri-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
+            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/quadri/thumb-coz-quadri-amb-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
           </a>
         <?php } else { ?>
           <span class="thumb thumb-capa">
-            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/quadri/thumb-coz-quadri-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
+            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/quadri/thumb-coz-quadri-amb-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
           </span>
         <?php } } }?>
         </figure>

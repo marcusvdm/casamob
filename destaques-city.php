@@ -2,25 +2,31 @@
     <tr>
         <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-cores.svg" alt=""></td>
         <td>
-            <p>8 cores</p>
+            <p>6 Opções de cores*</p>
         </td>
     </tr>
     <tr>
         <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-combinacoes.svg" alt=""></td>
         <td>
-            <p>8 módulos <br>para combinar como quiser</p>
+            <p>Módulos exclusivos</p>
         </td>
     </tr>
     <tr>
         <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-linha.svg" alt=""></td>
         <td>
-            <p>A linha City é a linha compacta <br>dos produtos CasaMob</p>
+            <p>Cozinha compacta com<br>versão amadeirada</p>
         </td>
     </tr>
     <tr>
         <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-acessorios.svg" alt=""></td>
         <td>
-          <p>Simples, moderna e funcional</p>
+          <p>Maior altura e profundidade</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="destaques--img"></td>
+        <td><br>
+          <p style="font-size:11px;">*Em nichos, portas e / ou gavetas de módulos selecionados</p>
         </td>
     </tr>
 </table>

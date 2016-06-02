@@ -2,31 +2,31 @@
     <tr>
         <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-cores.svg" alt=""></td>
         <td>
-            <p>4 cores</p>
+            <p>3 Opções de cores*</p>
         </td>
     </tr>
     <tr>
         <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-combinacoes.svg" alt=""></td>
         <td>
-            <p>14 módulos <br>para combinar como quiser</p>
+            <p>Portas de 35 cm</p>
         </td>
     </tr>
-    <!--<tr>-->
-    <!--    <td class="destaques--img"><img src="<?php //bloginfo('template_url'); ?>/assets/images/icons/icon-linha.svg" alt=""></td>-->
-    <!--    <td>-->
-    <!--        <p>Os armários da LINHA ÚNICA CasaMob<br>possuem maior altura que proporcionam<br>melhor área de armazenamento e excelente aproveitamento interno</p>-->
-    <!--    </td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--    <td class="destaques--img"><img src="<?php //bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-acessorios.svg" alt=""></td>-->
-    <!--    <td>-->
-    <!--      <p>Combinações exclusivas, <br>com mais e 10.000 possibilidades <br>de ambientes</p>-->
-    <!--    </td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--    <td class="destaques--img"><img src="<?php //bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-utilidades.svg" alt=""></td>-->
-    <!--    <td>-->
-    <!--      <p>Diversas utilidades, para qualquer ambiente da casa</p>-->
-    <!--    </td>-->
-    <!--</tr>-->
+    <tr>
+        <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-linha.svg" alt=""></td>
+        <td>
+            <p>Versão compacta com cor exclusiva</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="destaques--img"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-acessorios.svg" alt=""></td>
+        <td>
+          <p>Altura de 60 cm nos<br>armários aéreos - Maior do segmento</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="destaques--img"><!--<img src="<?php //bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-utilidades.svg" alt="">--></td>
+        <td><br>
+          <p style="font-size:11px;">*Em nichos, portas e / ou gavetas de módulos selecionados</p>
+        </td>
+    </tr>
 </table>

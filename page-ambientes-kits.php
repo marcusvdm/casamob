@@ -28,6 +28,7 @@
       <div class="content">
         
         <nav class="menu-linha">
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-kits">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modelos-kits">Modelos</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-kits">Ambientes</a>
         </nav>
@@ -37,7 +38,7 @@
             data-featherlight-filter="a">
         <?php 
           $exceptions = array();
-          $remove = array(2,3,6,7,16,17);
+          $remove = array(2,3,4,5,6,7,10,11,12,13,16,17);
           
           for ($i = 0; $i <= 19; $i++) { 
             

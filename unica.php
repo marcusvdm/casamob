@@ -26,7 +26,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-unica">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-unica">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-unica">Módulos</a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-unica">Acessórios</a>-->
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica">Ambientes</a>
@@ -37,7 +37,7 @@
             data-featherlight-filter="a"
         >
         <?php 
-          for ($i = 0; $i <= 5; $i++) {
+          for ($i = 0; $i <= 3; $i++) {
         ?>
           <a href="<?php bloginfo('template_url');?>/assets/images/unica/lightbox-coz-unica-<?php echo $i; ?>.jpg" title="">
             <img data-lazy="<?php bloginfo('template_url');?>/assets/images/unica/slide-coz-unica-<?php echo $i; ?>.jpg" alt="" />
@@ -47,7 +47,7 @@
         
         <figure class="thumbs" >
         <?php 
-          for ($i = 0; $i <= 5; $i++) {
+          for ($i = 0; $i <= 3; $i++) {
         ?>
           <a class="thumb" data-slick-index="<?php echo $i; ?>" href="<?php bloginfo('template_url');?>/#<?php echo $i; ?>" title="<?php the_title();?>">
             <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/unica/thumb-coz-unica-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />

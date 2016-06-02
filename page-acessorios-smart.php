@@ -75,7 +75,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-smart">Diferenciais</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-smart">Características</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/acessorios-smart">Acessórios</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-smart">Módulos</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-smart">Ambientes</a>

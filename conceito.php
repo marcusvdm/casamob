@@ -54,14 +54,14 @@
         <div class="color-box branco-sal">
         <p class="color-label color-label--dk">
           Branco Sal <br>
-          BS
+          [ BS ]
         </p>
       </div>
 
       <div class="color-box preto-jabuticaba">
         <p class="color-label">
           Preto Jabuticaba <br>
-          PJ
+          [ PJ ]
         </p>
       </div>
 
@@ -75,14 +75,14 @@
       <div class="color-box cinza-funghi">
         <p class="color-label">
           Cinza Funghi <br>
-          CF
+          [ CF ]
         </p>
       </div>
 
       <div class="color-box azul-anis">
         <p class="color-label">
           Azul Anis <br>
-          AA
+          [ AA ]
         </p>
       </div>
 
@@ -96,7 +96,7 @@
       <div class="color-box verde-cha">
         <p class="color-label">
           Verde Chá <br>
-          VC
+          [ VC ]
         </p>
       </div>
 
@@ -110,28 +110,28 @@
       <div class="color-box amarelo-curry">
         <p class="color-label">
           Amarelo Curry <br>
-          AC
+          [ AC ]
         </p>
       </div>
 
       <div class="color-box laranja-damasco">
         <p class="color-label">
           Laranja Damasco <br>
-          LD
+          [ LD ]
         </p>
       </div>
 
       <div class="color-box vermelho-paprica">
         <p class="color-label">
           Vermelho Páprica <br>
-          VP
+          [ VP ]
         </p>
       </div>
 
       <div class="color-box bege-baunilha">
         <p class="color-label">
           Bege Baunilha <br>
-          BB
+          [ BB ]
         </p>
       </div>
 
@@ -152,14 +152,14 @@
       <div class="color-box roxo-beterraba">
         <p class="color-label">
           Roxo Beterraba <br>
-          RB
+          [ RB ]
         </p>
       </div>
 
       <div class="color-box madeirado-sal">
         <p class="color-label color-label--dk">
           Madeirado Sal <br>
-          MS
+          [ MS ]
         </p>
       </div>
 
@@ -180,14 +180,14 @@
       <div class="color-box madeirado-canela">
         <p class="color-label">
           Madeirado Canela <br>
-          MC
+          [ MC ]
         </p>
       </div>
 
       <div class="color-box madeirado-baunilha">
         <p class="color-label">
           Madeirado Baunilha <br>
-         MB
+          [ MB ]
         </p>
       </div>
 

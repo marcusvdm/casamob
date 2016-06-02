@@ -80,7 +80,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-smart">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-smart">Características</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-smart">Módulos</a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-smart">Acessórios</a>-->
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-smart">Ambientes</a>
@@ -104,9 +104,11 @@
         <dt><?php //echo $k; ?></dt>
         <dd>
           <?php if ($k === "Cores" ) { ?>
-                <?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $d; ?>" style="width:100%; max-width:40px;" />
+                <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $d; ?>" style="width:100%; max-width:40px;" /></a>
+               
           <?php } else if ($k === "Cor" ) { ?>
-                  <?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
+                  <?php echo $k.":"; ?><br><a href="#" class="open-cor"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
+                   
           <?php } ?>
         </dd>
       <?php } ?>
@@ -114,11 +116,11 @@
     
     <div class="tampos">
       <?php if ($p->tampos !== "" ) { ?>
-      <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" />
+      <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" /></a>
       <?php } ?>
     </div>
       
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php echo $p->medidapeca; ?></p></div>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/smart/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php //echo $p->medidapeca; ?></p></div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       
@@ -193,5 +195,32 @@ $wp_query = $temp_query;
   <?php //require_once('tampos-smart.php'); ?>
 </div>
 
-
+  
+  <div class="cores-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-cf">cinza<br>funghi<br>[ cf ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
+    <div class="cor-ld">laranja<br>damasco<br>[ ld ]</div>
+    <div class="cor-vc">verde<br>chá<br>[ vc ]</div>
+    <div class="cor-ac">amarelo<br>curry<br>[ ac ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+    <div class="cor-rb">roxo<br>beterraba<br>[ rb ]</div>
+    <div class="cor-aa">azul<br>anis<br>[ aa ]</div>
+  </div>
+  
+  <div class="cor-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+  </div>
+  
+  <div class="cor-tampos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-mp">mármore<br>preto<br>[ mp ]</div>
+    <div class="cor-mb-b">mármore<br>branco<br>[ mb ]</div>
+  </div>
+ 
+  <div class="all-screen"><div>
+  
+  
 <?php get_footer(); ?>

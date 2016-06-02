@@ -265,7 +265,7 @@
     text-align: center;
     font-size: 0;
   }
-  .prod-box {
+  .prod-box,.ajuste-play {
     width: 100%;
     height: $base-spacing-unit*16;
     border: 1px solid $white;
@@ -393,7 +393,7 @@
   @include font-size(14px, 1.5);
 
   font-weight: $bold;
-  padding: 0 halve($base-spacing-unit) halve($base-spacing-unit);
+  //padding: 0 halve($base-spacing-unit) halve($base-spacing-unit);
   width: 20%;
   transform: translate(0,-60%);
   margin-top: $base-spacing-unit*1.5;
@@ -448,6 +448,17 @@
   p { color: #59496a;}
 }
 
+.acessorios-play-disponivel {
+  @include position(absolute, 80% auto auto auto);
+  width: 100%;
+  max-width: 350px;
+  
+  p { 
+    color: #59496a; 
+    @include font-size(10px, 1.5);
+  }
+}
+
 .msg {
   @include position(absolute, 85% auto auto auto);
   width: 100%;
@@ -456,6 +467,47 @@
   p { color: #59496a;}
 }
 
+.cores-modulos, .cor-modulos, .cor-tampos, .cores-modulos-dif, .cor-tampos-dif {
+  visibility: hidden;
+  position: fixed;
+  width: 320px;
+  left: 50%;
+  top: 50%;
+  margin-left: -160px;
+  margin-top: -165px;
+  background-color: #c7c7c7;
+  border: 1px solid #000000;
+  z-index: 1000;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  
+  a { width: 20px; height: 20px; color: #000000; float: right; font-size: 20px; text-decoration:none;}
+  p { color: #000000; clear:both; width: 100%; text-align: left;}
+}
+.cores-modulos--open, .cor-modulos--open, .cor-tampos--open, .cores-modulos-dif--open, .cor-tampos-dif--open {
+  visibility: visible;
+}
+
+
+.cor-bs {background: url('/wp-content/themes/casamob/assets/images/cores/bs.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #000000; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-cf {background: url('/wp-content/themes/casamob/assets/images/cores/cf.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-pj {background: url('/wp-content/themes/casamob/assets/images/cores/pj.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-vc {background: url('/wp-content/themes/casamob/assets/images/cores/vc.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-aa {background: url('/wp-content/themes/casamob/assets/images/cores/aa.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-ms {background: url('/wp-content/themes/casamob/assets/images/cores/ms.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #000000; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-mb {background: url('/wp-content/themes/casamob/assets/images/cores/mb.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-mb-b {background: url('/wp-content/themes/casamob/assets/images/cores/mb-marmore-branco.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-mc {background: url('/wp-content/themes/casamob/assets/images/cores/mc.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-mp {background: url('/wp-content/themes/casamob/assets/images/cores/mp.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-ac {background: url('/wp-content/themes/casamob/assets/images/cores/ac.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-ld {background: url('/wp-content/themes/casamob/assets/images/cores/ld.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-bb {background: url('/wp-content/themes/casamob/assets/images/cores/bb.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-vp {background: url('/wp-content/themes/casamob/assets/images/cores/vp.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-rb {background: url('/wp-content/themes/casamob/assets/images/cores/rb.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-ab {background: url('/wp-content/themes/casamob/assets/images/cores/ab.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-va {background: url('/wp-content/themes/casamob/assets/images/cores/va.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
+.cor-ri {background: url('/wp-content/themes/casamob/assets/images/cores/ri.png') no-repeat; width:90px; height:105px; float:left; line-height: 15px; color: #ffffff; font-size: 12px; padding-top: 28px; text-align: center; text-transform: uppercase;}
 
 /* NOVAS LINHAS*/
 

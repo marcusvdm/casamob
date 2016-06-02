@@ -38,7 +38,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#unica">
             <small class="white">Linha</small>
-            <span class="purple">Unica 3.5</span>
+            <span class="purple">Única 3.5</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
@@ -80,7 +80,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-unica">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-unica">Características</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-unica">Módulos</a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-unica">Acessórios</a>-->
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica">Ambientes</a>
@@ -102,11 +102,30 @@
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
-        <dd><?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></dd>
+        <dd>
+          <?php if (($k === "Cores" ) && ($p->modulo === "3")) { ?>
+                <?php echo $k.":"; ?><br><a href="#" class="open-cores-dif"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
+               
+          <?php } else if (($k === "Cores" ) && ($p->modulo === "4")) { ?>
+                  <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
+                   
+          <?php } else if ($k === "Cor" ) { ?>
+                  <?php echo $k.":"; ?><br><a href="#" class="open-cor"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
+                   
+          <?php } ?>
+        </dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
-    <div class="tampos"><p>Tampos</p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $p->Tampos; ?>" style="width:100%; max-width:20px;" /></div>
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    
+    <div class="tampos">
+      <?php if ($p->tampos !== "" ) { ?>
+      <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" /></a>
+      <?php } ?>
+    </div>
+    
+    <?php if ($p->peca !== "" ) { ?>
+      <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php //echo $p->medidapeca; ?></p></div>
+    <?php } ?>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       
@@ -181,5 +200,31 @@ $wp_query = $temp_query;
   <?php //require_once('tampos-unica.php'); ?>
 </div>
 
+<div class="cores-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
+    <div class="cor-vc">verde<br>chá<br>[ vc ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+  </div>
+  
+  <div class="cores-modulos-dif">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+  </div>
+  
+  <div class="cor-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+  </div>
+  
+  <div class="cor-tampos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-mp">mármore<br>preto<br>[ mp ]</div>
+  </div>
+ 
+  <div class="all-screen"><div>
 
 <?php get_footer(); ?>

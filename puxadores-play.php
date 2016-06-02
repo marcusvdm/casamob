@@ -1,4 +1,4 @@
-<h4 class="prod-title">Titulo do produto - Ref. 00000000</h4>
+<h4 class="prod-title title-puxadores-play">Titulo do produto - Ref. 00000000</h4>
 <article class="page__content puxadores-box linhas prod-box">
   <div class="content">
     <h2 class="lt-purple">Puxadores</h2>
@@ -7,8 +7,8 @@
       <h4 class="prod-title">Puxador Loft - Ref. A1</h4>
     
       <dl class="prod-data">
-        <dt>Largura:</dt>
-          <dd>192mm/256mm</dd>
+        <dt>Largura: 192mm/256mm</dt>
+          <!--<dd></dd>-->
       </dl><!-- /.prod-data -->
     </div><!-- /.prod-box -->
     
@@ -16,8 +16,8 @@
       <h4 class="prod-title">Puxador Pádua (opcional) - Ref. A2</h4>
     
       <dl class="prod-data">
-        <dt>Largura:</dt>
-          <dd>192mm/256mm</dd>
+        <dt>Largura: 192mm/256mm</dt>
+          <!--<dd></dd>-->
       </dl><!-- /.prod-data -->
     </div><!-- /.prod-box -->
     

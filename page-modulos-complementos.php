@@ -36,9 +36,9 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <a href="<?php echo home_url(); ?>#produtos">
-            <small class="white">Linha</small>
-            <span class="purple">complementos</span>
+          <a href="<?php echo home_url(); ?>#complementos">
+            <!--<small class="white">Linha</small>-->
+            <span class="lt-purple">Complementos de linhas</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
@@ -103,7 +103,7 @@
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
         <dd>
-          <?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/complementos/<?php echo $d; ?>" style="width:100%; max-width:45px;" />
+          <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/complementos/<?php echo $d; ?>" style="width:100%; max-width:45px;" /></a>
         </dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
@@ -181,5 +181,22 @@ $wp_query = $temp_query;
   <?php //require_once('tampos-complementos.php'); ?>
 </div>
 
+<div class="cores-modulos">
+    <a href="#" class="close-cores">X</a>
+   <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-cf">cinza<br>funghi<br>[ cf ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
+    <div class="cor-vc">verde<br>chá<br>[ vc ]</div>
+    <div class="cor-ac">amarelo<br>curry<br>[ ac ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+    <div class="cor-rb">roxo<br>beterraba<br>[ rb ]</div>
+    <div class="cor-aa">azul<br>anis<br>[ aa ]</div>
+    <p>*Cores disponíveis sob consulta:</p>
+    <div class="cor-ab">azul<br>blueberry<br>[ ab ] *</div>
+    <div class="cor-va">verde<br>alecrim<br>[ va ] *</div>
+    <div class="cor-ri">rosa<br>iogurte<br>[ ri ] *</div>
+  </div>
+ 
+  <div class="all-screen"><div>
 
 <?php get_footer(); ?>

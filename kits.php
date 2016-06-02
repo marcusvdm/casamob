@@ -25,6 +25,7 @@
       <div class="content">
         
         <nav class="menu-linha">
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-kits">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modelos-kits">Modelos</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-kits">Ambientes</a>
         </nav>
@@ -34,7 +35,7 @@
             data-featherlight-filter="a"
         >
         <?php 
-          for ($i = 0; $i <= 1; $i++) {
+          for ($i = 1; $i <= 1; $i++) {
         ?>
           <a href="<?php bloginfo('template_url');?>/assets/images/kits/lightbox-coz-kits-<?php echo $i; ?>.jpg" title="">
             <img data-lazy="<?php bloginfo('template_url');?>/assets/images/kits/slide-coz-kits-<?php echo $i; ?>.jpg" alt="" />
@@ -44,7 +45,7 @@
         
         <figure class="thumbs" >
         <?php 
-          for ($i = 0; $i <= 1; $i++) {
+          for ($i = 1; $i <= 1; $i++) {
         ?>
           <a class="thumb" data-slick-index="<?php echo $i; ?>" href="<?php bloginfo('template_url');?>/#<?php echo $i; ?>" title="<?php the_title();?>">
             <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/kits/thumb-coz-kits-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />

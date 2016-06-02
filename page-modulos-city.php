@@ -38,7 +38,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#city">
             <small class="white">Linha</small>
-            <span class="purple">city</span>
+            <span class="lt-green">city</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
@@ -80,7 +80,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-city">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-city">Características</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-city">Módulos</a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-city">Acessórios</a>-->
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-city">Ambientes</a>
@@ -104,11 +104,11 @@
         <dt><?php //echo $k; ?></dt>
         <dd>
           <?php if (($k === "Cores" ) && ($p->linha === "compacta" )){ echo $k.":"; ?>
-                <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
+                <br><a href="#" class="open-cores-dif"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
           <?php } else if ($k === "Cores" ) { echo $k.":"; ?>
-                <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:40px;" />
+                <br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:40px;" /></a>
           <?php } else if ($k === "Cor" ) { echo $k.":"; ?>
-                  <br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
+                  <br><a href="#" class="open-cor"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
           <?php } ?>
         </dd>
       <?php } ?>
@@ -116,14 +116,17 @@
     
     <div class="tampos">
       <?php if (($p->tampos === "Tampos" ) && ($p->linha === "compacta")) { ?>
-            <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" />
+            <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos-dif"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" /></a>
       <?php } else if (($p->tampos === "Tampos" ) && ($p->linha === "")) { ?>
-            <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" />
+            <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" /></a>
       <?php } ?>
     </div>
       
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
-    
+    <div class="puxadores">
+       <?php if ($p->puxadores !== "" ){ ?>
+          <p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php //echo $p->medidapeca; ?></p>
+       <?php } ?>
+    </div>
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       
       <?php //$lb_link = ($slug === 'nichos-city' ? '#lb-cores-nichos-city' : '#lb-cores-city'); ?>
@@ -197,5 +200,39 @@ $wp_query = $temp_query;
   <?php //require_once('tampos-city.php'); ?>
 </div>
 
+<div class="cores-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-cf">cinza<br>funghi<br>[ cf ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
+    <div class="cor-ac">amarelo<br>curry<br>[ ac ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+    <div class="cor-rb">roxo<br>beterraba<br>[ rb ]</div>
+  </div>
+  
+  <div class="cores-modulos-dif">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-mc">madeirado<br>canela<br>[ mc ]</div>
+    <div class="cor-bb">beje<br>baunilha<br>[ bb ]</div>
+  </div>
+  
+  <div class="cor-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+  </div>
+  
+  <div class="cor-tampos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-mb-b">mármore<br>branco<br>[ mb ]</div>
+    <div class="cor-mp">mármore<br>preto<br>[ mp ]</div>
+  </div>
+  
+  <div class="cor-tampos-dif">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-mb-b">mármore<br>branco<br>[ mb ]</div>
+  </div>
+ 
+  <div class="all-screen"><div>
 
 <?php get_footer(); ?>

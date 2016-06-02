@@ -36,30 +36,31 @@
         <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-smart.png" alt="">
         </div>
-  
+       
     </div><!-- /.offset -->
   
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>#smart" data-panel="smart" class="btn">Clique e conheça</a>
   
-  
+     <div class="skew smart-pos">lançamento</div>
     </div><!-- /.content.linha-smart -->
     
     <div class="content linha linha-quadri js-anchor" data-stellar-offset-parent="true">
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small class="show-hide">Linha</small> Quadri
+          <!--<small class="show-hide">Linha</small> Quadri 4.0-->
+          <small>Linha</small> Quadri 4.0
         </h2>
   
         <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-quadri-2.png" alt="">
         </div>
-  
+    
     </div><!-- /.offset -->
   
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>#quadri" data-panel="quadri" class="btn">Clique e conheça</a>
   
-  
+    <div class="skew quadri-pos">lançamento</div>
     </div><!-- /.content.linha-quadri -->
     
     
@@ -73,12 +74,12 @@
         <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-unica.png" alt="">
         </div>
-  
+    
     </div><!-- /.offset -->
   
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>#unica" data-panel="unica" class="btn">Clique e conheça</a>
   
-  
+    <div class="skew unica-pos">lançamento</div>
     </div><!-- /.content.linha-unica -->
     
     <div class="content linha linha-city js-anchor" data-stellar-offset-parent="true">
@@ -137,12 +138,12 @@
         </h2>
   
         <div class="cozinha">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-quadri-2.png" alt="">
+          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/nichos-destaque.png" alt="">
         </div>
   
     </div><!-- /.offset -->
   
-    <a href="<?php echo esc_url( home_url( '/modulos-complementos' ) ); ?>" data-panel="complemento" class="btn">Clique e conheça</a>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#complementos" data-panel="complementos" class="btn">Clique e conheça</a>
   
   
     </div><!-- /.content.linha-complemento -->

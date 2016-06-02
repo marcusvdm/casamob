@@ -38,7 +38,7 @@
         <h2>
           <a href="<?php echo home_url(); ?>#kits">
             <small class="white">Linha</small>
-            <span class="purple">kits</span>
+            <span class="lt-violet">kits</span>
           </a>
         </h2>
         <h2 class="tipo-modulo">
@@ -80,6 +80,7 @@
       <div class="content">
         
         <nav class="menu-linha">
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-kits">Características</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modelos-kits">Modelos</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-kits">Ambientes</a>
         </nav>
@@ -101,18 +102,18 @@
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
         <dd>
-          <?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $d; ?>" style="width:100%; max-width:20px;" />
+          <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
         </dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
     
     <div class="tampos">
       <?php if ($p->tampos === "Tampos" ) { ?>
-            <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" />
+            <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" /></a>
       <?php } ?>
     </div>
       
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /></div>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/kits/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php //echo $p->medidapeca; ?></p></div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       
@@ -187,5 +188,19 @@ $wp_query = $temp_query;
   <?php //require_once('tampos-kits.php'); ?>
 </div>
 
+<div class="cores-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
+    <div class="cor-ac">amarelo<br>curry<br>[ ac ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+  </div>
+  
+  <div class="cor-tampos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-mb-b">mármore<br>branco<br>[ mb ]</div>
+  </div>
+ 
+  <div class="all-screen"><div>
 
 <?php get_footer(); ?>

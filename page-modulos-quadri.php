@@ -80,7 +80,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-quadri">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-quadri">Características</a>
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-quadri">Módulos</a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-quadri">Acessórios</a>-->
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-quadri">Ambientes</a>
@@ -102,17 +102,25 @@
     <dl class="prod-data">
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
-        <dd><?php echo $k.":"; ?><br><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></dd>
+        <dd>
+           <?php if ($k === "Cores" ) { ?>
+                <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
+               
+          <?php } else if ($k === "Cor" ) { ?>
+                  <?php echo $k.":"; ?><br><a href="#" class="open-cor"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
+                   
+          <?php } ?>
+        </dd>
       <?php } ?>
     </dl><!-- /.prod-data -->
     
     <div class="tampos">
       <?php if ($p->tampos !== "" ) { ?>
-      <p><?php echo $p->tampos; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" />
+      <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" /></a>
       <?php } ?>
     </div>
     
-    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php echo $p->medidapeca; ?></p></div>
+    <div class="puxadores"><p><?php echo $p->peca; ?></p><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $p->puxadores; ?>" style="width:100%; max-width:100px;" /><p><?php //echo $p->medidapeca; ?></p></div>
     
     <div class="btns" data-featherlight-gallery data-featherlight-filter="a">
       
@@ -187,5 +195,26 @@ $wp_query = $temp_query;
   <?php //require_once('tampos-quadri.php'); ?>
 </div>
 
+<div class="cores-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
+    <div class="cor-vc">verde<br>chá<br>[ vc ]</div>
+    <div class="cor-ac">amarelo<br>curry<br>[ ac ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+  </div>
+  
+  <div class="cor-modulos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+  </div>
+  
+  <div class="cor-tampos">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-mp">mármore<br>preto<br>[ mp ]</div>
+    <div class="cor-mb-b">mármore<br>branco<br>[ mb ]</div>
+  </div>
+ 
+  <div class="all-screen"><div>
 
 <?php get_footer(); ?>

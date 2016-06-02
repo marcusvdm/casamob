@@ -20,7 +20,7 @@
     <tr>
         <td class="destaques--img"><!--<img src="<?php //bloginfo('template_url'); ?>/assets/images/icons/icon-destaque-acessorios.svg" alt="">--></td>
         <td><br>
-          <p>*Em portas e / ou gavetas de módulos selecionados</p>
+          <p style="font-size:11px;">*Em portas e / ou gavetas de módulos selecionados</p>
         </td>
     </tr>
     <!--<tr>-->

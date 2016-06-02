@@ -30,7 +30,7 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-smart">Características</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-smart">Características</a>
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-smart">Módulos</a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-smart">Acessórios</a>-->
           <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-smart">Ambientes</a>
@@ -40,12 +40,12 @@
             data-featherlight-gallery 
             data-featherlight-filter="a">
         <?php 
-          //$exceptions = array(0, 4, 8);
+          $exceptions = array(0, 3);
           //$remove = array(10,19,20);
           
-          for ($i = 0; $i <= 3; $i++) {
+          for ($i = 0; $i <= 4; $i++) {
             
-          if (!in_array($i, $remove)) {  
+          
             if (!in_array($i, $exceptions)) {
         ?>
           <a class="thumb" href="<?php bloginfo('template_url');?>/assets/images/smart/lightbox-coz-smart-amb-<?php echo $i; ?>.jpg" title="<?php the_title();?>">
@@ -55,7 +55,7 @@
           <span class="thumb thumb-capa">
             <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/smart/thumb-coz-smart-amb-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
           </span>
-        <?php } } }?>
+        <?php } }?>
         </figure>
       </div>
     </article>

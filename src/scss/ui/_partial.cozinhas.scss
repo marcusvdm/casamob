@@ -43,6 +43,9 @@
         @include media-query(lap){
           top: 0;
         }
+        @include media-query (wide) {
+          margin-top:             $base-spacing-unit;
+        }
       }
 
       .cozinhas-title { 
@@ -122,6 +125,7 @@
       height:               50%;
       width:                25%;
       bottom:               0;
+      overflow:             hidden;
 
       @include floor($hero-unica, $hero-unica-base64);
       @include media-query (portable) { .btn { background: $hero-unica; } };
@@ -322,7 +326,7 @@
     }
 
     @include media-query (wide) {
-      max-width:              600px;
+      max-width:              400px;
       margin-top:             -$base-spacing-unit;
     }
   }
@@ -355,11 +359,11 @@
     }
 
     @include media-query(wide) {
-      margin-top:           $header-total + $base-spacing-unit;
+      margin-top:           150px;
     }
 
     @include media-query(superwide) {
-      margin-top:           60px;
+      //margin-top:           60px;
     }
     
     @include media-query(palm) {
@@ -370,7 +374,7 @@
     }
     @include media-query(lap) {
       left:                 50%;
-      top:                  130px;
+      //top:                  200px;
       bottom:               auto;
       @include font-size(15px, 1);
     }
@@ -434,5 +438,53 @@
     max-width:360px;
     width:100%;
   }
-  
+}
+
+
+@include media-query(desk) {
+  .skew {
+    //background: url('/wp-content/themes/casamob/assets/images/faixa-lanc.png') no-repeat;
+    background: #fff200;
+    font-size: 12px;
+    float: right;
+     transform:  rotate(-40deg) scale(1.3) skew(2deg) translate(0);
+      -webkit-transform:  rotate(-40deg) scale(1.3) skew(2deg) translate(0);
+      -moz-transform: rotate(-40deg) scale(1.3) skew(2deg) translate(0);
+      -o-transform:  rotate(-40deg) scale(1.3) skew(2deg) translate(0);
+      -ms-transform: rotate(-40deg) scale(1.3) skew(2deg) translate(0);
+  }
+  .smart-pos { color: #91afbb; text-transform: uppercase; right: -6%; bottom: 30px; width: 33%; position: absolute;}
+  .quadri-pos { color: #c97a28; text-transform: uppercase; right: -6%; bottom: 30px; width: 33%; position: absolute; }
+  .unica-pos { color: #809c76; text-transform: uppercase; right: -6%; bottom: 28px; width: 40%; position: absolute; }
+
+}
+
+@include media-query(lap) {
+  .skew {
+    //background: url('/wp-content/themes/casamob/assets/images/faixa-lanc.png') no-repeat;
+    background: #fff200;
+    font-size: 12px;
+    float: right;
+     transform:  rotate(40deg) scale(1.3) skew(2deg) translate(0);
+      -webkit-transform:  rotate(40deg) scale(1.3) skew(2deg) translate(0);
+      -moz-transform: rotate(40deg) scale(1.3) skew(2deg) translate(0);
+      -o-transform:  rotate(40deg) scale(1.3) skew(2deg) translate(0);
+      -ms-transform: rotate(40deg) scale(1.3) skew(2deg) translate(0);
+  }
+  .smart-pos { color: #91afbb; text-transform: uppercase; right: -25%; top: 90px; width: 80%; position: absolute;}
+  .quadri-pos { color: #c97a28; text-transform: uppercase; right: -25%; top: 90px; width: 80%; position: absolute; }
+  .unica-pos { color: #809c76; text-transform: uppercase; right: -5%; top: 28px; width: 50%; position: absolute; }
+
+}
+
+@include media-query(palm) {
+  .skew {
+      background: url('/wp-content/themes/casamob/assets/images/faixa-lanc.png') no-repeat;
+      font-size: 12px;
+      float: left;
+  }
+  .smart-pos { color: #91afbb; text-transform: uppercase; left: 80px; top: 10px; width: 120px; position: absolute; }
+  .quadri-pos { color: #c97a28; text-transform: uppercase; left: 80px; top: 10px; width: 120px; position: absolute; }
+  .unica-pos { color: #809c76; text-transform: uppercase; left: 80px; top: 10px; width: 120px; position: absolute;}
+
 }
