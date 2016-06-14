@@ -40,22 +40,13 @@
             data-featherlight-gallery 
             data-featherlight-filter="a">
         <?php 
-          //$exceptions = array(0, 4, 8);
-          //$remove = array(10,19,20);
           
-          for ($i = 0; $i <= 10; $i++) {
-            
-          if (!in_array($i, $remove)) {  
-            if (!in_array($i, $exceptions)) {
-        ?>
+          for ($i = 0; $i <= 10; $i++) { ?>
+         
           <a class="thumb" href="<?php bloginfo('template_url');?>/assets/images/complementos/lightbox-coz-complementos-amb-<?php echo $i; ?>.jpg" title="<?php the_title();?>">
             <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/complementos/thumb-coz-complementos-amb-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
           </a>
-        <?php } else { ?>
-          <span class="thumb thumb-capa">
-            <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/complementos/thumb-coz-complementos-amb-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
-          </span>
-        <?php } } }?>
+        <?php }?>
         </figure>
       </div>
     </article>

@@ -220,7 +220,7 @@
     
     $('.img-slider', thisId).slick({
       autoplay: true,
-      autoplaySpeed: 7000,
+      autoplaySpeed: 5000,
       speed: 800,
       cssEase: 'ease-in-out',
       arrows: false,
@@ -237,7 +237,7 @@
     
     $('.txt-slider', thisId).slick({
       autoplay: true,
-      autoplaySpeed: 7000,
+      autoplaySpeed: 5000,
       speed: 800,
       cssEase: 'ease-in-out',
       arrows: true,

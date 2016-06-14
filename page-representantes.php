@@ -20,16 +20,16 @@
         </h2>
         <div class="intro"><?php the_content();?></div>
         <!-- POPUP REPRESENTANTES -->
-        <div class="popup">
-          <a href="#" class="close">X</a>
-          <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="173" height="173" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">
-            <param name="name" value="movelsul" />
-            <param name="src" value="/wp-content/themes/casamob/assets/images/movelsul-173x173-pt.swf" />
-            <param name="allowfullscreen" value="false" />
-            <param name="quality" value="high" />
-            <embed type="application/x-shockwave-flash" width="173" height="173" src="/wp-content/themes/casamob/assets/images/movelsul-173x173-pt.swf"></embed>
-          </object>
-        </div>
+        <!--<div class="popup">-->
+        <!--  <a href="#" class="close">X</a>-->
+        <!--  <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="173" height="173" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">-->
+        <!--    <param name="name" value="movelsul" />-->
+        <!--    <param name="src" value="/wp-content/themes/casamob/assets/images/movelsul-173x173-pt.swf" />-->
+        <!--    <param name="allowfullscreen" value="false" />-->
+        <!--    <param name="quality" value="high" />-->
+        <!--    <embed type="application/x-shockwave-flash" width="173" height="173" src="/wp-content/themes/casamob/assets/images/movelsul-173x173-pt.swf"></embed>-->
+        <!--  </object>-->
+        <!--</div>-->
         <!-- FIM POPUP REPRESENTANTES -->
       </div>
       <div class="content">
