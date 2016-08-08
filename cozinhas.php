@@ -11,9 +11,9 @@
           <small>Linha</small> Play
         </h2>
   
-        <div class="modelo">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-play.png" alt="">
-        </div>
+        <!--<div class="modelo">-->
+        <!--  <img src="<?php //bloginfo('template_url');?>/assets/images/cozinhas/modelo-play.png" alt="">-->
+        <!--</div>-->
   
         <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-play.png" alt="">
@@ -114,9 +114,9 @@
           <small>Linha</small> Kits
         </h2>
   
-        <div class="modelo">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/modelo-kits.png" alt="">
-        </div>
+        <!--<div class="modelo">-->
+        <!--  <img src="<?php //bloginfo('template_url');?>/assets/images/cozinhas/modelo-kits.png" alt="">-->
+        <!--</div>-->
         
         <div class="cozinha">
           <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-kits.png" alt="">

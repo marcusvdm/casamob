@@ -123,7 +123,7 @@ add_filter( 'body_class', 'add_slug_body_class' );
 
 // ******************* Add Custom Post Types & Taxonomies ****************** //
 
-/*register_post_type('custom', array(
+register_post_type('custom', array(
   'label' => __('Custom Post Type'),
   'singular_label' => __('Custom Post Type'),
   'public' => true,
@@ -135,7 +135,7 @@ add_filter( 'body_class', 'add_slug_body_class' );
   'has_archive' => true,
   'supports' => array('title', 'editor', 'author')
 ));
-
+/*
 add_action( 'init', 'build_taxonomies', 0 );
 
 function build_taxonomies() {

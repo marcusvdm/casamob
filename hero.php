@@ -9,7 +9,7 @@
 
     $playImages = array(
       'play-cozinha',
-      'play-modelo',
+      //'play-modelo',
       'play-modulo1',
       'play-modulo2',
       'play-modulo3',
@@ -28,8 +28,8 @@
 
     $quadriImages = array(
       'quadri-cozinha',
-      'quadri-mulher',
-      'quadri-homem',
+      //'quadri-mulher',
+      //'quadri-homem',
       'quadri-modulo1',
       'quadri-modulo2',
       'quadri-exaustor',
@@ -50,7 +50,7 @@
 
     $cityImages = array(
       'city-cozinha',
-      'city-modelo',
+      //'city-modelo',
       'city-modulo1',
       'city-modulo2',
       'city-modulo3',
