@@ -5152,6 +5152,16 @@ html.touch {
 .CCU2450-9P-3PV-Cozinha-Compacta-Unica-9-Portas-3-Vidros::after {
   background-image: url(../images/modulos-aereos/unica/CCU2450-9P-3PV-Cozinha-Compacta-Unica-9-Portas-3-Vidros.png); }
 
+/*KITS UNICA*/
+.kit-unica-6p2g::after {
+  background-image: url(../images/modulos-aereos/unica/kit-unica-6p2g.png); }
+
+.kit-unica-6p2g-1v::after {
+  background-image: url(../images/modulos-aereos/unica/kit-unica-6p2g-1v.png); }
+
+.kit-unica-6p2g-3v::after {
+  background-image: url(../images/modulos-aereos/unica/kit-unica-6p2g-3v.png); }
+
 /*QUADRI*/
 .Av40-1P-Armario-Vertical-1-Porta::after {
   background-image: url(../images/modulos-aereos/quadri/Av40-1P-Armario-Vertical-1-Porta.png); }
@@ -5257,6 +5267,16 @@ html.touch {
 
 .P80-6P-2V-Paneleiro-Duplo-6-Portas-2-Vidros::after {
   background-image: url(../images/modulos-aereos/quadri/P80-6P-2V-Paneleiro-Duplo-6-Portas-2-Vidros.png); }
+
+/*KITS QUADRI 4.0*/
+.kit-quadri-6p2g::after {
+  background-image: url(../images/modulos-aereos/quadri/kit-quadri-6p2g.png); }
+
+.kit-quadri-6p2g-1v::after {
+  background-image: url(../images/modulos-aereos/quadri/kit-quadri-6p2g-1v.png); }
+
+.kit-quadri-6p2g-3v::after {
+  background-image: url(../images/modulos-aereos/quadri/kit-quadri-6p2g-3v.png); }
 
 /*SMART*/
 .AV120-2PV-N-Armario-Vertical-2-portas-vidro-nicho::after {

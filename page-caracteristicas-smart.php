@@ -69,6 +69,7 @@
               <li class="caract-li">Dobradiças 35 slow motion</li>
               <li class="caract-li">Puxadores e pés em alumínio</li>
               <li class="caract-li">Portas em vidro temperado com esquadria de alumínio</li>
+              <li class="caract-li">Prateleira em aço com porta de correr em vidro</li>
             </ul>
           </div>
         

@@ -103,7 +103,10 @@
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
         <dd>
-           <?php if ($k === "Cores" ) { ?>
+           <?php if (($p->kits === "sim" ) && ($k === "Cores" )) { ?>
+                <?php echo $k.":"; ?><br><a href="#" class="open-cores-kits"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
+               
+          <?php } else if ($k === "Cores" ) { ?>
                 <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
                
           <?php } else if ($k === "Cor" ) { ?>
@@ -201,6 +204,13 @@ $wp_query = $temp_query;
     <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
     <div class="cor-vc">verde<br>chá<br>[ vc ]</div>
     <div class="cor-ac">amarelo<br>curry<br>[ ac ]</div>
+    <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+  </div>
+  
+  <div class="cores-modulos-kits">
+    <a href="#" class="close-cores">X</a>
+    <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
+    <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
     <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
   </div>
   

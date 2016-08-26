@@ -40,10 +40,10 @@
             data-featherlight-gallery 
             data-featherlight-filter="a">
         <?php 
-          $exceptions = array(0, 4, 6);
-          //$remove = array(10,19,20);
+          $exceptions = array(0, 4, 6, 9);
+          //$remove = array(9);
           
-          for ($i = 0; $i <= 8; $i++) {
+          for ($i = 0; $i <= 12; $i++) {
             
           if (!in_array($i, $remove)) {  
             if (!in_array($i, $exceptions)) {
