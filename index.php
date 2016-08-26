@@ -11,7 +11,7 @@
     get_template_part('quadri');
     get_template_part('unica');
     get_template_part('city');
-    get_template_part('kits');
+    //get_template_part('kits');
     get_template_part('complementos');
     
 ?>   

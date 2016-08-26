@@ -39,8 +39,8 @@
    }
 
   @include media-query(wide) {
-    background-size:    auto;
-    background-position: 65% center;
+    // background-size:    auto;
+    // background-position: 65% center;
     
     .popup__show {
       position: absolute;

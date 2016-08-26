@@ -2649,6 +2649,12 @@ html.touch {
   .accordion .logo-web:nth-child(4) a,
   .new-accordion .logo-web:nth-child(4) a {
     background-color: #493e2f; }
+  .accordion .logo-web:nth-child(5) a,
+  .new-accordion .logo-web:nth-child(5) a {
+    background-color: #761c27; }
+  .accordion .logo-web:nth-child(6) a,
+  .new-accordion .logo-web:nth-child(6) a {
+    background-color: #5d95a7; }
   .accordion .active > .regiao,
   .accordion .active > .estado,
   .accordion .active > .title, .accordion .active.has-arrow,
@@ -3712,9 +3718,8 @@ html.touch {
             bottom: 0px;
             font-size: 40px; } }
     .produtos .linha.linha-city {
-      left: 25%;
+      left: 33.33333%;
       height: 50%;
-      width: 25%;
       bottom: 0;
       background: linear-gradient(to bottom, #36344d 0%, #413e5c 70%, #34324a 80%);
       background: #36344d;
@@ -3836,7 +3841,6 @@ html.touch {
     .produtos .linha.linha-unica {
       left: 0;
       height: 50%;
-      width: 25%;
       bottom: 0;
       overflow: hidden;
       background: linear-gradient(to bottom, #839e79 0%, #91a988 70%, #809c76 80%);
@@ -4019,7 +4023,6 @@ html.touch {
     .produtos .linha.linha-complemento {
       right: 0;
       height: 50%;
-      width: 25%;
       bottom: 0;
       background: linear-gradient(to bottom, #839e79 0%, #91a988 70%, #809c76 80%);
       background: #839e79;
@@ -4046,7 +4049,7 @@ html.touch {
           left: 0;
           width: 100%;
           height: 12.28%;
-          top: 87.4%; } }
+          top: 75.12%; } }
       @media screen and (max-height: 500px) {
         .produtos .linha.linha-complemento {
           left: 0;
@@ -4853,7 +4856,7 @@ html.touch {
   .msg p {
     color: #59496a; }
 
-.cores-modulos, .cor-modulos, .cor-tampos, .cores-modulos-dif, .cor-tampos-dif {
+.cores-modulos, .cores-modulos-kits, .cor-modulos, .cor-tampos, .cor-tampos-kits, .cores-modulos-dif, .cor-tampos-dif {
   visibility: hidden;
   position: fixed;
   width: 320px;
@@ -4867,20 +4870,20 @@ html.touch {
   text-align: center;
   padding: 10px;
   text-transform: uppercase; }
-  .cores-modulos a, .cor-modulos a, .cor-tampos a, .cores-modulos-dif a, .cor-tampos-dif a {
+  .cores-modulos a, .cores-modulos-kits a, .cor-modulos a, .cor-tampos a, .cor-tampos-kits a, .cores-modulos-dif a, .cor-tampos-dif a {
     width: 20px;
     height: 20px;
     color: #000000;
     float: right;
     font-size: 20px;
     text-decoration: none; }
-  .cores-modulos p, .cor-modulos p, .cor-tampos p, .cores-modulos-dif p, .cor-tampos-dif p {
+  .cores-modulos p, .cores-modulos-kits p, .cor-modulos p, .cor-tampos p, .cor-tampos-kits p, .cores-modulos-dif p, .cor-tampos-dif p {
     color: #000000;
     clear: both;
     width: 100%;
     text-align: left; }
 
-.cores-modulos--open, .cor-modulos--open, .cor-tampos--open, .cores-modulos-dif--open, .cor-tampos-dif--open {
+.cores-modulos--open, .cores-modulos-kits--open, .cor-modulos--open, .cor-modulos--open, .cor-tampos--open, .cor-tampos-kits--open, .cores-modulos-dif--open, .cor-tampos-dif--open {
   visibility: visible; }
 
 .cor-bs {
@@ -5310,6 +5313,19 @@ html.touch {
 .P70-4P-Paneleiro-duplo-4-portas::after {
   background-image: url(../images/modulos-aereos/smart/P70-4P-Paneleiro-duplo-4-portas.png); }
 
+/*KITS PLAY SMART*/
+.KT120-4P-3G-kit-1200-4-portas-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/smart/KT120-4P-3G-kit-1200-4-portas-3-gavetas.png); }
+
+.KT120-5P-3G-kit-1200-5-portas-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/smart/KT120-5P-3G-kit-1200-5-portas-3-gavetas.png); }
+
+.KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/smart/KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas.png); }
+
+.KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas::after {
+  background-image: url(../images/modulos-aereos/smart/KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas.png); }
+
 /*CITY*/
 .AV105-3P-Armario-Vertical-3-Portas::after {
   background-image: url(../images/modulos-aereos/city/AV105-3P-Armario-Vertical-3-Portas.png); }
@@ -5477,19 +5493,6 @@ html.touch {
 
 .Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas::after {
   background-image: url(../images/modulos-aereos/play/Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas.png); }
-
-/*KITS*/
-.KT120-4P-3G-kit-1200-4-portas-3-gavetas::after {
-  background-image: url(../images/modulos-aereos/kits/KT120-4P-3G-kit-1200-4-portas-3-gavetas.png); }
-
-.KT120-5P-3G-kit-1200-5-portas-3-gavetas::after {
-  background-image: url(../images/modulos-aereos/kits/KT120-5P-3G-kit-1200-5-portas-3-gavetas.png); }
-
-.KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas::after {
-  background-image: url(../images/modulos-aereos/kits/KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas.png); }
-
-.KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas::after {
-  background-image: url(../images/modulos-aereos/kits/KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas.png); }
 
 /*COMPLEMENTOS*/
 .NV25-60-Nicho-250x600::after {
@@ -6469,20 +6472,17 @@ html.touch {
         visibility: visible;
         transition: all ease-in-out .3s; } }
   @media screen and (min-width: 1500px) {
-    .representantes {
-      background-size: auto;
-      background-position: 65% center; }
-      .representantes .popup__show {
-        position: absolute;
-        left: 100px;
-        top: 300px;
-        width: 173px;
-        height: 173px;
-        z-index: 9999;
-        opacity: 1;
-        max-height: 100%;
-        visibility: visible;
-        transition: all ease-in-out .3s; } }
+    .representantes .popup__show {
+      position: absolute;
+      left: 100px;
+      top: 300px;
+      width: 173px;
+      height: 173px;
+      z-index: 9999;
+      opacity: 1;
+      max-height: 100%;
+      visibility: visible;
+      transition: all ease-in-out .3s; } }
   .representantes .accordion .cobertura, .representantes .accordion p {
     color: #ffffff;
     font-size: 16px;
@@ -6536,7 +6536,8 @@ html.touch {
   .contato .telefone {
     background-color: #a32744; }
   .contato .assunto {
-    background-color: #95b9c8; }
+    background-color: #95b9c8;
+    color: #666666; }
   .contato .mensagem {
     background-color: #e3d9cb;
     color: #666666; }
@@ -6575,7 +6576,8 @@ html.touch {
   .trabalhe .telefone {
     background-color: #95b9c8; }
   .trabalhe .area {
-    background-color: #a32744; }
+    background-color: #a32744;
+    color: #cfbfa9; }
   .trabalhe .site {
     background-color: #94c0b8; }
   .trabalhe .mensagem {

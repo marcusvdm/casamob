@@ -467,7 +467,7 @@
   p { color: #59496a;}
 }
 
-.cores-modulos, .cor-modulos, .cor-tampos, .cores-modulos-dif, .cor-tampos-dif {
+.cores-modulos, .cores-modulos-kits, .cor-modulos, .cor-tampos, .cor-tampos-kits, .cores-modulos-dif, .cor-tampos-dif {
   visibility: hidden;
   position: fixed;
   width: 320px;
@@ -485,7 +485,7 @@
   a { width: 20px; height: 20px; color: #000000; float: right; font-size: 20px; text-decoration:none;}
   p { color: #000000; clear:both; width: 100%; text-align: left;}
 }
-.cores-modulos--open, .cor-modulos--open, .cor-tampos--open, .cores-modulos-dif--open, .cor-tampos-dif--open {
+.cores-modulos--open, .cores-modulos-kits--open, .cor-modulos--open, .cor-modulos--open, .cor-tampos--open, .cor-tampos-kits--open, .cores-modulos-dif--open, .cor-tampos-dif--open {
   visibility: visible;
 }
 
@@ -586,6 +586,13 @@
 .TE60-2P-Torre-multiuso-2-portas::after { background-image: url(../images/modulos-aereos/smart/TE60-2P-Torre-multiuso-2-portas.png) }
 .P70-4P-Paneleiro-duplo-4-portas::after { background-image: url(../images/modulos-aereos/smart/P70-4P-Paneleiro-duplo-4-portas.png) }
 
+/*KITS PLAY SMART*/
+.KT120-4P-3G-kit-1200-4-portas-3-gavetas::after { background-image: url(../images/modulos-aereos/smart/KT120-4P-3G-kit-1200-4-portas-3-gavetas.png) }
+.KT120-5P-3G-kit-1200-5-portas-3-gavetas::after { background-image: url(../images/modulos-aereos/smart/KT120-5P-3G-kit-1200-5-portas-3-gavetas.png) }
+.KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas::after { background-image: url(../images/modulos-aereos/smart/KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas.png) }
+.KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas::after { background-image: url(../images/modulos-aereos/smart/KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas.png) }
+
+
 /*CITY*/
 .AV105-3P-Armario-Vertical-3-Portas::after { background-image: url(../images/modulos-aereos/city/AV105-3P-Armario-Vertical-3-Portas.png) }
 .AH70-1P-Armario-horizontal-1-porta::after { background-image: url(../images/modulos-aereos/city/AH70-1P-Armario-horizontal-1-porta.png) }
@@ -645,12 +652,6 @@
 .Gg60-1G-Gabinete-1-Gaveta::after { background-image: url(../images/modulos-aereos/play/Gg60-1G-Gabinete-1-Gaveta.png) }
 .G70-2P-Gabinete-2-Portas::after { background-image: url(../images/modulos-aereos/play/G70-2P-Gabinete-2-Portas.png) }
 .Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas::after { background-image: url(../images/modulos-aereos/play/Gm105-2P-3G-Gabinete-2-Portas-3-Gavetas.png) }
-
-/*KITS*/
-.KT120-4P-3G-kit-1200-4-portas-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-4P-3G-kit-1200-4-portas-3-gavetas.png) }
-.KT120-5P-3G-kit-1200-5-portas-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-5P-3G-kit-1200-5-portas-3-gavetas.png) }
-.KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-5P-1V-3G-kit-1200-5-portas-1-vidro-3-gavetas.png) }
-.KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas::after { background-image: url(../images/modulos-aereos/kits/KT120-5P-3V-3G-kit-1200-5-portas-3-vidros-3-gavetas.png) }
 
 /*COMPLEMENTOS*/
 .NV25-60-Nicho-250x600::after               { background-image: url(../images/modulos-aereos/complementos/NV25-60-Nicho-250x600.png) }

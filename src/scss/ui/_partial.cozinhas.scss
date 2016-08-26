@@ -58,10 +58,11 @@
     }
 
     &.linha-city {
-      left:               25%;
-      height:             50%;
-      width:              25%;
-      bottom:             0;
+      //left:               25%;
+      left:                 33.33333%;
+      height:               50%;
+      //width:              25%;
+      bottom:               0;
 
       @include floor($hero-city, $hero-city-base64);
       @include media-query (portable) { .btn { background: $hero-city; } };
@@ -123,7 +124,7 @@
     &.linha-unica {
       left:                 0;
       height:               50%;
-      width:                25%;
+      //width:                25%;
       bottom:               0;
       overflow:             hidden;
 
@@ -218,13 +219,14 @@
     &.linha-complemento {
       right:                 0;
       height:               50%;
-      width:                25%;
+      //width:                25%;
       bottom:               0;
 
       @include floor($hero-unica, $hero-unica-base64);
       @include media-query (portable) { .btn { background: $hero-unica; } };
       @include media-query(lap-and-up) {  padding-top: 0; };
-      @include media-query(palm){left: 0; width: 100%; height: 12.28%; top: 87.4%;}
+      //@include media-query(palm){left: 0; width: 100%; height: 12.28%; top: 87.4%;}
+      @include media-query(palm){left: 0; width: 100%;  height: 12.28%; top: 75.12%;}
       @include media-query(landscape){left: 0; width: 100%; height: 12.28%; top: 97.68% ;}
       
       .cozinha {

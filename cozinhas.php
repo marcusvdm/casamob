@@ -106,29 +106,29 @@
   
     </div><!-- /.content.linha-city -->
     
-    <div class="content linha kits js-anchor" data-stellar-offset-parent="true">
+    <!--<div class="content linha kits js-anchor" data-stellar-offset-parent="true">-->
   
-      <div class="offset">
+    <!--  <div class="offset">-->
   
-        <h2 class="cozinhas-title">
-          <small>Linha</small> Kits
-        </h2>
+    <!--    <h2 class="cozinhas-title">-->
+    <!--      <small>Linha</small> Kits-->
+    <!--    </h2>-->
   
         <!--<div class="modelo">-->
         <!--  <img src="<?php //bloginfo('template_url');?>/assets/images/cozinhas/modelo-kits.png" alt="">-->
         <!--</div>-->
         
-        <div class="cozinha">
-          <img src="<?php bloginfo('template_url');?>/assets/images/cozinhas/cozinha-kits.png" alt="">
-        </div>
+        <!--<div class="cozinha">-->
+        <!--  <img src="<?php //bloginfo('template_url');?>/assets/images/cozinhas/cozinha-kits.png" alt="">-->
+        <!--</div>-->
   
-      </div><!-- /.offset -->
+      <!--</div><!-- /.offset -->-->
   
-       <a href="<?php echo esc_url( home_url( '/' ) ); ?>#kits" data-panel="kits" class="btn">Clique e conheça</a> 
+       <!--<a href="<?php //echo esc_url( home_url( '/' ) ); ?>#kits" data-panel="kits" class="btn">Clique e conheça</a> -->
       <!--<span class="btn btn--placeholder">Novidades em Breve</span>-->
   
   
-    </div><!-- /.content.linha-kits -->
+    <!--</div><!-- /.content.linha-kits -->-->
     
     <div class="content linha linha-complemento js-anchor" data-stellar-offset-parent="true">
       <div class="offset">
@@ -148,8 +148,5 @@
   
     </div><!-- /.content.linha-complemento -->
   </div>
-  <!-- <div class="dark-produtos"></div>-->
-  <!--<div class="banner-desculpe">-->
-  <!--      <p style="font-size: 16px;"><a href="http://www.youblisher.com/p/1374421-Catalogo-CasaMob-2016/" target="_blank"><img src="wp-content/themes/casamob/assets/images/banner-360x480.jpg" alt="Banner novo catálogo 2016" class="img-banner"/></a></p>-->
-  <!--  </div>-->
+ 
 </section>
