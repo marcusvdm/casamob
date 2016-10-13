@@ -223,6 +223,7 @@ $wp_query = $temp_query;
     <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
     <div class="cor-ac">amarelo<br>curry<br>[ ac ]</div>
     <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+    <div class="cores-indicadas">As cores indicadas acima somente nas portas de vidro e gavetas.</div>
   </div>
   
   <div class="cor-modulos">

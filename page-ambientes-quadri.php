@@ -45,7 +45,7 @@
           
           for ($i = 0; $i <= 12; $i++) {
             
-          if (!in_array($i, $remove)) {  
+         // if (!in_array($i, $remove)) {  
             if (!in_array($i, $exceptions)) {
         ?>
           <a class="thumb" href="<?php bloginfo('template_url');?>/assets/images/quadri/lightbox-coz-quadri-amb-<?php echo $i; ?>.jpg" title="<?php the_title();?>">
@@ -55,7 +55,7 @@
           <span class="thumb thumb-capa">
             <img class="thumb__img" src="<?php bloginfo('template_url');?>/assets/images/quadri/thumb-coz-quadri-amb-<?php echo $i; ?>.jpg" alt="<?php the_title();?>" />
           </span>
-        <?php } } }?>
+        <?php } } //}?>
         </figure>
       </div>
     </article>

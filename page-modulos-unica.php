@@ -213,6 +213,7 @@ $wp_query = $temp_query;
     <div class="cor-bs">branco<br>sal<br>[ bs ]</div>
     <div class="cor-pj">preto<br>jabuticaba<br>[ pj ]</div>
     <div class="cor-vp">vermelho<br>páprica<br>[ vp ]</div>
+    <div class="cores-indicadas">As cores indicadas acima somente nas portas de vidro, gavetas e porta menor do balcão.</div>
   </div>
   
   <div class="cor-modulos">

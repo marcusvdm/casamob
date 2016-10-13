@@ -4886,6 +4886,16 @@ html.touch {
 .cores-modulos--open, .cores-modulos-kits--open, .cor-modulos--open, .cor-modulos--open, .cor-tampos--open, .cor-tampos-kits--open, .cores-modulos-dif--open, .cor-tampos-dif--open {
   visibility: visible; }
 
+.cores-indicadas {
+  font-size: 12px;
+  color: #59496a;
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  text-transform: none;
+  font-weight: bold; }
+
 .cor-bs {
   background: url("/wp-content/themes/casamob/assets/images/cores/bs.png") no-repeat;
   width: 90px;

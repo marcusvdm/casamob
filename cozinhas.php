@@ -68,7 +68,7 @@
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small>Linha</small> Unica 3.5
+          <small>Linha</small> Única 3.5
         </h2>
   
         <div class="cozinha">
