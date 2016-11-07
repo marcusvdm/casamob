@@ -80,10 +80,45 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-play">Características</a>
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-play">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-play">Acessórios</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-play">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/diferenciais-play">
+            <?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?>
+          </a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-play">
+            <?php _e(
+          "<!--:en-->MODULES<!--:--> 
+          
+          <!--:pb-->Módulos<!--:-->
+          
+          <!--:es-->MODULES<!--:-->
+          
+          <!--:fr-->MÓDULOS<!--:-->" ); ?>
+          </a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/acessorios-play">
+            <?php _e(
+          "<!--:en-->Accessories <!--:--> 
+          
+          <!--:pb-->Acessórios<!--:-->
+          
+          <!--:es-->Accesorios<!--:-->
+          
+          <!--:fr-->Accessoires<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-play">
+            <?php _e(
+          "<!--:en-->ENVIRONMENTS<!--:--> 
+          
+          <!--:pb-->Ambientes<!--:-->
+          
+          <!--:es-->AMBIENTES<!--:-->
+          
+          <!--:fr-->AMBIANCES<!--:-->" ); ?>
+          </a>
         </nav>
 
         <figure class="modulos">

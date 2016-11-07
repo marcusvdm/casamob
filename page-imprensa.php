@@ -15,9 +15,33 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <span class="red">imprensa</span>
-          <span class="white">&amp;</span>
-          <span class="lt-purple">Mídia</span>
+          <span class="red"><?php _e(
+          "<!--:en-->PRESS<!--:--> 
+          
+          <!--:pb-->imprensa<!--:-->
+          
+          <!--:es-->PRENSA <!--:-->
+          
+          <!--:fr-->PRESSE  <!--:-->"
+          ); ?></span>
+          <span class="white"><?php _e(
+          "<!--:en-->&amp;<!--:--> 
+          
+          <!--:pb-->&amp;<!--:-->
+          
+          <!--:es-->Y<!--:-->
+          
+          <!--:fr-->& <!--:-->"
+          ); ?></span>
+          <span class="lt-purple"><?php _e(
+          "<!--:en-->MEDIA<!--:--> 
+          
+          <!--:pb-->Mídia<!--:-->
+          
+          <!--:es-->MEDIOS DE COMUNICACIÓN<!--:-->
+          
+          <!--:fr-->MÉDIA<!--:-->"
+          ); ?></span>
         </h2>
         <div class="intro">
           <?php the_content();?>
@@ -27,9 +51,29 @@
           </p>
         </div>
       </div>
-      <div class="content content--limited slideshow">
-        <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
-      </div>
+      <?php
+            $caminho  = $_SERVER['REQUEST_URI'];
+            $pieces = explode("/", $caminho);
+            $idioma = $pieces[1];
+            
+            if ($idioma == 'pb'){
+              
+              echo "<div class='content content--limited slideshow'>";
+              echo do_shortcode('[wonderplugin_slider id="1"]');
+              echo "</div>";
+                  
+            }
+            if ($idioma == 'es'){
+                  //nada
+            }
+            if ($idioma == 'en'){
+                 //nada
+            }
+            if ($idioma == 'fr'){
+                  //nada
+            }
+      ?>
+      
     </article>
   </div>
 </section>

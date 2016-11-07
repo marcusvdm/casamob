@@ -5,12 +5,40 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <span class="lt-violet">Resultados</span>
-	      <span class="white">da</span>
-	      <span class="orange">busca</span>
+          <span class="lt-violet"><?php _e(
+          "<!--:en-->Search<!--:--> 
+          
+          <!--:pb-->Resultados<!--:-->
+          
+          <!--:es-->resultados<!--:-->
+          
+          <!--:fr-->résultats<!--:-->" ); ?></span>
+	      <span class="white"><?php _e(
+          "<!--:en-->results<!--:--> 
+          
+          <!--:pb-->da<!--:-->
+          
+          <!--:es-->de la<!--:-->
+          
+          <!--:fr-->de la<!--:-->" ); ?></span>
+	      <span class="orange"><?php _e(
+          "<!--:en-->...<!--:--> 
+          
+          <!--:pb-->busca<!--:-->
+          
+          <!--:es-->búsqueda<!--:-->
+          
+          <!--:fr-->recherche<!--:-->" ); ?></span>
         </h2>
         <div class="intro">
-        	<h3>Você pesquisou por: </h3>
+        	<h3><?php _e(
+          "<!--:en-->You searched for:<!--:--> 
+          
+          <!--:pb-->Você pesquisou por:<!--:-->
+          
+          <!--:es-->Ha buscado por:<!--:-->
+          
+          <!--:fr-->Vous avez cherché:<!--:-->" ); ?> </h3>
         	<p><?php echo get_search_query(); ?></p>
         </div>
       </div>
@@ -25,7 +53,14 @@
 
 		<?php else : ?>
 			<li>
-				<h3>Nada foi encontrado.</h3>
+				<h3><?php _e(
+          "<!--:en-->Nothing was found.<!--:--> 
+          
+          <!--:pb-->Nada foi encontrado.<!--:-->
+          
+          <!--:es-->No se encontró nada.<!--:-->
+          
+          <!--:fr-->Rien n'a été trouvé.<!--:-->" ); ?></h3>
 				<p><?php get_search_form(); ?></p>
 			</li>
 		<?php endif; ?>

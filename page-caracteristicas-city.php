@@ -28,9 +28,9 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-city">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-city">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-city">Ambientes</a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-city"><?php _e("<!--:en-->CHARACTERISTICS<!--:--><!--:pb-->CARACTERÍSTICAS<!--:--><!--:es-->CARACTERÍSTICAS<!--:--><!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-city"><?php _e("<!--:en-->MODULES<!--:--><!--:pb-->Módulos<!--:--><!--:es-->MÓDULOS<!--:--><!--:fr-->MODULES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-city"><?php _e("<!--:en-->ENVIRONMENTS<!--:--><!--:pb-->Ambientes<!--:--><!--:es-->AMBIENTES<!--:--><!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
         
         <figure class="img-slider"
@@ -62,13 +62,52 @@
             //the_post();
         ?>
           <div class="txt-content">
-            <h3><?php //the_title();?>CARACTERÍSTICAS</h3>
+            <h3><?php //the_title();?><?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></h3>
             <?php //the_content();?>
             <ul>
-              <li class="caract-li">Dobradiças 35 slow motion</li>
-              <li class="caract-li">Puxadores cromados</li>
-              <li class="caract-li">Pés em alumínio</li>
-              <li class="caract-li">Portas de vidro temperado com esquadria de alumínio</li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->35 slow motion hinges <!--:--> 
+          
+          <!--:pb-->Dobradiças 35 slow motion<!--:-->
+          
+          <!--:es-->Bisagras 35 slow motion<!--:-->
+          
+          <!--:fr-->Charnières 35 slow motion <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Chrome-plated Handles <!--:--> 
+          
+          <!--:pb-->Puxadores cromados<!--:-->
+          
+          <!--:es-->Manijaes cromados<!--:-->
+          
+          <!--:fr-->Poignées chromées <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Aluminum feet <!--:--> 
+          
+          <!--:pb-->Pés em alumínio<!--:-->
+          
+          <!--:es-->Patas en aluminio<!--:-->
+          
+          <!--:fr-->Pieds en aluminium <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Tempered glass doors with aluminum frame<!--:--> 
+          
+          <!--:pb-->Portas de vidro temperado com esquadria de alumínio<!--:-->
+          
+          <!--:es-->Puertas de vidrio templado con perfil de aluminio<!--:-->
+          
+          <!--:fr-->Portes en verre trempé avec cadrage en aluminium <!--:-->"
+          ); ?></li>
             </ul>
           </div>
         

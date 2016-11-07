@@ -14,7 +14,15 @@
   <div class="page-container">
     <article class="page__content">
       <div class="info">
-        <h2><span class="lt-blue"><?php the_title();?></span></h2>
+        <h2><span class="lt-blue"><?php _e(
+          "<!--:en-->CONTACT<!--:--> 
+          
+          <!--:pb-->Contato<!--:-->
+          
+          <!--:es-->CONTACTO<!--:-->
+          
+          <!--:fr-->CONTACT<!--:-->" ); ?>
+          </a></span></h2>
         <div class="intro"><?php the_content();?></div>
       </div>
       

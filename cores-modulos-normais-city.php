@@ -1,9 +1,27 @@
 <h4 class="prod-title">Titulo do produto - Ref. 00000000</h4>
 <article class="page__content cores-box linhas prod-box">
   <div class="content">
-    <h2 class="lt-green">Cores</h2>
+    <h2 class="lt-green">
+      <?php _e(
+          "<!--:en-->Body<!--:--> 
+          
+          <!--:pb-->Cores<!--:-->
+          
+          <!--:es-->colores<!--:-->
+          
+          <!--:fr-->couleurs<!--:-->"
+          ); ?>
+          </h2>
     
-    <h3 class="lt-green">Corpo</h3>
+    <h3 class="lt-green"><?php _e(
+          "<!--:en-->colors<!--:--> 
+          
+          <!--:pb-->Corpo<!--:-->
+          
+          <!--:es-->de cuerpo<!--:-->
+          
+          <!--:fr-->du corps<!--:-->"
+          ); ?></h3>
     <div class="color-palete">
       <div class="color-box branco-sal right">
         <p class="color-label color-label--dk">

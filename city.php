@@ -13,7 +13,17 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <small class="white">Linha</small>
+          <small class="white">
+            <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne <!--:-->"
+          ); ?>
+          </small>
           <span class="lt-green"><?php the_title();?></span>
         </h2>
         <div class="intro">
@@ -25,22 +35,79 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-city">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-city">Módulos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-city">Ambientes</a>
-        </nav>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-city">
+            <?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-city">
+             <?php _e(
+          "<!--:en-->MODULES<!--:--> 
+          
+          <!--:pb-->Módulos<!--:-->
+          
+          <!--:es-->MÓDULOS<!--:-->
+          
+          <!--:fr-->MODULES<!--:-->" ); ?>
         
+          </a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-city">
+            <?php _e(
+          "<!--:en-->ENVIRONMENTS<!--:--> 
+          
+          <!--:pb-->Ambientes<!--:-->
+          
+          <!--:es-->AMBIENTES<!--:-->
+          
+          <!--:fr-->AMBIANCES<!--:-->" ); ?>
+          </a>
+        </nav>
+         <?php
+         $caminho  = $_SERVER['REQUEST_URI'];
+          $pieces = explode("/", $caminho);
+          $idioma = $pieces[1];
+          //echo "Escreve idioma; ".$idioma;
+        ?>
         <figure class="img-slider"
             data-featherlight-gallery 
             data-featherlight-filter="a"
         >
         <?php 
           for ($i = 0; $i <= 5; $i++) {
-        ?>
-          <a href="<?php bloginfo('template_url');?>/assets/images/city/lightbox-coz-city-<?php echo $i; ?>.jpg" title="">
-            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/city/slide-coz-city-<?php echo $i; ?>.jpg" alt="" />
-          </a>
-        <?php } ?>
+            
+        if (($i == 4) || ($i == 5)) {
+        
+        if ($idioma == 'pb'){ ?>
+                  <a href="<?php bloginfo('template_url');?>/assets/images/city/lightbox-coz-city-<?php echo $i; ?>.jpg" title="">
+                    <img data-lazy="<?php bloginfo('template_url');?>/assets/images/city/slide-coz-city-<?php echo $i; ?>.jpg" alt="" />
+                  </a>
+            <?php }
+            
+            if ($idioma == 'es'){ ?>
+                <a href="<?php bloginfo('template_url');?>/assets/images/city/lightbox-coz-city-<?php echo $i; ?>-es.jpg" title="">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/city/slide-coz-city-<?php echo $i; ?>-es.jpg" alt="" />
+                </a>
+            <?php }
+            if ($idioma == 'en'){ ?>
+                  <a href="<?php bloginfo('template_url');?>/assets/images/city/lightbox-coz-city-<?php echo $i; ?>-en.jpg" title="">
+                    <img data-lazy="<?php bloginfo('template_url');?>/assets/images/city/slide-coz-city-<?php echo $i; ?>-en.jpg" alt="" />
+                  </a>
+            <?php }
+            if ($idioma == 'fr'){ ?>
+                <a href="<?php bloginfo('template_url');?>/assets/images/city/lightbox-coz-city-<?php echo $i; ?>-fr.jpg" title="">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/city/slide-coz-city-<?php echo $i; ?>-fr.jpg" alt="" />
+                </a>
+            <?php }
+            
+        } else { ?>
+           <a href="<?php bloginfo('template_url');?>/assets/images/city/lightbox-coz-city-<?php echo $i; ?>.jpg" title="">
+              <img data-lazy="<?php bloginfo('template_url');?>/assets/images/city/slide-coz-city-<?php echo $i; ?>.jpg" alt="" />
+           </a>
+        <?php } } ?>
         </figure>
         
         <figure class="thumbs" >

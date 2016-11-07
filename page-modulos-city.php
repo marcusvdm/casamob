@@ -37,7 +37,16 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#city">
-            <small class="white">Linha</small>
+            <small class="white">
+               <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+            </small>
             <span class="lt-green">city</span>
           </a>
         </h2>
@@ -103,11 +112,11 @@
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
         <dd>
-          <?php if (($k === "Cores" ) && ($p->linha === "compacta" )){ echo $k.":"; ?>
+          <?php if ((($k === "Cores" ) || ($k === "Colors" ) || ($k === "Couleurs" ) || ($k === "Colores" )) && ($p->linha === "compacta" )){ echo $k.":"; ?>
                 <br><a href="#" class="open-cores-dif"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
-          <?php } else if ($k === "Cores" ) { echo $k.":"; ?>
+          <?php } else if (($k === "Cores" ) || ($k === "Colors" ) || ($k === "Couleurs" ) || ($k === "Colores" )) { echo $k.":"; ?>
                 <br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:40px;" /></a>
-          <?php } else if ($k === "Cor" ) { echo $k.":"; ?>
+          <?php } else if (($k === "Cor" ) || ($k === "Color" ) || ($k === "Couleur" ) || ($k === "Color" )) { echo $k.":"; ?>
                   <br><a href="#" class="open-cor"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
           <?php } ?>
         </dd>
@@ -115,9 +124,9 @@
     </dl><!-- /.prod-data -->
     
     <div class="tampos">
-      <?php if (($p->tampos === "Tampos" ) && ($p->linha === "compacta")) { ?>
+      <?php if ((($p->tampos === "Tampos" ) || ($p->tampos === "Tops") || ($p->tampos === "Plateaux") || ($p->tampos === "Encimeras")) && ($p->linha === "compacta")) { ?>
             <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos-dif"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:20px;" /></a>
-      <?php } else if (($p->tampos === "Tampos" ) && ($p->linha === "")) { ?>
+      <?php } else if ((($p->tampos === "Tampos" ) || ($p->tampos === "Tops") || ($p->tampos === "Plateaux") || ($p->tampos === "Encimeras")) && ($p->linha === "")) { ?>
             <p><?php echo $p->tampos; ?></p><a href="#" class="open-cor-tampos"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/city/<?php echo $p->tamposImg; ?>" style="width:100%; max-width:45px;" /></a>
       <?php } ?>
     </div>

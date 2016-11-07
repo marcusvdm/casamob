@@ -8,8 +8,17 @@
       <div class="offset">
   
         <h2 class="cozinhas-title to-mobile-play">
-          <small>Linha</small> Play
-        </h2>
+          <small>
+          <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+          </small> Play
+          </h2>
   
         <!--<div class="modelo">-->
         <!--  <img src="<?php //bloginfo('template_url');?>/assets/images/cozinhas/modelo-play.png" alt="">-->
@@ -21,16 +30,47 @@
   
       </div><!-- /.offset -->
   
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#play" data-panel="play" class="btn to-mobile-play btn-mobile-play">Clique e conheça</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#play" data-panel="play" class="btn to-mobile-play btn-mobile-play">
+      <?php _e(
+          "<!--:en-->Click to know<!--:--> 
+          
+          <!--:pb-->Clique e conheça<!--:-->
+          
+          <!--:es-->Haga clic para saber<!--:-->
+          
+          <!--:fr-->Cliquez pour en savoir<!--:-->" ); ?></a>
   
   
     </div><!-- /.content.linha-play -->
-    
+<?php _e(
+          "<!--:en-->Click to know<!--:--> 
+          
+          <!--:pb-->lançamento<!--:-->
+          
+          <!--:es-->LANZAMIENTO<!--:-->
+          
+          <!--:fr-->Cliquez pour en savoir<!--:-->" ); ?>
     <div class="content linha linha-smart js-anchor" data-stellar-offset-parent="true">
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small>Linha</small> Play Smart
+          <small>
+            <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+          
+          </small> Play Smart
+          <!--ENGLISH-->
+          <!--<small>Line</small> Play Smart-->
+           <!--ESPANHOL-->
+          <!--<small>Línea</small> Play Smart-->
+           <!--FRANCES-->
+          <!--<small>Ligne</small> Play Smart-->
         </h2>
   
         <div class="cozinha">
@@ -39,9 +79,25 @@
        
     </div><!-- /.offset -->
   
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#smart" data-panel="smart" class="btn">Clique e conheça</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#smart" data-panel="smart" class="btn"><?php _e(
+          "<!--:en-->Click to know<!--:--> 
+          
+          <!--:pb-->Clique e conheça<!--:-->
+          
+          <!--:es-->Haga clic para saber<!--:-->
+          
+          <!--:fr-->Cliquez pour en savoir<!--:-->" ); ?></a>
   
-     <div class="skew smart-pos">lançamento</div>
+     <div class="skew smart-pos">
+       <?php _e(
+          "<!--:en-->LAUNCH<!--:--> 
+          
+          <!--:pb-->lançamento<!--:-->
+          
+          <!--:es-->LANZAMIENTO<!--:-->
+          
+          <!--:fr-->LANCEMENT<!--:-->" ); ?>
+     </div>
     </div><!-- /.content.linha-smart -->
     
     <div class="content linha linha-quadri js-anchor" data-stellar-offset-parent="true">
@@ -49,7 +105,18 @@
   
         <h2 class="cozinhas-title">
           <!--<small class="show-hide">Linha</small> Quadri 4.0-->
-          <small>Linha</small> Quadri 4.0
+          <small>
+            <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+          
+          
+          </small> Quadri 4.0
         </h2>
   
         <div class="cozinha">
@@ -58,9 +125,25 @@
     
     </div><!-- /.offset -->
   
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#quadri" data-panel="quadri" class="btn">Clique e conheça</a>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#quadri" data-panel="quadri" class="btn"><?php _e(
+          "<!--:en-->Click to know<!--:--> 
+          
+          <!--:pb-->Clique e conheça<!--:-->
+          
+          <!--:es-->Haga clic para saber<!--:-->
+          
+          <!--:fr-->Cliquez pour en savoir<!--:-->" ); ?></a>
   
-    <div class="skew quadri-pos">lançamento</div>
+    <div class="skew quadri-pos">
+      <?php _e(
+          "<!--:en-->LAUNCH<!--:--> 
+          
+          <!--:pb-->lançamento<!--:-->
+          
+          <!--:es-->LANZAMIENTO<!--:-->
+          
+          <!--:fr-->LANCEMENT<!--:-->" ); ?>
+    </div>
     </div><!-- /.content.linha-quadri -->
     
     
@@ -68,7 +151,16 @@
       <div class="offset">
   
         <h2 class="cozinhas-title">
-          <small>Linha</small> Única 3.5
+          <small>
+          <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+          </small> Única 3.5
         </h2>
   
         <div class="cozinha">
@@ -77,9 +169,27 @@
     
     </div><!-- /.offset -->
   
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#unica" data-panel="unica" class="btn">Clique e conheça</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#unica" data-panel="unica" class="btn">
+      <?php _e(
+          "<!--:en-->Click to know<!--:--> 
+          
+          <!--:pb-->Clique e conheça<!--:-->
+          
+          <!--:es-->Haga clic para saber<!--:-->
+          
+          <!--:fr-->Cliquez pour en savoir<!--:-->" ); ?>
+          </a>
   
-    <div class="skew unica-pos">lançamento</div>
+    <div class="skew unica-pos">
+      <?php _e(
+          "<!--:en-->LAUNCH<!--:--> 
+          
+          <!--:pb-->lançamento<!--:-->
+          
+          <!--:es-->LANZAMIENTO<!--:-->
+          
+          <!--:fr-->LANCEMENT<!--:-->" ); ?>
+          </div>
     </div><!-- /.content.linha-unica -->
     
     <div class="content linha linha-city js-anchor" data-stellar-offset-parent="true">
@@ -88,7 +198,17 @@
       
         <h2 class="cozinhas-title">
          <!--<h2 class="cozinhas-title" data-stellar-ratio="2">-->
-          <small>Linha</small> City
+          <small>
+            <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+          
+          </small> City
         </h2>
   
         <div class="modelo">
@@ -101,7 +221,14 @@
   
       </div><!-- /.offset -->
   
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#city" data-panel="city" class="btn">Clique e conheça</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>#city" data-panel="city" class="btn"><?php _e(
+          "<!--:en-->Click to know<!--:--> 
+          
+          <!--:pb-->Clique e conheça<!--:-->
+          
+          <!--:es-->Haga clic para saber<!--:-->
+          
+          <!--:fr-->Cliquez pour en savoir<!--:-->" ); ?></a>
   
   
     </div><!-- /.content.linha-city -->
@@ -134,7 +261,22 @@
       <div class="offset">
   
         <h2 class="cozinhas-title">
-           Complementos<small> de Linhas</small>
+          <?php _e(
+          "<!--:en-->Line <!--:--> 
+          
+          <!--:pb-->Complementos<!--:-->
+          
+          <!--:es-->Complementos<!--:-->
+          
+          <!--:fr-->Compléments <!--:-->" ); ?>s<small>
+          <?php _e(
+          "<!--:en-->Complements<!--:--> 
+          
+          <!--:pb--> de Linhas<!--:-->
+          
+          <!--:es-->de Líneas <!--:-->
+          
+          <!--:fr-->de Lignes <!--:-->" ); ?></small>
         </h2>
   
         <div class="cozinha">
@@ -143,7 +285,15 @@
   
     </div><!-- /.offset -->
   
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#complementos" data-panel="complementos" class="btn">Clique e conheça</a>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>#complementos" data-panel="complementos" class="btn">
+    <?php _e(
+          "<!--:en-->Click to know<!--:--> 
+          
+          <!--:pb-->Clique e conheça<!--:-->
+          
+          <!--:es-->Haga clic para saber<!--:-->
+          
+          <!--:fr-->Cliquez pour en savoir<!--:-->" ); ?></a>
   
   
     </div><!-- /.content.linha-complemento -->

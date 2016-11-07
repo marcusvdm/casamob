@@ -37,7 +37,16 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#kits">
-            <small class="white">Linha</small>
+            <small class="white">
+               <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+            </small>
             <span class="lt-violet">kits</span>
           </a>
         </h2>

@@ -16,7 +16,16 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#kits">
-            <small class="white">Linha</small>
+            <small class="white">
+               <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+            </small>
             <span class="lt-violet"><?php the_title();?></span>
           </a>
         </h2>
@@ -28,9 +37,9 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-kits">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modelos-kits">Modelos</a>
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-kits">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-kits"><?php _e("<!--:en-->CHARACTERISTICS<!--:--><!--:pb-->CARACTERÍSTICAS<!--:--><!--:es-->CARACTERÍSTICAS<!--:--><!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-kits"><?php _e("<!--:en-->MODULES<!--:--><!--:pb-->Módulos<!--:--><!--:es-->MÓDULOS<!--:--><!--:fr-->MODULES<!--:-->" ); ?></a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-kits"><?php _e("<!--:en-->ENVIRONMENTS<!--:--><!--:pb-->Ambientes<!--:--><!--:es-->AMBIENTES<!--:--><!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
         
         <figure class="thumbs ambientes"

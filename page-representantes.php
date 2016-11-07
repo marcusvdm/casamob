@@ -15,8 +15,25 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <span class="lt-blue">Repre</span>
-          <span class="lt-blue">sentantes</span>
+          <span class="lt-blue">
+          <?php _e(
+          "<!--:en-->INTERNACIONAL<!--:--> 
+          
+          <!--:pb-->Repre<!--:-->
+          
+          <!--:es-->VENTAS<!--:-->
+          
+          <!--:fr-->PORVENTES<!--:-->" ); ?>
+          </span>
+          <span class="lt-blue">
+          <?php _e(
+          "<!--:en-->SALES<!--:--> 
+          
+          <!--:pb-->sentantes<!--:-->
+          
+          <!--:es-->INTERNACIONALES<!--:-->
+          
+          <!--:fr-->INTERNATIONALES<!--:-->" ); ?></span>
         </h2>
         <div class="intro"><?php the_content();?></div>
         <!-- POPUP REPRESENTANTES -->
@@ -57,6 +74,10 @@
       
                 $arrayOnde[] = $entryOnde;
             }
+            
+            $caminho  = $_SERVER['REQUEST_URI'];
+            $pieces = explode("/", $caminho);
+            $idioma = $pieces[1]; 
       
             $regiao     = array();
             $estado     = array();
@@ -68,7 +89,37 @@
                 $regiao[] = $value['regiao'];
                 $regiao[$value['regiao']] = search($arrayOnde, 'regiao', $value['regiao']);
                 $cssregiao = preg_replace('/\W+/','',strtolower($value['regiao']));
-                echo '<li><a href="#'.$cssregiao.'"class="regiao '.$cssregiao.'">'.$value['regiao'].'</a><ul class="ul-'.$cssregiao.'">';
+                
+                if ($idioma == 'pb'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'Norte'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Nordeste'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'Sul'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Sudeste'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Centro-Oeste'; }
+                }
+                if ($idioma == 'es'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'Norte'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Nordeste'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'Sur'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Sudeste'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Centro Oeste'; }
+                }
+                if ($idioma == 'en'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'North'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Northeast'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'South'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Southeast'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Midwest'; }
+                }
+                 if ($idioma == 'fr'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'Nord'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Nord-est'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'Sud'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Au sud-est'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Midwest'; }
+                }
+                
+                echo '<li><a href="#'.$cssregiao.'"class="regiao '.$cssregiao.'">'.$valor_regiao.'</a><ul class="ul-'.$cssregiao.'">';
       
       
                 foreach ($regiao[$value['regiao']] as $key => $value) {

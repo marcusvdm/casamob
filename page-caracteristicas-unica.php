@@ -28,10 +28,10 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-unica">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-unica">Módulos</a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-unica"><?php _e("<!--:en-->CHARACTERISTICS<!--:--><!--:pb-->CARACTERÍSTICAS<!--:--><!--:es-->CARACTERÍSTICAS<!--:--><!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-unica"><?php _e("<!--:en-->MODULES<!--:--><!--:pb-->Módulos<!--:--><!--:es-->MÓDULOS<!--:--><!--:fr-->MODULES<!--:-->" ); ?></a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-unica">Acessórios</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica"><?php _e("<!--:en-->ENVIRONMENTS<!--:--><!--:pb-->Ambientes<!--:--><!--:es-->AMBIENTES<!--:--><!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
         
         <figure class="img-slider"
@@ -63,12 +63,45 @@
            // the_post();
         ?>
           <div class="txt-content">
-            <h3><?php //the_title();?>CARACTERÍSTICAS</h3>
+            <h3><?php //the_title();?><?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></h3>
             <?php //the_content();?>
             <ul>
-              <li class="caract-li">Puxadores em ABS cromado</li>
-              <li class="caract-li">Portas de vidro temperado</li>
-              <li class="caract-li">Pés em alumínio</li>
+              <li class="caract-li">
+                <?php _e(
+          "<!--:en-->Tempered glass doors <!--:--> 
+          
+          <!--:pb-->Puxadores em ABS cromado<!--:-->
+          
+          <!--:es-->Manijaes en ABS cromado<!--:-->
+          
+          <!--:fr-->Portes en verre trempé <!--:-->"
+          ); ?>
+                </li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Tempered glass doors <!--:--> 
+          
+          <!--:pb-->Portas de vidro temperado<!--:-->
+          
+          <!--:es-->Puertas de vidrio templado<!--:-->
+          
+          <!--:fr-->Portes en verre trempé <!--:-->"
+          ); ?></li>
+              <li class="caract-li"> <?php _e(
+          "<!--:en-->Aluminum feet<!--:--> 
+          
+          <!--:pb-->Pés em alumínio<!--:-->
+          
+          <!--:es-->Patas en aluminio<!--:-->
+          
+          <!--:fr-->Pieds en aluminium <!--:-->"
+          ); ?></li>
             </ul>
           </div>
         

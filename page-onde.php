@@ -14,18 +14,60 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <span class="lt-cyan">Onde</span>
-          <span class="lt-red">Comprar</span>
+          <span class="lt-cyan"><?php _e(
+          "<!--:en-->Where<!--:--> 
+          
+          <!--:pb-->Onde<!--:-->
+          
+          <!--:es-->Donde<!--:-->
+          
+          <!--:fr-->où<!--:-->"
+          ); ?></span>
+          <span class="lt-red"><?php _e(
+          "<!--:en-->to buy<!--:--> 
+          
+          <!--:pb-->Comprar<!--:-->
+          
+          <!--:es-->comprar<!--:-->
+          
+          <!--:fr-->acheter<!--:-->"
+          ); ?></span>
         </h2>
         <div class="intro">
           <?php the_content();?>
-          <span class="legal">*O sortimento total de produtos CasaMob não necessariamente está disponível nas lojas.
-          Consulte disponibilidade de estoque do lojista.</span>
+          <span class="legal">
+            <?php _e(
+          "<!--:en-->*The total assortment of CasaMob products is not necessarily available in stores. Consult the retailer's stock availability.<!--:--> 
+          
+          <!--:pb-->*O sortimento total de produtos CasaMob não necessariamente está disponível nas lojas.
+          Consulte disponibilidade de estoque do lojista.<!--:-->
+          
+          <!--:es-->*El surtido completo de productos CasaMob no está disponible necesariamente en las tiendas. *Consulte la disponibilidad de stock de la tienda.<!--:-->
+          
+          <!--:fr-->*L’assortiment total de produits CasaMob n’est pas nécéssairement disponible en magasins. Vérifiez la disponibilité des stocks en magasin.  <!--:-->"
+          ); ?>
+          </span>
         </div>
         <div class="virtual-store">
           <ul class="new-accordion">
-            <li><a href="#" class="accordion__item show-nacionais active" title="Lojas">LOJAS FISICAS</a></li>
-            <li><a href="#" class="accordion__item has-arrow show-web" title="Casamob web">LOJAS ONLINE</a>
+            <li><a href="#" class="accordion__item show-nacionais active" title="Lojas"><?php _e(
+          "<!--:en-->Physical stores<!--:--> 
+          
+          <!--:pb-->LOJAS FISICAS<!--:-->
+          
+          <!--:es-->Tiendas físicas<!--:-->
+          
+          <!--:fr-->Magasins physiques<!--:-->"
+          ); ?></a></li>
+            <li><a href="#" class="accordion__item has-arrow show-web" title="Casamob web"><?php _e(
+          "<!--:en-->Online stores<!--:--> 
+          
+          <!--:pb-->LOJAS ONLINE<!--:-->
+          
+          <!--:es-->Tiendas en línea<!--:-->
+          
+          <!--:fr-->Magasins online <!--:-->"
+          ); ?></a>
               <ul class="accordion__list">
                 
                 <?php
@@ -82,6 +124,10 @@
     
                 $arrayOnde[] = $entryOnde;
             }
+            
+            $caminho  = $_SERVER['REQUEST_URI'];
+            $pieces = explode("/", $caminho);
+            $idioma = $pieces[1]; 
     
             $regiao = array();
             $estado = array();
@@ -93,7 +139,38 @@
                 $regiao[] = $value['regiao'];
                 $regiao[$value['regiao']] = search($arrayOnde, 'regiao', $value['regiao']);
                 $cssregiao = preg_replace('/\W+/','',strtolower($value['regiao']));
-                echo '<li><a href="#'.$cssregiao.'"class="regiao '.$cssregiao.'">'.$value['regiao'].'</a><ul class="ul-'.$cssregiao.'">';
+                
+                if ($idioma == 'pb'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'Norte'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Nordeste'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'Sul'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Sudeste'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Centro-Oeste'; }
+                }
+                if ($idioma == 'es'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'Norte'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Nordeste'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'Sur'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Sudeste'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Centro Oeste'; }
+                }
+                if ($idioma == 'en'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'North'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Northeast'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'South'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Southeast'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Midwest'; }
+                }
+                 if ($idioma == 'fr'){
+                  if ($value['regiao'] == 'Norte'){ $valor_regiao = 'Nord'; }
+                  if ($value['regiao'] == 'Nordeste'){ $valor_regiao = 'Nord-est'; }
+                  if ($value['regiao'] == 'Sul'){ $valor_regiao = 'Sud'; }
+                  if ($value['regiao'] == 'Sudeste'){ $valor_regiao = 'Au sud-est'; }
+                  if ($value['regiao'] == 'Centro-Oeste'){ $valor_regiao = 'Midwest'; }
+                }
+                
+                
+                echo '<li><a href="#'.$cssregiao.'"class="regiao '.$cssregiao.'">'.$valor_regiao.'</a><ul class="ul-'.$cssregiao.'">';
     
     
                 foreach ($regiao[$value['regiao']] as $key => $value) {

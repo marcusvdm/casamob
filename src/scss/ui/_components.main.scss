@@ -470,3 +470,15 @@ h2.tipo-modulo {
   opacity: 0;
   visibility: hidden;
 }
+
+.idiomas{
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  
+  
+  li {
+    display: inline;
+    list-style-type: none;
+  }
+}

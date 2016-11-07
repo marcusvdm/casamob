@@ -37,7 +37,16 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#quadri">
-            <small class="white">Linha</small>
+            <small class="white">
+            <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+            </small>
             <span class="red">quadri 4.0</span>
           </a>
         </h2>
@@ -80,10 +89,36 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-quadri">Características</a>
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-quadri">Módulos</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-quadri"><?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-quadri">
+            <?php _e(
+          "<!--:en-->MODULES<!--:--> 
+          
+          <!--:pb-->Módulos<!--:-->
+          
+          <!--:es-->MODULES<!--:-->
+          
+          <!--:fr-->MÓDULOS<!--:-->" ); ?>
+          </a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-quadri">Acessórios</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-quadri">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-quadri">
+            <?php _e(
+          "<!--:en-->ENVIRONMENTS<!--:--> 
+          
+          <!--:pb-->Ambientes<!--:-->
+          
+          <!--:es-->AMBIENTES<!--:-->
+          
+          <!--:fr-->AMBIANCES<!--:-->" ); ?>
+          </a>
+          </a>
         </nav>
 
         <figure class="modulos">
@@ -103,13 +138,13 @@
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
         <dd>
-           <?php if (($p->kits === "sim" ) && ($k === "Cores" )) { ?>
+           <?php if (($p->kits === "sim" ) && (($k === "Cores" ) || ($k === "Colors" ) || ($k === "Couleurs" ) || ($k === "Colores" ))) { ?>
                 <?php echo $k.":"; ?><br><a href="#" class="open-cores-kits"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
                
-          <?php } else if ($k === "Cores" ) { ?>
+          <?php } else if (($k === "Cores" ) || ($k === "Colors" ) || ($k === "Couleurs" ) || ($k === "Colores" )) { ?>
                 <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
                
-          <?php } else if ($k === "Cor" ) { ?>
+          <?php } else if (($k === "Cor" ) || ($k === "Color" ) || ($k === "Couleur" ) || ($k === "Color" )) { ?>
                   <?php echo $k.":"; ?><br><a href="#" class="open-cor"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/quadri/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
                    
           <?php } ?>

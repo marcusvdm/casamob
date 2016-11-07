@@ -15,8 +15,24 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <span class="lt-beige">Trabalhe</span>
-          <span class="acqua">Conosco</span>
+          <span class="lt-beige"><?php _e(
+          "<!--:en-->WORK<!--:--> 
+          
+          <!--:pb-->Trabalhe<!--:-->
+          
+          <!--:es-->TRABAJE<!--:-->
+          
+          <!--:fr-->REJOIGNEZ <!--:-->"
+          ); ?></span>
+          <span class="acqua"><?php _e(
+          "<!--:en-->WITH US<!--:--> 
+          
+          <!--:pb-->Conosco<!--:-->
+          
+          <!--:es-->CON NOSOTROS<!--:-->
+          
+          <!--:fr-->NOTRE ÉQUIPE <!--:-->"
+          ); ?></span>
         </h2>
         <div class="intro"><?php the_content();?></div>
       </div>

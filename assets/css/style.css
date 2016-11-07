@@ -3609,7 +3609,7 @@ html.touch {
       max-width: 880px;
       height: 550px; }
     .diferenciais .txt-slider.txt-slider {
-      right: 50px; } }
+      right: 60px; } }
   .diferenciais .txt-slider {
     background-color: #e0a243; }
     .diferenciais .txt-slider h3 {
@@ -7264,6 +7264,14 @@ h2.tipo-modulo small {
 .banner_lighthome__close {
   opacity: 0;
   visibility: hidden; }
+
+.idiomas {
+  position: absolute;
+  left: 18px;
+  top: 20px; }
+  .idiomas li {
+    display: inline;
+    list-style-type: none; }
 
 /* UI OBJECTS */
 /* UI PLUGINS */

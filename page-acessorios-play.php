@@ -37,7 +37,7 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#play">
-            <small class="white">Linha</small>
+            <small class="white">Linhas</small>
             <span class="lt-purple">Play</span>
           </a>
         </h2>

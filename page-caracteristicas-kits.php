@@ -28,9 +28,9 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-kits">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modelos-kits">Modelos</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-kits">Ambientes</a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-kits"><?php _e("<!--:en-->CHARACTERISTICS<!--:--><!--:pb-->CARACTERÍSTICAS<!--:--><!--:es-->CARACTERÍSTICAS<!--:--><!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modelos-kits"><?php _e("<!--:en-->MODULES<!--:--><!--:pb-->Módulos<!--:--><!--:es-->MÓDULOS<!--:--><!--:fr-->MODULES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-kits"><?php _e("<!--:en-->ENVIRONMENTS<!--:--><!--:pb-->Ambientes<!--:--><!--:es-->AMBIENTES<!--:--><!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
         
         <figure class="img-slider"

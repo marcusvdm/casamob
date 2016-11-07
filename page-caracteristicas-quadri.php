@@ -28,10 +28,10 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-quadri">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-quadri">Módulos</a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-quadri"><?php _e("<!--:en-->CHARACTERISTICS<!--:--><!--:pb-->Características<!--:--><!--:es-->CARACTERÍSTICAS<!--:--><!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-quadri"><?php _e("<!--:en-->MODULES<!--:--><!--:pb-->Módulos<!--:--><!--:es-->MÓDULOS<!--:--><!--:fr-->MODULES<!--:-->" ); ?></a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-quadri">Acessórios</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-quadri">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-quadri"><?php _e("<!--:en-->ENVIRONMENTS<!--:--><!--:pb-->Ambientes<!--:--><!--:es-->AMBIENTES<!--:--><!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
         
         <figure class="img-slider"
@@ -63,13 +63,52 @@
            // the_post();
         ?>
           <div class="txt-content">
-            <h3><?php //the_title();?>CARACTERÍSTICAS</h3>
+            <h3><?php //the_title();?><?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></h3>
             <?php //the_content();?>
             <ul>
-              <li class="caract-li">Pés em alumínio</li>
-              <li class="caract-li">Puxadores de alumínio com ponteiras em ABS cromado</li>
-              <li class="caract-li">Dobradiça de 35 mm</li>
-              <li class="caract-li">Portas em vidro temperado</li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Aluminum feet <!--:--> 
+          
+          <!--:pb-->Pés em alumínio<!--:-->
+          
+          <!--:es-->Patas en aluminio<!--:-->
+          
+          <!--:fr-->Pieds en aluminium <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Aluminum Handles with chrome-plated ABS tips <!--:--> 
+          
+          <!--:pb-->Puxadores de alumínio com ponteiras em ABS cromado<!--:-->
+          
+          <!--:es-->Manijaes de aluminio con tapas en ABS cromado<!--:-->
+          
+          <!--:fr-->Poignées en aluminium avec embouts en ABS chromé <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->35-mm Hinge <!--:--> 
+          
+          <!--:pb-->Dobradiça de 35 mm<!--:-->
+          
+          <!--:es-->Bisagra de 35 mm<!--:-->
+          
+          <!--:fr-->Glissière de 35 mm <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Tempered glass doors<!--:--> 
+          
+          <!--:pb-->Portas em vidro temperado<!--:-->
+          
+          <!--:es-->Puertas en vidrio templado<!--:-->
+          
+          <!--:fr-->Portes en verre trempé  <!--:-->"
+          ); ?></li>
             </ul>
           </div>
         

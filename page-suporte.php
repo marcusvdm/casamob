@@ -15,7 +15,16 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <span class="lt-purple"><?php the_title(); ?></span>
+          <span class="lt-purple"><?php _e(
+          "<!--:en-->SUPPORT<!--:--> 
+          
+          <!--:pb-->Suporte<!--:-->
+          
+          <!--:es-->SOPORTE<!--:-->
+          
+          <!--:fr-->SUPPORT <!--:-->"
+          ); ?></span>
+          <!--<?php the_title(); ?> (isso pertence ao titulo originalmente, foi tirado para inserir traducao)-->
         </h2>
         <!--<div class="intro"><?php // the_content();?></div>-->
         <?php }} wp_reset_postdata(); ?>

@@ -16,7 +16,17 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#smart">
-            <small class="white">Linha</small>
+            <small class="white">
+              <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne <!--:-->"
+          ); ?>
+              </small>
             <span class="petroleum"><?php the_title();?></span>
           </a>
         </h2>
@@ -28,10 +38,31 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-smart">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-smart">Módulos</a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/caracteristicas-smart"><?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-smart"><?php _e(
+          "<!--:en-->MODULES<!--:--> 
+          
+          <!--:pb-->Módulos<!--:-->
+          
+          <!--:es-->MÓDULOS<!--:-->
+          
+          <!--:fr-->MODULES<!--:-->" ); ?></a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-smart">Acessórios</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-smart">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-smart"><?php _e(
+          "<!--:en-->ENVIRONMENTS<!--:--> 
+          
+          <!--:pb-->Ambientes<!--:-->
+          
+          <!--:es-->AMBIENTES<!--:-->
+          
+          <!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
         
         <figure class="img-slider"
@@ -63,13 +94,54 @@
           //  the_post();
         ?>
           <div class="txt-content">
-            <h3><?php //the_title();?>CARACTERÍSTICAS</h3>
+            <h3><?php //the_title();?>
+            <?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></h3>
             <?php //the_content();?>
             <ul>
-              <li class="caract-li">Dobradiças 35 slow motion</li>
-              <li class="caract-li">Puxadores e pés em alumínio</li>
-              <li class="caract-li">Portas em vidro temperado com esquadria de alumínio</li>
-              <li class="caract-li">Prateleira em aço com porta de correr em vidro</li>
+              <li class="caract-li">
+              <?php _e(
+          "<!--:en-->35 slow motion hinges <!--:--> 
+          
+          <!--:pb-->Dobradiças 35 slow motion<!--:-->
+          
+          <!--:es-->Bisagras 35 slow motion<!--:-->
+          
+          <!--:fr-->Glissières 35 slow motion<!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Aluminum Handles and feet <!--:--> 
+          
+          <!--:pb-->Puxadores e pés em alumínio<!--:-->
+          
+          <!--:es-->Manijaes y patas en aluminio<!--:-->
+          
+          <!--:fr-->Poignées et pieds en aluminium <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Tempered glass doors with aluminum frame <!--:--> 
+          
+          <!--:pb-->Portas em vidro temperado com esquadria de alumínio<!--:-->
+          
+          <!--:es-->Puertas en vidrio templado con perfil de aluminio<!--:-->
+          
+          <!--:fr-->Portes en verre trempé composés d’un cadrage en aluminium  <!--:-->"
+          ); ?></li>
+              <li class="caract-li"><?php _e(
+          "<!--:en-->Shelves in steel with glass sliding door<!--:--> 
+          
+          <!--:pb-->Prateleira em aço com porta de correr em vidro<!--:-->
+          
+          <!--:es-->Los estantes de acero con puerta corredera de cristal<!--:-->
+          
+          <!--:fr-->Etagères en acier avec porte coulissante en verre<!--:-->"
+          ); ?></li>
             </ul>
           </div>
         

@@ -37,7 +37,15 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#play">
-            <small class="white">Linha</small>
+            <small class="white"><?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne <!--:-->"
+          ); ?></small>
             <span class="lt-purple">play</span>
           </a>
         </h2>
@@ -79,27 +87,127 @@
           ?>
         </h2>
         <div class="intro">
-        <strong>Categorias de Módulos:</strong><br>
+        <strong>
+          <?php _e(
+          "<!--:en-->Module Categories:<!--:--> 
           
-        <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/1">Aéreos Verticais</a>
-        | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/2">Aéreos Horizontais</a>
-        | <a class="link-modulos <?php if($paged === 3) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/3">Gabinetes</a>
-        | <a class="link-modulos <?php if($paged === 4) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/4">Paneleiros</a>
-        | <a class="link-modulos <?php if($paged === 5) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/5">Cantos</a>
-        | <a class="link-modulos <?php if($paged === 6) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/6">Acessórios</a>
-        | <a class="link-modulos <?php if($paged === 7) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/7">Especiais*</a>
+          <!--:pb-->Categorias de Módulos:<!--:-->
+          
+          <!--:es-->Categorías de Módulos<!--:-->
+          
+          <!--:fr-->Catégories de Modules:<!--:-->" ); ?></strong><br>
+          
+        <a class="link-modulos <?php if($paged === 1 or !$paged) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/1">
+        <?php _e(
+          "<!--:en-->Vertical Aerial <!--:--> 
+          
+          <!--:pb-->Aéreos Verticais<!--:-->
+          
+          <!--:es-->Aéreos Verticales<!--:-->
+          
+          <!--:fr-->Aériens Verticaux<!--:-->" ); ?></a>
+        | <a class="link-modulos <?php if($paged === 2) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/2">
+        <?php _e(
+          "<!--:en-->Horizontal Aerial<!--:--> 
+          
+          <!--:pb-->Aéreos Horizontais<!--:-->
+          
+          <!--:es-->Aéreos Horizontales<!--:-->
+          
+          <!--:fr-->Horizontal Aerial<!--:-->" ); ?></a>
+        | <a class="link-modulos <?php if($paged === 3) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/3">
+          <?php _e(
+          "<!--:en-->Cabinets <!--:--> 
+          
+          <!--:pb-->Gabinetes<!--:-->
+          
+          <!--:es-->Armarios<!--:-->
+          
+          <!--:fr--> Bureaux<!--:-->" ); ?></a>
+        | <a class="link-modulos <?php if($paged === 4) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/4">
+        <?php _e(
+          "<!--:en-->Pot Cabinets <!--:--> 
+          
+          <!--:pb-->Paneleiros<!--:-->
+          
+          <!--:es-->Alacenas<!--:-->
+          
+          <!--:fr--> | Placards<!--:-->" ); ?></a>
+        | <a class="link-modulos <?php if($paged === 5) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/5">
+          <?php _e(
+          "<!--:en-->Corners  <!--:--> 
+          
+          <!--:pb-->Cantos<!--:-->
+          
+          <!--:es-->Esquineros<!--:-->
+          
+          <!--:fr--> |Coins<!--:-->" ); ?></a>
+        | <a class="link-modulos <?php if($paged === 6) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/6">
+        <?php _e(
+          "<!--:en-->Accessories<!--:--> 
+          
+          <!--:pb-->Acessórios<!--:-->
+          
+          <!--:es-->Accesorios <!--:-->
+          
+          <!--:fr--> |Accessoires<!--:-->" ); ?></a>
+        | <a class="link-modulos <?php if($paged === 7) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/7">
+        <?php _e(
+          "<!--:en-->Special*<!--:--> 
+          
+          <!--:pb-->Especiais*<!--:-->
+          
+          <!--:es-->Especiales*<!--:-->
+          
+          <!--:fr--> |Spéciaux*<!--:-->" ); ?></a>
         <br><br>
-        <p style="font-size:11px; color: #59496a;">* Disponível sob consulta</p>
+        <p style="font-size:11px; color: #59496a;">
+          <?php _e(
+          "<!--:en-->* Available upon request<!--:--> 
+          
+          <!--:pb-->* Disponível sob consulta*<!--:-->
+          
+          <!--:es--> *Disponible bajo consulta<!--:-->
+          
+          <!--:fr--> |* Disponible sur demande<!--:-->" ); ?></p>
         </div>
       </div>
 
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-play">Características</a>
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-play">Módulos</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-play">
+            <?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?>
+          </a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-play">
+            <?php _e(
+          "<!--:en-->MODULES<!--:--> 
+          
+          <!--:pb-->Módulos<!--:-->
+          
+          <!--:es-->MODULES<!--:-->
+          
+          <!--:fr-->MÓDULOS<!--:-->" ); ?>
+          </a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-play">Acessórios</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-play">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-play">
+            <?php _e(
+          "<!--:en-->ENVIRONMENTS<!--:--> 
+          
+          <!--:pb-->Ambientes<!--:-->
+          
+          <!--:es-->AMBIENTES<!--:-->
+          
+          <!--:fr-->AMBIANCES<!--:-->" ); ?>
+          </a>
+          </a>
         </nav>
 
         <figure class="modulos">
@@ -138,7 +246,14 @@
         data-prodtitle="<?php echo $p->prodTitle; ?>"
         class="btn-cores"
       >
-        cores
+        <?php _e(
+          "<!--:en-->colors<!--:--> 
+          
+          <!--:pb-->cores<!--:-->
+          
+          <!--:es-->colores<!--:-->
+          
+          <!--:fr-->couleurs<!--:-->" ); ?>
       </a>
       <?php } ?>
       
@@ -149,7 +264,14 @@
         data-prodtitle="<?php echo $p->prodTitle; ?>"
         class="btn-puxadores"
       >
-        puxadores
+        <?php _e(
+          "<!--:en-->handles<!--:--> 
+          
+          <!--:pb-->puxadores<!--:-->
+          
+          <!--:es-->manijaes<!--:-->
+          
+          <!--:fr-->poignées<!--:-->" ); ?>
       </a>
       <?php } ?>
       
@@ -160,7 +282,14 @@
         data-prodtitle="<?php echo $p->prodTitle; ?>"
         class="btn-tampos"
       >
-        tampos
+         <?php _e(
+          "<!--:en-->tops<!--:--> 
+          
+          <!--:pb-->tampos<!--:-->
+          
+          <!--:es-->encimeras<!--:-->
+          
+          <!--:fr-->plateaux<!--:-->" ); ?>
       </a>
       <?php } ?>
     </div>

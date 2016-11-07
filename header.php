@@ -79,8 +79,10 @@
         wp_nav_menu($menuParameters);
       ?>
     </nav>
+    
 
     <div class="sec-line">
+      
 
       <?php get_search_form(); ?>
 
@@ -99,5 +101,13 @@
         ?>
       </nav>
       <a href="https://www.facebook.com/casamob.cozinhas" target="_blank" class="face"><img src="/wp-content/themes/casamob/assets/images/ico-face.png" /></a>
+    </div>
+    <div class="idiomas">
+      <ul>
+        <li><a href="/pb/"><img src="/wp-content/plugins/qtranslate-x/flags/br.png" alt="Português do Brasil" title="Português do Brasil">&nbsp;</a></li>
+        <li><a href="/en/"><img src="/wp-content/plugins/qtranslate-x/flags/us.png" alt="English" title="English">&nbsp;</a></li>
+        <li><a href="/es/"><img src="/wp-content/plugins/qtranslate-x/flags/es.png" alt="Español" title="Español">&nbsp;</a></li>
+        <li><a href="/fr/"><img src="/wp-content/plugins/qtranslate-x/flags/fr.png" alt="Français" title="Français">&nbsp;</a></li>
+      </ul>
     </div>
   </header>

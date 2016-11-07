@@ -13,7 +13,17 @@
     <article class="page__content">
       <div class="info">
         <h2>
-          <small class="white">Linha</small>
+          <small class="white">
+          <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne <!--:-->"
+          ); ?>
+          </small>
           <span class="petroleum"><?php the_title();?></span>
         </h2>
         <div class="intro">
@@ -26,22 +36,75 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-smart">Características</a>
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-smart">Módulos</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-smart">
+          <?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?>
+          <!--pareiaqui-->
+          </a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-smart">
+            <?php _e(
+          "<!--:en-->MODULES<!--:--> 
+          
+          <!--:pb-->Módulos<!--:-->
+          
+          <!--:es-->MÓDULOS<!--:-->
+          
+          <!--:fr-->MODULES<!--:-->" ); ?>
+          </a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-smart">Acessórios</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-smart">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-smart">
+            <?php _e(
+          "<!--:en-->ENVIRONMENTS<!--:--> 
+          
+          <!--:pb-->Ambientes<!--:-->
+          
+          <!--:es-->AMBIENTES<!--:-->
+          
+          <!--:fr-->AMBIANCES<!--:-->" ); ?>
+          </a>
         </nav>
-        
+        <?php
+         $caminho  = $_SERVER['REQUEST_URI'];
+          $pieces = explode("/", $caminho);
+          $idioma = $pieces[1];
+          //echo "Escreve idioma; ".$idioma;
+        ?>
         <figure class="img-slider"
             data-featherlight-gallery 
             data-featherlight-filter="a"
         >
         <?php 
           for ($i = 0; $i <= 2; $i++) {
+            
+             if ($idioma == 'pb'){ ?>
+                  <a href="<?php bloginfo('template_url');?>/assets/images/smart/lightbox-coz-smart-<?php echo $i; ?>.jpg" title="">
+                    <img data-lazy="<?php bloginfo('template_url');?>/assets/images/smart/slide-coz-smart-<?php echo $i; ?>.jpg" alt="" />
+                  </a>
+            <?php }
+            
+            if ($idioma == 'es'){ ?>
+                <a href="<?php bloginfo('template_url');?>/assets/images/smart/lightbox-coz-smart-<?php echo $i; ?>-es.jpg" title="">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/smart/slide-coz-smart-<?php echo $i; ?>-es.jpg" alt="" />
+                </a>
+            <?php }
+            if ($idioma == 'en'){ ?>
+                  <a href="<?php bloginfo('template_url');?>/assets/images/smart/lightbox-coz-smart-<?php echo $i; ?>-en.jpg" title="">
+                    <img data-lazy="<?php bloginfo('template_url');?>/assets/images/smart/slide-coz-smart-<?php echo $i; ?>-en.jpg" alt="" />
+                  </a>
+            <?php }
+            if ($idioma == 'fr'){ ?>
+                <a href="<?php bloginfo('template_url');?>/assets/images/smart/lightbox-coz-smart-<?php echo $i; ?>-fr.jpg" title="">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/smart/slide-coz-smart-<?php echo $i; ?>-fr.jpg" alt="" />
+                </a>
+            <?php }
         ?>
-          <a href="<?php bloginfo('template_url');?>/assets/images/smart/lightbox-coz-smart-<?php echo $i; ?>.jpg" title="">
-            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/smart/slide-coz-smart-<?php echo $i; ?>.jpg" alt="" />
-          </a>
+          
         <?php } ?>
         </figure>
         

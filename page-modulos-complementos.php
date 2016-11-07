@@ -38,7 +38,14 @@
         <h2>
           <a href="<?php echo home_url(); ?>#complementos">
             <!--<small class="white">Linha</small>-->
-            <span class="lt-purple">Complementos de linhas</span>
+            <span class="lt-purple"><?php _e(
+          "<!--:en-->LINE COMPLEMENTS<!--:--> 
+          
+          <!--:pb-->Complementos de linhas<!--:-->
+          
+          <!--:es-->COMPLEMENTOS DE LÍNEAS<!--:-->
+          
+          <!--:fr-->COMPLÉMENTS DE GAMMES<!--:-->" ); ?></span>
           </a>
         </h2>
         <h2 class="tipo-modulo">

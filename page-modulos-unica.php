@@ -37,7 +37,16 @@
       <div class="info">
         <h2>
           <a href="<?php echo home_url(); ?>#unica">
-            <small class="white">Linha</small>
+            <small class="white">
+               <?php _e(
+          "<!--:en-->Line<!--:--> 
+          
+          <!--:pb-->Linha<!--:-->
+          
+          <!--:es-->Línea<!--:-->
+          
+          <!--:fr-->Ligne<!--:-->" ); ?>
+            </small>
             <span class="purple">Única 3.5</span>
           </a>
         </h2>
@@ -80,10 +89,34 @@
       <div class="content">
         
         <nav class="menu-linha">
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-unica">Características</a>
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-unica">Módulos</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/caracteristicas-unica">
+            <?php _e(
+          "<!--:en-->CHARACTERISTICS<!--:--> 
+          
+          <!--:pb-->Características<!--:-->
+          
+          <!--:es-->CARACTERÍSTICAS<!--:-->
+          
+          <!--:fr-->CARACTÉRISTIQUES<!--:-->" ); ?></a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/modulos-unica">
+            <?php _e(
+          "<!--:en-->MODULES<!--:--> 
+          
+          <!--:pb-->Módulos<!--:-->
+          
+          <!--:es-->MODULES<!--:-->
+          
+          <!--:fr-->MÓDULOS<!--:-->" ); ?></a>
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-unica">Acessórios</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica">Ambientes</a>
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica">
+            <?php _e(
+          "<!--:en-->ENVIRONMENTS<!--:--> 
+          
+          <!--:pb-->Ambientes<!--:-->
+          
+          <!--:es-->AMBIENTES<!--:-->
+          
+          <!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
 
         <figure class="modulos">
@@ -103,13 +136,13 @@
       <?php foreach ( $p->prodData[0] as $k => $d ) { ?>
         <dt><?php //echo $k; ?></dt>
         <dd>
-          <?php if (($k === "Cores" ) && ($p->modulo === "3")) { ?>
+          <?php if ((($k === "Cores" ) || ($k === "Colors" ) || ($k === "Couleurs" ) || ($k === "Colores" )) && ($p->modulo === "3")) { ?>
                 <?php echo $k.":"; ?><br><a href="#" class="open-cores-dif"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
                
-          <?php } else if (($k === "Cores" ) && ($p->modulo === "4")) { ?>
+          <?php } else if ((($k === "Cores" ) || ($k === "Colors" ) || ($k === "Couleurs" ) || ($k === "Colores" )) && ($p->modulo === "4")) { ?>
                   <?php echo $k.":"; ?><br><a href="#" class="open-cores"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
                    
-          <?php } else if ($k === "Cor" ) { ?>
+          <?php } else if (($k === "Cor" ) || ($k === "Color" ) || ($k === "Couleur" )) { ?>
                   <?php echo $k.":"; ?><br><a href="#" class="open-cor"><img src="/wp-content/themes/casamob/assets/images/modulos-aereos/unica/<?php echo $d; ?>" style="width:100%; max-width:20px;" /></a>
                    
           <?php } ?>

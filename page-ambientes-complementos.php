@@ -17,7 +17,14 @@
         <h2>
           <a href="<?php echo home_url(); ?>#complementos">
             <!--<small class="white">Linha</small>-->
-            <span class="lt-purple"><?php //the_title();?>Complementos<br>de linhas</span>
+            <span class="lt-purple"><?php //the_title();?><?php _e(
+          "<!--:en-->Complementos<br>de linhas<!--:--> 
+          
+          <!--:pb-->Complementos<br>de linhas<!--:-->
+          
+          <!--:es-->COMPLEMENTOS<br>DE LÍNEAS<!--:-->
+          
+          <!--:fr-->Complementos<br>de linhas<!--:-->" ); ?></span>
           </a>
         </h2>
         <div class="intro">
@@ -29,11 +36,9 @@
 
       <div class="content">
         
-        <nav class="menu-linha">
-          <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/diferenciais-complementos">Características</a>-->
-          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-complementos">Módulos</a>
-          <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-complementos">Acessórios</a>-->
-          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-complementos">Ambientes</a>
+       <nav class="menu-linha">
+          <a class="menu-linha--item" href="<?php echo home_url(); ?>/modulos-complementos"><?php _e("<!--:en-->MODULES<!--:--><!--:pb-->Módulos<!--:--><!--:es-->MODULES<!--:--><!--:fr-->MÓDULOS<!--:-->" ); ?></a>
+          <a class="menu-linha--item active" href="<?php echo home_url(); ?>/ambientes-complementos"><?php _e("<!--:en-->ENVIRONMENTS<!--:--><!--:pb-->Ambientes<!--:--><!--:es-->AMBIENTES<!--:--><!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
         
         <figure class="thumbs ambientes"
