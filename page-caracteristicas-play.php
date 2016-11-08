@@ -75,6 +75,12 @@
             data-featherlight-gallery 
             data-featherlight-filter="a"
         >
+          <?php
+         $caminho  = $_SERVER['REQUEST_URI'];
+          $pieces = explode("/", $caminho);
+          $idioma = $pieces[1];
+          //echo "Escreve idioma; ".$idioma;
+        ?>
         <?php 
           $query_args = array (
             'showposts' => -1,
@@ -86,10 +92,29 @@
           query_posts($query_args);
           while (have_posts() ) { the_post();
           $childSlug = basename(get_permalink());
+        
+          if ($idioma == 'pb'){ ?>
+                  <a href="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/lightbox-dif-<?php echo $childSlug; ?>.jpg" title="<?php the_title();?>">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/slide-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
+                  </a>
+            <?php }
+            
+            if ($idioma == 'es'){ ?>
+                <a href="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/lightbox-dif-<?php echo $childSlug; ?>-es.jpg" title="<?php the_title();?>">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/slide-dif-<?php echo $childSlug; ?>-es.jpg" alt="<?php the_title();?>" />
+                  </a>
+            <?php }
+            if ($idioma == 'en'){ ?>
+                  <a href="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/lightbox-dif-<?php echo $childSlug; ?>-en.jpg" title="<?php the_title();?>">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/slide-dif-<?php echo $childSlug; ?>-en.jpg" alt="<?php the_title();?>" />
+                  </a>
+            <?php }
+            if ($idioma == 'fr'){ ?>
+                <a href="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/lightbox-dif-<?php echo $childSlug; ?>-fr.jpg" title="<?php the_title();?>">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/slide-dif-<?php echo $childSlug; ?>-fr.jpg" alt="<?php the_title();?>" />
+                  </a>
+            <?php }
         ?>
-          <a href="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/lightbox-dif-<?php echo $childSlug; ?>.jpg" title="<?php the_title();?>">
-            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/play/diferenciais/slide-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
-          </a>
         <?php } ?>
         </figure>
         
@@ -177,7 +202,17 @@
           ); ?></li>
             </ul>
             <p>&nbsp;</p>
-            <p class="caract-p">*Consulte disponibilidade</p>
+            <p class="caract-p">
+            <?php _e(
+          "<!--:en-->*Check availability<!--:--> 
+          
+          <!--:pb-->*Consulte disponibilidade<!--:-->
+          
+          <!--:es-->*Consulte disponibilidad<!--:-->
+          
+          <!--:fr-->*Vérifiez disponibilité<!--:-->"
+          ); ?>
+            </p>
           </div>
         <?php //} ?>
         </aside>

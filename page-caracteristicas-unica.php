@@ -33,7 +33,12 @@
           <!--<a class="menu-linha--item" href="<?php //echo home_url(); ?>/acessorios-unica">Acessórios</a>-->
           <a class="menu-linha--item" href="<?php echo home_url(); ?>/ambientes-unica"><?php _e("<!--:en-->ENVIRONMENTS<!--:--><!--:pb-->Ambientes<!--:--><!--:es-->AMBIENTES<!--:--><!--:fr-->AMBIANCES<!--:-->" ); ?></a>
         </nav>
-        
+        <?php
+         $caminho  = $_SERVER['REQUEST_URI'];
+          $pieces = explode("/", $caminho);
+          $idioma = $pieces[1];
+          //echo "Escreve idioma; ".$idioma;
+        ?>
         <figure class="img-slider"
             data-featherlight-gallery 
             data-featherlight-filter="a"
@@ -49,10 +54,29 @@
           query_posts($query_args);
           while (have_posts() ) { the_post();
           $childSlug = basename(get_permalink());
+        
+        if ($idioma == 'pb'){ ?>
+                  <a href="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/lightbox-dif-<?php echo $childSlug; ?>.jpg" title="<?php the_title();?>">
+                    <img data-lazy="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/slide-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
+                  </a>
+            <?php }
+            
+            if ($idioma == 'es'){ ?>
+                 <a href="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/lightbox-dif-<?php echo $childSlug; ?>-es.jpg" title="<?php the_title();?>">
+                    <img data-lazy="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/slide-dif-<?php echo $childSlug; ?>-es.jpg" alt="<?php the_title();?>" />
+                  </a>
+            <?php }
+            if ($idioma == 'en'){ ?>
+                   <a href="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/lightbox-dif-<?php echo $childSlug; ?>-en.jpg" title="<?php the_title();?>">
+                    <img data-lazy="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/slide-dif-<?php echo $childSlug; ?>-en.jpg" alt="<?php the_title();?>" />
+                  </a>
+            <?php }
+            if ($idioma == 'fr'){ ?>
+                 <a href="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/lightbox-dif-<?php echo $childSlug; ?>-fr.jpg" title="<?php the_title();?>">
+                  <img data-lazy="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/slide-dif-<?php echo $childSlug; ?>-fr.jpg" alt="<?php the_title();?>" />
+                </a>
+            <?php }
         ?>
-          <a href="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/lightbox-dif-<?php echo $childSlug; ?>.jpg" title="<?php the_title();?>">
-            <img data-lazy="<?php bloginfo('template_url');?>/assets/images/unica/diferenciais/slide-dif-<?php echo $childSlug; ?>.jpg" alt="<?php the_title();?>" />
-          </a>
         <?php } ?>
         </figure>
         
