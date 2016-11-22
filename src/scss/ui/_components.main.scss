@@ -471,14 +471,33 @@ h2.tipo-modulo {
   visibility: hidden;
 }
 
-.idiomas{
-  position: absolute;
-  left: 18px;
-  top: 20px;
-  
-  
-  li {
-    display: inline;
-    list-style-type: none;
-  }
+@include media-query(desk) {
+     
+     .idiomas{
+          position: fixed;
+          z-index: 1000;
+          left: 18px;
+          top: 45px;
+      
+      li {
+        display: inline;
+        list-style-type: none;
+      }
+    }
 }
+
+@include media-query(portable) {
+     
+     .idiomas{
+          position: fixed;
+          z-index: 1000;
+          right: 18px;
+          top: 60px;
+      
+      li {
+        display: inline;
+        list-style-type: none;
+      }
+    }
+}
+

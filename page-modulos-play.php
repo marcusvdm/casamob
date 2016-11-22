@@ -117,13 +117,13 @@
           <!--:fr-->Horizontal Aerial<!--:-->" ); ?></a>
         | <a class="link-modulos <?php if($paged === 3) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/3">
           <?php _e(
-          "<!--:en-->Cabinets <!--:--> 
+          "<!--:en-->Cabinets<!--:--> 
           
           <!--:pb-->Gabinetes<!--:-->
           
           <!--:es-->Armarios<!--:-->
           
-          <!--:fr--> Bureaux<!--:-->" ); ?></a>
+          <!--:fr-->Bureaux<!--:-->" ); ?></a>
         | <a class="link-modulos <?php if($paged === 4) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/4">
         <?php _e(
           "<!--:en-->Pot Cabinets <!--:--> 
@@ -132,16 +132,16 @@
           
           <!--:es-->Alacenas<!--:-->
           
-          <!--:fr--> | Placards<!--:-->" ); ?></a>
+          <!--:fr-->Placards<!--:-->" ); ?></a>
         | <a class="link-modulos <?php if($paged === 5) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/5">
           <?php _e(
-          "<!--:en-->Corners  <!--:--> 
+          "<!--:en-->Corners<!--:--> 
           
           <!--:pb-->Cantos<!--:-->
           
           <!--:es-->Esquineros<!--:-->
           
-          <!--:fr--> |Coins<!--:-->" ); ?></a>
+          <!--:fr-->Coins<!--:-->" ); ?></a>
         | <a class="link-modulos <?php if($paged === 6) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/6">
         <?php _e(
           "<!--:en-->Accessories<!--:--> 
@@ -150,7 +150,7 @@
           
           <!--:es-->Accesorios <!--:-->
           
-          <!--:fr--> |Accessoires<!--:-->" ); ?></a>
+          <!--:fr-->Accessoires<!--:-->" ); ?></a>
         | <a class="link-modulos <?php if($paged === 7) { echo "current"; } ?>" href="<?php echo home_url(); ?>/modulos-play/page/7">
         <?php _e(
           "<!--:en-->Special*<!--:--> 
@@ -159,7 +159,7 @@
           
           <!--:es-->Especiales*<!--:-->
           
-          <!--:fr--> |Spéciaux*<!--:-->" ); ?></a>
+          <!--:fr-->Spéciaux*<!--:-->" ); ?></a>
         <br><br>
         <p style="font-size:11px; color: #59496a;">
           <?php _e(
@@ -169,7 +169,7 @@
           
           <!--:es--> *Disponible bajo consulta<!--:-->
           
-          <!--:fr--> |* Disponible sur demande<!--:-->" ); ?></p>
+          <!--:fr-->* Disponible sur demande<!--:-->" ); ?></p>
         </div>
       </div>
 

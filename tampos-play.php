@@ -70,7 +70,16 @@
           <!--:fr-->marbre<br>noir<br>[ MP ]<!--:-->" ); ?>
     </div>
     
-    <span class="legal">* Padrão dos módulos com Mármore Branco. Consulte disponibilidade das demais cores.</span>
+    <span class="legal">
+       <?php _e(
+          "<!--:en-->* Modules pattern in White Marble. See availability of other colors.<!--:--> 
+          
+          <!--:pb-->* Padrão dos módulos com Mármore Branco. Consulte disponibilidade das demais cores.<!--:-->
+          
+          <!--:es-->* Padrón de los módulos  con Mármol Blanco. Consulte disponibilidad de las demás colores.<!--:-->
+          
+          <!--:fr-->* Norme des modules en Marbre Blanc. Veuillez consulter la disponibilité des autres couleurs.<!--:-->" ); ?>
+      </span>
   </div>
 
 </article>

@@ -7265,13 +7265,25 @@ h2.tipo-modulo small {
   opacity: 0;
   visibility: hidden; }
 
-.idiomas {
-  position: absolute;
-  left: 18px;
-  top: 20px; }
-  .idiomas li {
-    display: inline;
-    list-style-type: none; }
+@media screen and (min-width: 1024px) {
+  .idiomas {
+    position: fixed;
+    z-index: 1000;
+    left: 18px;
+    top: 45px; }
+    .idiomas li {
+      display: inline;
+      list-style-type: none; } }
+
+@media screen and (max-width: 1023px) {
+  .idiomas {
+    position: fixed;
+    z-index: 1000;
+    right: 18px;
+    top: 60px; }
+    .idiomas li {
+      display: inline;
+      list-style-type: none; } }
 
 /* UI OBJECTS */
 /* UI PLUGINS */

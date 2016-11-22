@@ -68,10 +68,27 @@
     );
   }
 ?>  
-
+<?php
+         $caminho  = $_SERVER['REQUEST_URI'];
+          $pieces = explode("/", $caminho);
+          $idioma = $pieces[1];
+          //echo "Escreve idioma; ".$idioma;
+        ?>
 <section class="step hero" id="hero" data-panel="hero">
   <a href="http://www.mooble.com/p/casamob" target="_blank" class="monte-a-sua">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon-monte-a-sua.svg" alt="monte a sua">
+    <?php 
+    
+    if ($idioma == 'pb'){ ?>
+        
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon-monte-a-sua.svg" alt="monte a sua">    
+    
+    <?php } if ($idioma == 'es'){ ?>
+         <!-- nada -->           
+    <?php } if ($idioma == 'en'){ ?>
+          <!-- nada -->           
+    <?php } if ($idioma == 'fr'){ ?>
+           <!-- nada -->         
+    <?php } ?>
   </a>
   
   <div class="slider" ><div class="slides-container">
